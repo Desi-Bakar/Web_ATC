@@ -1,21 +1,14 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
-mainpitch:
-  title: Why Kaldi
+title: 
+image: /img/WebTraining.jpg
+heading: Mau Jago IT? Belajar dari Ahlinya di Areta Training Center!
+mainpitch: 
+  title: Mengapa Areta Training Center?
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Areta Training Center menawarkan pendekatan pembelajaran berbasis praktik, bukan hanya teori. Peserta pelatihan akan langsung mengerjakan studi kasus nyata yang relevan dengan industri dan dipandu oleh instruktur profesional yang memiliki pengalaman langsung di bidangnya. Ini memastikan materi yang diajarkan selalu up-to-date dan sesuai dengan kebutuhan dunia kerja.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+    Tingkatkan Skill IT dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
 intro:
   blurbs:
     - image: /img/coffee.png

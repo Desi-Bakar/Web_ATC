@@ -71,7 +71,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
             >
               <span className="icon whatsapp">
-                <img src={whatsapp} alt="whatsapp" />
+                <img src={whatsapp} alt="whatsapp1" />
               </span>
             </a>
           </li>

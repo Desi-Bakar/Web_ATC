@@ -11,7 +11,7 @@ description: >-
     Tingkatkan Skill IT dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/Hacking.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a

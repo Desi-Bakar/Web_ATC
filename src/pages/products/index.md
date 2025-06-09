@@ -15,17 +15,14 @@ intro:
       text: >
         Linux Basic
         Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
-    - image: /img/linux.png
+    - image: /img/linuxadm.png
       text: >
-        Linux System Admministrator 
+        Linux System Administrator 
         Materi : Karnel Linux, Konfigurasi Hardware, Otomatisasi System-(Penjadwalan), File System, Menangani Masalah - dengan Linux, System File dan Printer (NFS, Printer & Samba), Instalasi Server - Linux, Penggunaan Bantuan bagi Administrator, Managemen User & Group, Paket Managemen ( Instalasi, Uninstall, Upgrade )
-    - image: /img/tutorials.png
+    - image: /img/network.png
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        Linux System Administrator
+        Materi : Konsep Dasar TCP/IP, Routing, Subnetting, DNS server, Mall Server, Web Server, NFS, FTP Server, Proxy & Firewalling, Teknik Koneksi ke Internet.
     - image: /img/meeting-space.png
       text: >
         We believe that good coffee has the power to bring people together.

@@ -15,12 +15,10 @@ intro:
       text: >
         Linux Basic
         Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
-    - image: /img/coffee-gear.png
+    - image: /img/linux.png
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Linux System Admministrator 
+        Materi : Karnel Linux, Konfigurasi Hardware, Otomatisasi System-(Penjadwalan), File System, Menangani Masalah - dengan Linux, System File dan Printer (NFS, Printer & Samba), Instalasi Server - Linux, Penggunaan Bantuan bagi Administrator, Managemen User & Group, Paket Managemen ( Instalasi, Uninstall, Upgrade )
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a

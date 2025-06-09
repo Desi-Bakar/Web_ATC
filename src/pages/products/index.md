@@ -28,6 +28,14 @@ intro:
         Linux for Networking Computer -Technic
         Materi: TCP/IP. Cabling, Instalasi PC Router Debian & PC-
         Server-Debian, Instalasi PC Client Windows, Instalasi Jaringan, Konfigurasi-Wireless Access Point, Konfigurasi PC Router, Konfigurasi Firewall, Setup DNS Server, Setup HTTP Server, Setup Mail Server & Webmail Server, Setup FTP Server, Proxy Server & NTP, Trouble-Shooting Networking.
+    - image: /img/security.png
+      text: >
+        Linux Security
+        Materi: Pengantar Keamanan, Boot Security, General Linux Security, Cryptography, Root Jail, Server Security, VPN, Firewall, IDS.
+    - image: /img/complete.png
+      text: >
+        Linux Security
+        Materi: Linux Basic, Linux System Administrator, Linux System Administrator & Networking.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

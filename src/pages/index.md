@@ -12,9 +12,9 @@ mainpitch:
     
 description: >-
     
-      Areta Training Center yang berlokasi di Dasana Indah, Blok CD 68, Kec.Kelapa Dua - Tangerang menawarkan pendekatan pembelajaran berbasis praktik, bukan hanya teori. Peserta pelatihan akan langsung mengerjakan studi kasus nyata yang relevan dengan industri dan dipandu oleh instruktur profesional yang memiliki pengalaman langsung di bidangnya. Ini memastikan materi yang diajarkan selalu up-to-date dan sesuai dengan kebutuhan dunia kerja.
+    Areta Training Center yang berlokasi di Dasana Indah, Blok CD 68, Kec.Kelapa Dua - Tangerang menawarkan pendekatan pembelajaran berbasis praktik, bukan hanya teori. Peserta pelatihan akan langsung mengerjakan studi kasus nyata yang relevan dengan industri dan dipandu oleh instruktur profesional yang memiliki pengalaman langsung di bidangnya. Ini memastikan materi yang diajarkan selalu up-to-date dan sesuai dengan kebutuhan dunia kerja.
       
-      Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
+    Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
 
 
 intro:

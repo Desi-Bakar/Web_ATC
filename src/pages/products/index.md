@@ -13,12 +13,8 @@ intro:
   blurbs:
     - image: /img/LogoLinux.png
       text: >
-        **Linux Basic**
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Linux Basic
+        Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and

@@ -23,13 +23,11 @@ intro:
       text: >
         Linux System Administrator
         Materi : Konsep Dasar TCP/IP, Routing, Subnetting, DNS server, Mall Server, Web Server, NFS, FTP Server, Proxy & Firewalling, Teknik Koneksi ke Internet.
-    - image: /img/meeting-space.png
+    - image: /img/teknik.png
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Linux for Networking Computer -Technic
+        Materi: TCP/IP. Cabling, Instalasi PC Router Debian & PC-
+        Server-Debian, Instalasi PC Client Windows, Instalasi Jaringan, Konfigurasi-Wireless Access Point, Konfigurasi PC Router, Konfigurasi Firewall, Setup DNS Server, Setup HTTP Server, Setup Mail Server & Webmail Server, Setup FTP Server, Proxy Server & NTP, Trouble-Shooting Networking.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

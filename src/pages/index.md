@@ -6,9 +6,17 @@ heading: Mau Jago IT? Belajar dari Ahlinya di Areta Training Center!
 mainpitch: 
   title: Mengapa Areta Training Center?
   description: >
-    Areta Training Center menawarkan pendekatan pembelajaran berbasis praktik, bukan hanya teori. Peserta pelatihan akan langsung mengerjakan studi kasus nyata yang relevan dengan industri dan dipandu oleh instruktur profesional yang memiliki pengalaman langsung di bidangnya. Ini memastikan materi yang diajarkan selalu up-to-date dan sesuai dengan kebutuhan dunia kerja.
+    Areta Training Center merupakan lembaga kursus dan pelatihan yang berfokus pada dunia IT dan Bisnis Digital. Kami menyediakan berbagai program pelatihan berbasis 100% praktik langsung, dirancang untuk membekali peserta dengan keterampilan yang sesuai dengan kebutuhan industri saat ini.
+    
+    Mulai dari pelatihan Jaringan Komputer, Web Development, Digital Marketing, hingga IT Support dan Desain Grafis, semua materi disampaikan oleh instruktur berpengalaman di bidangnya. Areta Training Center berkomitmen untuk membantu peserta tidak hanya menguasai teori, tetapi juga siap terjun langsung ke dunia kerja dan bisnis digital yang terus berkembang.
+    
 description: >-
-    Tingkatkan Skill IT dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
+    
+      Areta Training Center yang berlokasi di Dasana Indah, Blok CD 68, Kec.Kelapa Dua - Tangerang menawarkan pendekatan pembelajaran berbasis praktik, bukan hanya teori. Peserta pelatihan akan langsung mengerjakan studi kasus nyata yang relevan dengan industri dan dipandu oleh instruktur profesional yang memiliki pengalaman langsung di bidangnya. Ini memastikan materi yang diajarkan selalu up-to-date dan sesuai dengan kebutuhan dunia kerja.
+      
+      Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu. Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing dengan pendekatan 100% praktik langsung.
+
+
 intro:
   blurbs:
     - image: /img/Hacking.png

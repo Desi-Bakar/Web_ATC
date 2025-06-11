@@ -86,6 +86,18 @@ intro:
       text: >
         MS PowerPoint for Business
         Materi: Penggunaan Dasar & Manajemen File, Pengaturan Bullet & Numbering, Catatan & Komentar, Insert Image, Video, Audio, Table, Multimedia, Link, Persentasi & Internet, Pengaturan Persentasi, dll.
+    - image: /img/php.png
+      text: >
+        PHP & MySQL. Standard
+        Materi: Pengantar PHP, Struktur Program PHP, Pengenalan Variabel Tipe Data & Konstanta, Submit Form (HTTP POST/GET); Penggunaan Operator Aritmatika & Variabel Array, Struktur Kendali IF... ELSE SWITCH: Pernyataan Pengulangan FOR, WHILE & FOREACH, Pernyataan Require & Include, Penanganan Error, Data Lanjutan & Fungsi String, Pembuatan & Penggunaan Fungsi; Pengenalan Database MySQL, Pembuatan Database & Table, Pengenalan Perintah-Perintah SQL, Koneksi PHP-ke MySQL, Submit Form ke Database, Menampilkan Data dari Database, Input & Output File, Penggunaan SESSION, Upload-Aplikasi PHP ke Server.
+    - image: /img/phpadvance.png
+      text: >
+        PHP & MySQL Advanced
+        Materi: Merancang Website & Template Web, Penggunaan Variabel Lokal & Global, Pengenalan Fungsi & Parameternya By Referencs & By Value, Pengenalan Konsep-OOP, Membuat Class & Object, Penggunaan Static Member Class & Fitur Inheritance, Penanganan Error, Penggunaan Library DBPEAR; Database Transaction, Penggunaan Library HTML. Quickform, Paging Data, Rancangan Database & Pembuatan ERD; Studi Kasus, Penggunaan MySQL Store Procedure & Trigger, Pengenalan Teknologi AJAX.
+    - image: /img/netbeans.png
+      text: >
+        Java Programming Basic with Netbeans
+        Materi : Pengenalan Java & Editor: Elemen Dasar (Variabel & Tipe Data), Коnsер OOP, Operator, Fungsi, Kondisi IF, Kondisi Switch-Case: Perulangan Array, Latihan, Studi Kasus.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

@@ -61,6 +61,18 @@ intro:
       text: >
         Hacking & Security
         Materi : Pengantar Hacking, Hacking Password, Hacking Linux & Remote Login, Exploits, Password Folder & Hacking Modem, Teknik SQL Injection, Hacking Windows & Defice Website, Teknik Security.
+    - image: /img/windowsnetwork.png
+      text: >
+        Linux Networking & Windows -Networking
+        Materi: Konsep TCP/IP, Membuat Router / Gateway Linux, Firewall Linux, DHCP, Proxy, DNS, FTP, Web Server Linux, PDC Windows Server & Backup Linux, Instalasi Client Windows, Teknik Backup.
+    - image: /img/mail.png
+      text: >
+        Mail Server with Zimbra
+        Materi: Konsep & Design Linux Enterprise, DNS, Mail Server Postfix, Imap, POP3, Instalasi, Konfigurasi, Trouble Shooting & Testing Zimbra.
+    - image: /img/cloud.png
+      text: >
+        Cloud Computing
+        Materi: Pengenal Teknologi Cloud & Proxmox, Hardware Compability, Implementasi VM with KVM, Implementasi VM with OpenVZ, Instalasi FreeNAS for NFS & ISCSI Storage, Konfigurasi NFS & ISCSI, Koneksi, Proxmox Cluster & High Availability Server with DRBD, Backup & Restore.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

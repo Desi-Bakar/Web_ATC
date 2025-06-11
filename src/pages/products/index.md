@@ -106,7 +106,7 @@ intro:
       text: >
         Adobe Ilustrator
         Materi: Pengenalan Dasar Adobe Ilustrator; Membuat dokumen; Menggambar-& Menyeleksi Objek; Bekerja dengan Pen Tool & Objek; Mengenal Layer -Illustrator; Bekerja dengan Warna & Teks; Mentransformasi & Memodifikasi -Objek; Membuat Gradient & Pattern; Menggunakan Efek - efek Ilustrator; Bekerja dengan Grafik; Bekerja dengan Simbol; Live Paint; Trace & Mencetak; Latihan.
-    - image: /img/ADOBE
+    - image: /img/ADOBE.png
       text: >
         Macromedia Flash
         Materi: Pengenalan Dasar Animasi Macromedia Flash; Toolbox(Tools, -View, Colors, Options); Stage; Timeline; ActionScript; Halaman Kerja; Membuat Animasi Tweening; Variable & Tipe Data; Operator; Membuat Animasi Teks; Menambahkan Sound & Video; Publishing.

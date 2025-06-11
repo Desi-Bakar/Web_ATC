@@ -36,6 +36,18 @@ intro:
       text: >
         Linux Security
         Materi: Linux Basic, Linux System Administrator, Linux System Administrator & Networking.
+    - image: /img/mysql.png
+      text: >
+        MySQL Database Administrator        
+        Materi : Pengenalan Database; Instalasi, Konektivitas, Perintah dasar-Database, Management Table, Perintah SQL.; Operator, View & Rule; Index, Transaksi, Fungsi.
+    - image: /img/PostgreSQL.png
+      text: >
+        PostgreSQL Database -Administrator 
+        Materi Pengantar PostgreSQL (Konsep & Kapabilitas); Mendefinisikan Tabel & Relasi (Create, Constraint & Serial); Menambah & Mengubah data (Insert, Update, Delete & Transction); Query (Select, Self Join, Cross join, Inner Join, Outer Join & Subquery); Pemrograman User Defined Function dengan PL/PostgreSQL; Administrasi Database PostgreSQL; Merancang Database.
+    - image: /img/oracle.png
+      text: >
+        Oracle Database 
+        Materi Pengantar Oracle Database, Create The Database, Managing Tablespaces & Datafiles; Create New Table; Bigfile Tablespace To Extend & To Decrease The Size of Tablespace, Making, Renaming & Dropping Tablespaces, Procedure for Tablespaces, Managing Redo Logfiles, Control Files & The Undo Tablespaces; SQL. Loader, Export & Import, Data Pump Utility, Flash Back Features: Log Miner, Backup & Recovery.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

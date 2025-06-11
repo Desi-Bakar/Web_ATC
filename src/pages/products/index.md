@@ -98,6 +98,18 @@ intro:
       text: >
         Java Programming Basic with Netbeans
         Materi : Pengenalan Java & Editor: Elemen Dasar (Variabel & Tipe Data), Коnsер OOP, Operator, Fungsi, Kondisi IF, Kondisi Switch-Case: Perulangan Array, Latihan, Studi Kasus.
+    - image: /img/PHOTOSHOP.png
+      text: >
+        Adobe Photoshop
+        Materi: Pengenalan Dasar Photoshop: Tools, Membuat Tulisan dengan-Menggunakan Efek-efek Tertentu; Memasukkan Gambar/Objek: Copy,-Cut Paste; Mengedit Gambar yang sudah ada; Seleksi: Pewarnaan; Transformasi; Cropping; Duplikasi; Efek Fotografi; Efek Ketajaman &-Smudge; Slice Tool; Menghapus; Penggunaan Efek; Save; Latihan.
+    - image: /img/ILUSTRATOR.png
+      text: >
+        Adobe Ilustrator
+        Materi: Pengenalan Dasar Adobe Ilustrator; Membuat dokumen; Menggambar-& Menyeleksi Objek; Bekerja dengan Pen Tool & Objek; Mengenal Layer -Illustrator; Bekerja dengan Warna & Teks; Mentransformasi & Memodifikasi -Objek; Membuat Gradient & Pattern; Menggunakan Efek - efek Ilustrator; Bekerja dengan Grafik; Bekerja dengan Simbol; Live Paint; Trace & Mencetak; Latihan.
+    - image: /img/ADOBE
+      text: >
+        Macromedia Flash
+        Materi: Pengenalan Dasar Animasi Macromedia Flash; Toolbox(Tools, -View, Colors, Options); Stage; Timeline; ActionScript; Halaman Kerja; Membuat Animasi Tweening; Variable & Tipe Data; Operator; Membuat Animasi Teks; Menambahkan Sound & Video; Publishing.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

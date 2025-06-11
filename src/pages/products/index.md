@@ -48,6 +48,19 @@ intro:
       text: >
         Oracle Database 
         Materi Pengantar Oracle Database, Create The Database, Managing Tablespaces & Datafiles; Create New Table; Bigfile Tablespace To Extend & To Decrease The Size of Tablespace, Making, Renaming & Dropping Tablespaces, Procedure for Tablespaces, Managing Redo Logfiles, Control Files & The Undo Tablespaces; SQL. Loader, Export & Import, Data Pump Utility, Flash Back Features: Log Miner, Backup & Recovery.
+    - image: /img/Mikro.png
+      text: >
+        Mikrotik & Networking Basic
+        Materi : Pengantar Mikrotik & TCP/IP, Instalasi Mikrotik, Paket Instalasi Mikrotik, Dasar - dasar Perintah Mikrotik, Konfigurasi Mikrotik, Studi Kasus.
+
+    - image: /img/Firewall_Advanced.png
+      text: >
+        Mikrotik & Firewall Advanced
+        Materi : Konsep Dasar Routing & Firewall, Winbox, Konfigurasi Router, Firewall, Studi Kasus.
+    - image: /img/Hack.png
+      text: >
+        Hacking & Security
+        Materi : Pengantar Hacking, Hacking Password, Hacking Linux & Remote Login, Exploits, Password Folder & Hacking Modem, Teknik SQL Injection, Hacking Windows & Defice Website, Teknik Security.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

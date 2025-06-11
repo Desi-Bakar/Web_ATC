@@ -110,6 +110,18 @@ intro:
       text: >
         Macromedia Flash
         Materi: Pengenalan Dasar Animasi Macromedia Flash; Toolbox(Tools, -View, Colors, Options); Stage; Timeline; ActionScript; Halaman Kerja; Membuat Animasi Tweening; Variable & Tipe Data; Operator; Membuat Animasi Teks; Menambahkan Sound & Video; Publishing.
+        - image: /img/cad.png
+      text: >
+        AutoCAD Basic
+        Materi: Membuka dan Menjalankan Program Autocad Membuat Garis Miring dengan Kuadran Kartesian Fillet dan Trim Circle dan Tan, Array, Offset, Layer, Copy, Move, Mirror, Rotate, Block, Mline, Explode, Extend, Hatch, Latihan.
+    - image: /img/cadadvance.png
+      text: >
+        AutoCAD Advanced
+        Materi: Pengenalan 3D, Mengubah Model Gambar 2D ke 3D, Perintah & Modifikasi Gambar 3D, Solid & Surface, Gambar Perspective, Kombinasi Objek 2D & 3D, Rendeing, Aplikasi Ucs & Viewpoint, Latihan.
+    - image: /img/corel.png
+      text: >
+        CorelDRAW
+        Materi: Pengenalan Dasar CorelDRAW, Toolbox & Fungsinya, Import & Export, Copy Object, Layout Halaman, Teknik Transparasi Gambar, Teknik Penggabungan & Shaping, Memotong Gambar, Fungsi Ruler & Guide Lines, Membuat Half Tone, Membuat Kancing, Membuat Logo, Membuat Kartun, Desain Baju Puzzle Gambar, Kalender; Spanduk, Brosur, Latihan.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

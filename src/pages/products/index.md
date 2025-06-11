@@ -110,7 +110,7 @@ intro:
       text: >
         Macromedia Flash
         Materi: Pengenalan Dasar Animasi Macromedia Flash; Toolbox(Tools, -View, Colors, Options); Stage; Timeline; ActionScript; Halaman Kerja; Membuat Animasi Tweening; Variable & Tipe Data; Operator; Membuat Animasi Teks; Menambahkan Sound & Video; Publishing.
-        - image: /img/cad.png
+    - image: /img/cad.png
       text: >
         AutoCAD Basic
         Materi: Membuka dan Menjalankan Program Autocad Membuat Garis Miring dengan Kuadran Kartesian Fillet dan Trim Circle dan Tan, Array, Offset, Layer, Copy, Move, Mirror, Rotate, Block, Mline, Explode, Extend, Hatch, Latihan.

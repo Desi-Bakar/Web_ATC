@@ -73,6 +73,19 @@ intro:
       text: >
         Cloud Computing
         Materi: Pengenal Teknologi Cloud & Proxmox, Hardware Compability, Implementasi VM with KVM, Implementasi VM with OpenVZ, Instalasi FreeNAS for NFS & ISCSI Storage, Konfigurasi NFS & ISCSI, Koneksi, Proxmox Cluster & High Availability Server with DRBD, Backup & Restore.
+    - image: /img/JAVASCRIPT.png
+      text: >
+        Web Standard (HTML, CSS & JavaScript)
+        Materi Pengenalan Web & Persiapan, Pengenalan HTML.; Membuat Gambar, Membuat Link; Heading; List; Memahami Tag Div; Form; Tabel; Studi Kasus 1-(Konversi Desaign ke HTML); Semantik; CSS; Box-Model; Typography; CSS-Image; Floating; Positioning; Pseudo-Class; Studi Kasus 2 (Pemberian Style/CSS); Studi Kasus 3-(Slicing); JavaScript.
+    - image: /img/Microsoft.png
+      text: >
+        MS Office/Open Office 
+        Materi Pengantar Dasar Office; Membuat Dokumen dengan Word;
+        Membuat Lembar Kerja dengan Excel; Membuat Persentasi dengan -PowerPoint; Latihan & Contoh Kasus.
+    - image: /img/Power.png
+      text: >
+        MS PowerPoint for Business
+        Materi: Penggunaan Dasar & Manajemen File, Pengaturan Bullet & Numbering, Catatan & Komentar, Insert Image, Video, Audio, Table, Multimedia, Link, Persentasi & Internet, Pengaturan Persentasi, dll.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

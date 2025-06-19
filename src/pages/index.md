@@ -19,26 +19,23 @@ description: >-
 
 intro:
   blurbs:
-    - image: /img/Hacking.png
-      text: >
-        Pengantar Hacking; Hacking Password; Hacking Linux & Remote Login
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Linux System Admministrator 
-        Materi : Karnel Linux, Konfigurasi hardwa
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+     - image: /img/LogoLinux.png
+       text: >
+        Linux Basic
+        Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
+     - image: /img/linuxadm.png
+       text: >
+        Linux System Administrator 
+        Materi : Karnel Linux, Konfigurasi Hardware, Otomatisasi System-(Penjadwalan), File System, Menangani Masalah - dengan Linux, System File dan Printer (NFS, Printer & Samba), Instalasi Server - Linux, Penggunaan Bantuan bagi Administrator, Managemen User & Group, Paket Managemen ( Instalasi, Uninstall, Upgrade )
+     - image: /img/network.png
+       text: >
+        Linux System Administrator
+        Materi : Konsep Dasar TCP/IP, Routing, Subnetting, DNS server, Mall Server, Web Server, NFS, FTP Server, Proxy & Firewalling, Teknik Koneksi ke Internet.
+     - image: /img/teknik.png
+       text: >
+        Linux for Networking Computer -Technic
+        Materi: TCP/IP. Cabling, Instalasi PC Router Debian & PC-
+        Server-Debian, Instalasi PC Client Windows, Instalasi Jaringan, Konfigurasi-Wireless Access Point, Konfigurasi PC Router, Konfigurasi Firewall, Setup DNS Server, Setup HTTP Server, Setup Mail Server & Webmail Server, Setup FTP Server, Proxy Server & NTP, Trouble-Shooting Networking.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

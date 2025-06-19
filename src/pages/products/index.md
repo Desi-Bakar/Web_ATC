@@ -136,10 +136,10 @@ main:
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: 
     image:
   image2:
-    alt: A green cup of a coffee on a wooden table
+    alt: 
     image:
   image3:
     alt: Coffee beans
@@ -153,7 +153,7 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+full_image:
 pricing:
   heading: Monthly subscriptions
   description: >-

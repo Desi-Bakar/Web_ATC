@@ -49,14 +49,14 @@ const Footer = () => {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/AretaCollege/">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                <a title="tiktok" href="https://www.tiktok.com/@areta_informaticscollege">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -64,14 +64,14 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://instagram.com/areta_informaticscollege/">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="vimeo" href="https://vimeo.com">
+                <a title="vimeo" href="https://pmb.aretacollege.com">
                   <img
                     src={vimeo}
                     alt="Vimeo"

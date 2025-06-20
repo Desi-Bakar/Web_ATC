@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Pelatihan CorelDRAW untuk Pemula, Mahir Desain Grafis dari Dasar'
-date: 2016-12-17T15:04:10.000Z
+date: 2025-06-20T15:04:10.000Z
 featuredpost: false
 featuredimage: /img/corel.png
 description:  >-

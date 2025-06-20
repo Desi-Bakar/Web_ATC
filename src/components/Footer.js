@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import logo from "../img/Training.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/tiktok.svg";
+import twitter from "../img/social/icons8-tiktok-logo.svg";
 import vimeo from "../img/social/vimeo.svg";
 
 const Footer = () => {

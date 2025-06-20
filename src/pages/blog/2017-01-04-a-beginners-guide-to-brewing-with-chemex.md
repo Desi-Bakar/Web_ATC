@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: A beginners’ guide to brewing with Chemex
+title: Pelatihan Web Standard untuk Pemula, Mulai dari Pengenalan Web hingga Dasar HTML
 date: 2017-01-04T15:04:10.000Z
 featuredpost: false
-featuredimage: /img/chemex.jpg
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+description: >-
+ Selamat datang di Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 tags:
   - kursus web programming
   - kursus web design
@@ -19,7 +19,7 @@ tags:
 ---
 
 
-Pelatihan Web Standard untuk Pemula: Mulai dari Pengenalan Web hingga Dasar HTML
+
 
 Di era serba digital seperti sekarang, kemampuan membuat website adalah salah satu keahlian yang sangat dibutuhkan. Baik untuk pelajar SMK, mahasiswa IT, maupun siapa saja yang ingin terjun ke dunia kerja di bidang
 teknologi informasi, menguasai HTML, CSS, dan JavaScript adalah langkah awal yang wajib dipelajari.

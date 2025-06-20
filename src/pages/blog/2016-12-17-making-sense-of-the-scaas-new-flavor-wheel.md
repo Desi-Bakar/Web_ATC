@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
+title: Pelatihan CorelDRAW untuk Pemula, Mahir Desain Grafis dari Dasar
 date: 2016-12-17T15:04:10.000Z
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+description: >-
+ Selamat datang di Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 tags:
   - kursus coreldraw
   - training coreldraw
@@ -17,8 +17,6 @@ tags:
   - kursus desain spanduk coreldraw
   - kursus membuat logo coreldraw
 ---
-
-Pelatihan CorelDRAW untuk Pemula: Mahir Desain Grafis dari Dasar
 
 Di era digital kreatif seperti sekarang, kemampuan desain grafis menjadi salah satu skill yang sangat dibutuhkan, terutama bagi pelajar SMK, mahasiswa jurusan desain, multimedia, maupun siapa saja yang tertarik berkarir di dunia kreatif. Salah satu software desain grafis populer dan banyak digunakan di industri percetakan hingga periklanan adalah *CorelDRAW*.
 

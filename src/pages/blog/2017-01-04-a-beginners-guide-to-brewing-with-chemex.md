@@ -54,7 +54,7 @@ Pelatihan Web Standard di Areta Training Center meliputi materi dasar yang wajib
 2 Pengenalan HTML (HyperText Markup Language)
 
  > Sejarah dan fungsi HTML sebagai bahasa markup.
- > Struktur dasar HTML: <html>, <head>, <body>.
+ > Struktur dasar HTML <html>, <head>, <body>.
  > Membuat teks dengan heading, paragraf, dan list.
  > Menambahkan gambar, link, dan video ke halaman web. Membuat form input sederhana.
  > Praktik: Membuat halaman web sederhana berisi teks, gambar, dan link.

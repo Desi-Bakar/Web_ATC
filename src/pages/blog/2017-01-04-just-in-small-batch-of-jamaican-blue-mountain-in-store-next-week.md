@@ -11,6 +11,11 @@ tags:
   - pelatihan komputer
   - kursus digital marketing
   - kursus networking
+  - kursus mikrotik
+  - training mikrotik
+  - pelatihan mikrotik
+  - kursus jaringan mikrotik
+  - pelatihan konfigurasi mikrotik
 ---
 
 Di era serba digital seperti sekarang, kemampuan dalam mengelola jaringan komputer menjadi salah satu skill yang sangat dibutuhkan, terutama bagi pelajar SMK dan mahasiswa jurusan IT. Salah satu sertifikasi yang diakui secara internasional di bidang jaringan adalah Mikrotik Certified Network Associate (MTCNA).

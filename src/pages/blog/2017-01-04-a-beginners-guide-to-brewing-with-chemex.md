@@ -6,24 +6,66 @@ featuredpost: false
 featuredimage: /img/chemex.jpg
 description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
 tags:
-  - brewing
-  - chemex
+  - kursus web programming
+  - kursus web design
+  - kursus frontend developer
+  - kursus coding html css javascript
+  - kursus pembuatan website
+  - pelatihan web development
+  - belajar membuat website
+  - belajar javascript untuk pemula
+  - belajar html untuk pemula
+  - belajar css untuk pemula
 ---
-![chemex](/img/chemex.jpg)
 
-This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is _"one of the best-designed products of modern times"_, and so is included in the collection of the Museum of Modern Art in New York City.
+Pelatihan Web Standard untuk Pemula: Mulai dari Pengenalan Web hingga Dasar HTML
 
-## The little secrets of Chemex brewing
+Di era serba digital seperti sekarang, kemampuan membuat website adalah salah satu keahlian yang sangat dibutuhkan. Baik untuk pelajar SMK, mahasiswa IT, maupun siapa saja yang ingin terjun ke dunia kerja di bidang
+teknologi informasi, menguasai HTML, CSS, dan JavaScript adalah langkah awal yang wajib dipelajari.
 
-The Chemex Coffeemaker consists of an hourglass-shaped glass flask with a conical funnel-like neck (rather than the cylindrical neck of an Erlenmeyer flask) and uses proprietary filters, made of bonded paper (thicker-gauge paper than the standard paper filters for a drip-method coffeemaker) that removes most of the coffee oils, brewing coffee with a taste that is different than coffee brewed in other coffee-making systems; also, the thicker paper of the Chemex coffee filters may assist in removing cafestol, a cholesterol-containing compound found in coffee oils. Here’s three important tips newbies forget about:
+Melihat pentingnya hal ini, Areta Training Center menghadirkan Pelatihan Web Standard untuk Pemula. Program ini dirancang khusus agar mudah diikuti oleh pemula, mulai dari pengenalan dasar hingga praktik membuat halaman web sederhana.
 
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
+## Kenapa Harus Belajar Web Standard?
 
-The most visually distinctive feature of the Chemex is the heatproof wooden collar around the neck, allowing it to be handled and poured when full of hot water. This is turned, then split in two to allow it to fit around the glass neck. The two pieces are held loosely in place by a tied leather thong. The pieces are not tied tightly and can still move slightly, retained by the shape of the conical glass.
+HTML, CSS, dan JavaScript adalah pondasi utama dalam pembuatan website. Hampir semua website di dunia dibuat dengan teknologi ini. Jika kamu menguasai Web Standard, kamu akan:
 
-For a design piece that became popular post-war at a time of Modernism and precision manufacture, this juxtaposition of natural wood and the organic nature of a hand-tied knot with the laboratory nature of glassware was a distinctive feature of its appearance.
+Memahami cara kerja sebuah website dari awal hingga bisa diakses di internet, Bisa membuat halaman web sendiri dengan tampilan menarik,
+Mengetahui bagaimana cara menambahkan teks, gambar, link, video, dan elemen-elemen lain di halaman web, 
+Mempersiapkan diri untuk belajar framework modern seperti React, Vue, atau Angular,  Memiliki skill dasar yang sangat dicari oleh perusahaan IT dan startup digital.
+
+
+Pelatihan ini sangat cocok sebagai langkah pertama untuk kamu yang bercita-cita menjadi Web Developer, Frontend Developer, **UI/UX Designer**, atau ingin membuka jasa pembuatan website sendiri.
+
+
+## Materi yang Akan Dipelajari
+
+Pelatihan Web Standard di Areta Training Center meliputi materi dasar yang wajib dikuasai pemula, antara lain:
+
+1 Pengenalan Web & Persiapan
+
+  Apa itu website dan bagaimana cara kerjanya,Pengenalan domain, hosting, dan server.
+  Tools yang dibutuhkan:
+  > Text Editor (contoh: VS Code)
+  > Web Browser (contoh: Chrome, Firefox)
+  > Server Lokal (contoh: XAMPP atau Live Server Extension)
+  Cara mengatur workspace agar siap coding.
+
+2 Pengenalan HTML (HyperText Markup Language)
+
+ > Sejarah dan fungsi HTML sebagai bahasa markup.
+ > Struktur dasar HTML: <html>, <head>, <body>.
+ > Membuat teks dengan heading, paragraf, dan list.
+ > Menambahkan gambar, link, dan video ke halaman web. Membuat form input sederhana.
+ > Praktik: Membuat halaman web sederhana berisi teks, gambar, dan link.
+
+Seluruh materi disampaikan dengan metode 100% praktik langsung, dengan bimbingan trainer berpengalaman di bidang web development yang siap membantu peserta step-by-step.
+
+## Siapa yang Cocok Mengikuti Pelatihan Ini?
+
+ > Siswa SMK jurusan TKJ atau RPL yang ingin menambah skill di bidang web programming.
+ > Mahasiswa IT yang ingin memperdalam pengetahuan dasar dan memperkaya portofolio.
+ > Pemula yang belum punya pengalaman coding tapi ingin belajar membuat website dari nol.
+
+
+Dengan mengikuti pelatihan ini, kamu akan memiliki pondasi yang kuat untuk melanjutkan ke materi CSS, JavaScript, hingga membuat website dinamis dan responsif.

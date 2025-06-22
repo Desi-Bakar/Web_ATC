@@ -145,14 +145,12 @@ main:
     alt: Coffee beans
     image:
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: Bill Gates
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+     “Saya masih berpikir bahwa salah satu tes terbaik dari kemampuan pemrograman adalah memberikan programmer sekitar 30 halaman kode dan melihat seberapa cepat dia dapat membaca dan memahaminya.”
+  - author: Stephen Hawking
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      “Musuh terbesar dari pengetahuan bukanlah ketidakpedulian, tetapi ilusi mengenai pengetahuan.”
 full_image: /img/fotoajaib.png
 pricing:
   heading: Monthly subscriptions

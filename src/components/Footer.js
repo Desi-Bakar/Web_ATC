@@ -5,7 +5,7 @@ import logo from "../img/Training.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/tik-tok.png";
-import vimeo from "../img/social/vimeo.svg";
+import vimeo from "../img/social/web.png";
 
 const Footer = () => {
   

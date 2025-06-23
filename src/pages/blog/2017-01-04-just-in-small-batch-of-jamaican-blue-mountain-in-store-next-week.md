@@ -3,6 +3,7 @@ templateKey: 'blog-post'
 title: 'Pelatihan Mikrotik untuk Pemula: Cocok Buat Siswa SMK & Mahasiswa IT'
 date: 2025-06-20T15:04:10.000Z
 featuredpost: true
+featuredimage: /img/Mikro.png
 description: >-
   Selamat datang di Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 tags:

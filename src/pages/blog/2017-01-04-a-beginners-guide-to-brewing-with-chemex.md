@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: 'Pelatihan Web Standard untuk Pemula, Mulai dari Pengenalan Web hingga Dasar HTML'
 date: 2025-06-20T15:04:10.000Z
-featuredpost: false
+featuredpost: true
 featuredimage: /img/JAVASCRIPT.png
 description:  Selamat datang di Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 tags:

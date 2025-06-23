@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: 
-image: /img/terbaru.png
+image: /img/gambar.png
 heading: Mau Jago IT? Belajar dari Ahlinya di Areta Training Center!
 mainpitch: 
   title: Mengapa Areta Training Center?

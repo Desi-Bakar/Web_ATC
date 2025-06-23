@@ -43,29 +43,26 @@ Pelatihan ini sangat cocok sebagai langkah pertama untuk kamu yang bercita-cita 
 Pelatihan Web Standard di Areta Training Center meliputi materi dasar yang wajib dikuasai pemula, antara lain:
 
 1 Pengenalan Web & Persiapan
-
-  Apa itu website dan bagaimana cara kerjanya,Pengenalan domain, hosting, dan server.
-  Tools yang dibutuhkan:
-  > Text Editor (contoh: VS Code)
-  > Web Browser (contoh: Chrome, Firefox)
-  > Server Lokal (contoh: XAMPP atau Live Server Extension)
-  Cara mengatur workspace agar siap coding.
+Apa itu website dan bagaimana cara kerjanya,Pengenalan domain, hosting, dan server.
+Tools yang dibutuhkan:
+> Text Editor (contoh: VS Code)
+> Web Browser (contoh: Chrome, Firefox)
+> Server Lokal (contoh: XAMPP atau Live Server Extension)
+Cara mengatur workspace agar siap coding.
 
 2 Pengenalan HTML (HyperText Markup Language)
-
- > Sejarah dan fungsi HTML sebagai bahasa markup.
- > Struktur dasar HTML <html>, <head>, <body>.
- > Membuat teks dengan heading, paragraf, dan list.
- > Menambahkan gambar, link, dan video ke halaman web. Membuat form input sederhana.
- > Praktik: Membuat halaman web sederhana berisi teks, gambar, dan link.
+> Sejarah dan fungsi HTML sebagai bahasa markup.
+> Struktur dasar HTML <html>, <head>, <body>.
+> Membuat teks dengan heading, paragraf, dan list.
+> Menambahkan gambar, link, dan video ke halaman web. Membuat form input sederhana.
+> Praktik: Membuat halaman web sederhana berisi teks, gambar, dan link.
 
 Seluruh materi disampaikan dengan metode 100% praktik langsung, dengan bimbingan trainer berpengalaman di bidang web development yang siap membantu peserta step-by-step.
 
 ## Siapa yang Cocok Mengikuti Pelatihan Ini?
-
- > Siswa SMK jurusan TKJ atau RPL yang ingin menambah skill di bidang web programming.
- > Mahasiswa IT yang ingin memperdalam pengetahuan dasar dan memperkaya portofolio.
- > Pemula yang belum punya pengalaman coding tapi ingin belajar membuat website dari nol.
+> Siswa SMK jurusan TKJ atau RPL yang ingin menambah skill di bidang web programming.
+> Mahasiswa IT yang ingin memperdalam pengetahuan dasar dan memperkaya portofolio.
+> Pemula yang belum punya pengalaman coding tapi ingin belajar membuat website dari nol.
 
 
 Dengan mengikuti pelatihan ini, kamu akan memiliki pondasi yang kuat untuk melanjutkan ke materi CSS, JavaScript, hingga membuat website dinamis dan responsif.

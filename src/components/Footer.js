@@ -71,7 +71,7 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="vimeo" href="https://pmb.aretacollege.com">
+                <a title="web" href="https://pmb.aretacollege.com">
                   <img
                     src={vimeo}
                     alt="Vimeo"

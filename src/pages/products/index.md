@@ -8,11 +8,11 @@ description: >-
  Belajar dan berlatih Networking seperti CISCO, MIKROTIK, Networking with Linux/UNIX, Linux Server, Hacking Penetration & Security, Firewall, Database MySQL/PostgreSQL/Oracle. Mendapatkan BONUS GRATIS Keahlian Web Design.
 intro:
   blurbs:
-    - image: /img/Linuxadv.jpg
+    - image: /img/linuxadv.png
       text: >
         Linux Basic
         Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
-    - image: /img/linux2.jpg
+    - image: /img/linux2.png
       text: >
         Linux System Administrator 
         Materi : Karnel Linux, Konfigurasi Hardware, Otomatisasi System-(Penjadwalan), File System, Menangani Masalah - dengan Linux, System File dan Printer (NFS, Printer & Samba), Instalasi Server - Linux, Penggunaan Bantuan bagi Administrator, Managemen User & Group, Paket Managemen ( Instalasi, Uninstall, Upgrade )

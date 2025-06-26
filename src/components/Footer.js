@@ -8,7 +8,7 @@ import twitter from "../img/social/tik-tok.png";
 import vimeo from "../img/social/web.png";
 
 const Footer = () => {
-  
+     
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">

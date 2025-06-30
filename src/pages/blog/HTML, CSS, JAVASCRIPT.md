@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Pelatihan Web Standard untuk Pemula, Mulai dari Pengenalan Web hingga Dasar HTML'
+title: 'Pelatihan Web Standard untuk Pemula, Mulai dari Pengenalan Web hingga Dasar HTML, CSS, JAVASCRIPT'
 date: 2025-06-20T15:04:10.000Z
 featuredpost: false
 featuredimage: /img/JAVASCRIPT.png

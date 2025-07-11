@@ -201,6 +201,7 @@ export const productPageQuery = graphql`
               }
             }
           }
+        }
         testimonials {
           author
           quote

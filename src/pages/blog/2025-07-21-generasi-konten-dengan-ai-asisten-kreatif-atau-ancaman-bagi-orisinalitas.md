@@ -9,20 +9,16 @@ description: "AI mengubah lanskap penciptaan konten secara drastis. Artikel ini
 featuredpost: true
 featuredimage: /img/download-1-.jpeg
 tags:
-  - "#AI"
-  - "#KecerdasanBuatan"
-  - "#KontenDigital"
-  - "#Kreativitas"
-  - "#Orisinalitas"
-  - "#GenerasiKonten"
-  - "#Teknologi"
-  - "#Inovasi"
-  - "#MasaDepanKerja"
-  - "#PenulisanAI"
-  - "#SeniDigital"
-  - "#DilemaAI"
-  - "#EtikaAI"
-  - "#TransformasiDigital"
+  - AI Generate Content
+  - Konten AI
+  - Content Creation AI
+  - Generasi Konten AI
+  - AI Content Creator
+  - Teknologi AI
+  - Konten Otomatis dengan AI
+  - AI dalam Kreativitas
+  - AI for Marketing
+  - AI Driven Content
 ---
 \---------------------------------------------------------------------------------------------------------
 

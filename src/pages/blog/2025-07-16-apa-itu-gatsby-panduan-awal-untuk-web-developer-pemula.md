@@ -7,7 +7,16 @@ description: "Gatsby adalah framework modern berbasis React yang digunakan untuk
 featuredpost: true
 featuredimage: /img/flyer-pmb-1.png
 tags:
-  - "#belajargatsby"
+  - "#Gatsby"
+  - "#Gatsby JS"
+  - "#Gatsby Framework"
+  - "#Gatsby Website"
+  - "#Gatsby Static Site Generator"
+  - "#Gatsby untuk Pemula"
+  - "#Gatsby Developer Guide"
+  - "#Gatsby Starter"
+  - "#Gatsby Blog"
+  - "#Gatsby Tutorial"
 ---
 Gatsby adalah \*\*Static Site Generator (SSG)\*\* berbasis \*\*React\*\*. Artinya, Gatsby membangun situs web yang cepat dengan cara men-generate halaman secara statis di waktu build, bukan saat halaman diminta oleh pengguna.
 

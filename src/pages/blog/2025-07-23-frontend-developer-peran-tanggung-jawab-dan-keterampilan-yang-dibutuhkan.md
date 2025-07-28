@@ -10,15 +10,16 @@ description: Dalam era digital saat ini, hampir semua bisnis dan organisasi
 featuredpost: true
 featuredimage: /img/frontend.jpg
 tags:
-  - "#Frontend Developer"
-  - "#Pengembang Frontend"
-  - "#Coding Frontend"
-  - "#Tools Frontend Developer"
-  - "#Karier Frontend Developer"
-  - "#Tugas Frontend Developer"
-  - "#Belajar Frontend"
-  - "#Roadmap Frontend Developer"
-  - ""
+  - FrontendDeveloper
+  - FrontendDevelopment
+  - BelajarFrontend
+  - PelatihanFrontend
+  - FrontendBootcamp
+  - FrontendTraining
+  - FrontendSkills
+  - FrontendWeb
+  - FrontendIndonesia
+  - FrontendCareer
 ---
 ### **Apa Itu Frontend Developer?**
 

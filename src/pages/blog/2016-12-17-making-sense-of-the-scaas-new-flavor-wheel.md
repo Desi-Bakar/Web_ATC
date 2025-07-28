@@ -9,16 +9,16 @@ description: Selamat datang di Areta Training Center tempat kamu untuk
 featuredpost: false
 featuredimage: /img/corel.png
 tags:
-  - "#Pelatihan CorelDRAW"
-  - "#Pelatihan CorelDRAW untuk Pemula"
-  - "#Pelatihan Desain Grafis"
-  - "#Pelatihan CorelDRAW Dasar"
-  - "#Pelatihan Desain Grafis dari Dasar"
-  - "#Pelatihan CorelDRAW Mahir"
-  - "#Pelatihan CorelDRAW Online"
-  - "#Pelatihan CorelDRAW Offline"
-  - "#Pelatihan Desain Grafis Pemula"
-  - "#Pelatihan CorelDRAW Bersertifikat"
+  - Pelatihan CorelDRAW
+  - Pelatihan CorelDRAW untuk Pemula
+  - Pelatihan Desain Grafis
+  - Pelatihan CorelDRAW Dasar
+  - Pelatihan Desain Grafis dari Dasar
+  - Pelatihan CorelDRAW Mahir
+  - Pelatihan CorelDRAW Online
+  - Pelatihan CorelDRAW Offline
+  - Pelatihan Desain Grafis Pemula
+  - Pelatihan CorelDRAW Bersertifikat
 ---
 
 Di era digital kreatif seperti sekarang, kemampuan desain grafis menjadi salah satu skill yang sangat dibutuhkan, terutama bagi pelajar SMK, mahasiswa jurusan desain, multimedia, maupun siapa saja yang tertarik berkarir di dunia kreatif. Salah satu software desain grafis populer dan banyak digunakan di industri percetakan hingga periklanan adalah *CorelDRAW*.

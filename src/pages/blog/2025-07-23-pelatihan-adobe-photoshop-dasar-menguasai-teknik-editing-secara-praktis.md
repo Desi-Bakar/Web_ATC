@@ -13,16 +13,16 @@ description: >-
 featuredpost: true
 featuredimage: /img/PHOTOSHOP.png
 tags:
-  - "#Pelatihan Adobe Photoshop"
-  - "#Pelatihan Photoshop Dasar"
-  - "#Pelatihan Editing Foto"
-  - "#Pelatihan Desain Grafis"
-  - "#Pelatihan Photoshop untuk Pemula"
-  - "#Pelatihan Software Desain"
-  - "#Pelatihan Teknik Editing"
-  - "#Pelatihan Gambar Digital"
-  - "#Pelatihan Editing Gambar"
-  - "#Pelatihan Photoshop Online"
+  - Pelatihan Adobe Photoshop
+  - Pelatihan Photoshop Dasar
+  - Pelatihan Editing Foto
+  - Pelatihan Desain Grafis
+  - Pelatihan Photoshop untuk Pemula
+  - Pelatihan Software Desain
+  - Pelatihan Teknik Editing
+  - Pelatihan Gambar Digital
+  - Pelatihan Editing Gambar
+  - Pelatihan Photoshop Online
 ---
 ### **1. Pengenalan Dasar Photoshop dan Tools**
 

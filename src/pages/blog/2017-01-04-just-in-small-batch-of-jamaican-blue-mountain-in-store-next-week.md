@@ -1,22 +1,24 @@
 ---
-templateKey: 'blog-post'
-title: 'Pelatihan Mikrotik untuk Pemula: Cocok Buat Siswa SMK & Mahasiswa IT'
+templateKey: blog-post
+title: "Pelatihan Mikrotik untuk Pemula: Cocok Buat Siswa SMK & Mahasiswa IT"
 date: 2025-06-20T15:04:10.000Z
+description: Selamat datang di Areta Training Center tempat kamu untuk
+  Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan
+  Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki
+  hari ini menentukan masa depan kariermu.
 featuredpost: true
 featuredimage: /img/Mikro.png
-description: >-
-  Selamat datang di Areta Training Center tempat kamu untuk Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 tags:
-  - kursus kumputer
-  - training computer
-  - pelatihan komputer
-  - kursus digital marketing
-  - kursus networking
-  - kursus mikrotik
-  - training mikrotik
-  - pelatihan mikrotik
-  - kursus jaringan mikrotik
-  - pelatihan konfigurasi mikrotik
+  - "#Pelatihan Mikrotik"
+  - "#Pelatihan Mikrotik untuk Pemula"
+  - "#Pelatihan Mikrotik Dasar"
+  - "#Pelatihan Jaringan Mikrotik"
+  - "#Pelatihan Mikrotik SMK"
+  - "#Pelatihan Mikrotik Mahasiswa"
+  - "#Pelatihan Mikrotik untuk Siswa"
+  - "#Pelatihan Mikrotik Online"
+  - "#Pelatihan Mikrotik Offline"
+  - "#Pelatihan Mikrotik Indonesia"
 ---
 
 Di era serba digital seperti sekarang, kemampuan dalam mengelola jaringan komputer menjadi salah satu skill yang sangat dibutuhkan, terutama bagi pelajar SMK dan mahasiswa jurusan IT. Salah satu sertifikasi yang diakui secara internasional di bidang jaringan adalah Mikrotik Certified Network Associate (MTCNA).

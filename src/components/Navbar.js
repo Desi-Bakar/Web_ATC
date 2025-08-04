@@ -58,6 +58,16 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+         <li className="navbar-item" style={{ padding: "0px" }}>
+            <a
+              className="navbar-item"
+              href="https://pmb.aretacollege.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Information Campus
+            </a>
+          </li>
           {/* <li className="navbar-item" style={{ padding: "0px" }}>
             <Link className="navbar-item" to="/contact/examples">
               Form Examples

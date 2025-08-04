@@ -4,86 +4,145 @@ import { Link } from "gatsby";
 import logo from "../img/Training.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/tik-tok.png";
-import vimeo from "../img/social/web.png";
+import tiktok from "../img/social/tik-tok.png";
 
 const Footer = () => {
-     
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: "24em", height: "6em" }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+  return (
+    <footer
+      className="footer has-text-white-ter"
+      style={{ backgroundColor: "#004aad", padding: "3rem 1.5rem" }}
+    >
+      <div className="container">
+        <div className="columns is-variable is-8 is-multiline">
+          {/* Navigasi */}
+          <div className="column is-4">
+            <ul className="menu-list">
+              <li><Link to="/" className="navbar-item has-text-white">Home</Link></li>
+              <li><Link to="/about" className="navbar-item has-text-white">About</Link></li>
+              <li><Link to="/products" className="navbar-item has-text-white">Products</Link></li>
+              <li><Link to="/contact" className="navbar-item has-text-white">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Logo & Deskripsi */}
+          <div className="column is-4 has-text-centered">
+            <div
+              className="card"
+              style={{
+                display: "inline-block",
+                backgroundColor: "#ffffff",
+                padding: "0.5rem",
+                borderRadius: "10px",
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+              }}
+            >
+              <div className="card-image">
+                <figure className="image" style={{ margin: 0 }}>
+                  <img
+                    src={logo}
+                    alt="Logo Areta"
+                    style={{
+                      maxWidth: "150px",
+                      height: "auto",
+                      display: "block",
+                    }}
+                  />
+                </figure>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://www.facebook.com/AretaCollege/">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="tiktok" href="https://www.tiktok.com/@areta_informaticscollege">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com/areta_informaticscollege/">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="web" href="https://pmb.aretacollege.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-              </div>
+            </div>
+
+            <p
+              style={{
+                maxWidth: "300px",
+                margin: "1rem auto 0",
+                color: "#ffffff",
+              }}
+            >
+              Areta Training Center menyediakan pelatihan berbasis praktek untuk
+              mengembangkan potensi generasi muda di bidang IT & industri kreatif.
+            </p>
+          </div>
+
+          {/* Sosial Media */}
+          <div className="column is-4" style={{ textAlign: "right" }}>
+            <h4 className="title is-5" style={{ color: "#ffffff" }}>
+              Ikuti Kami
+            </h4>
+
+            <div
+              style={{
+                display: "inline-flex",
+                gap: "15px",
+                marginTop: "0.5rem",
+              }}
+            >
+              <a
+                href="https://www.facebook.com/AretaCollege/"
+                title="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={facebook}
+                  alt="Facebook"
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    filter: "brightness(0) invert(1)",
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.tiktok.com/@areta_informaticscollege"
+                title="TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={tiktok}
+                  alt="TikTok"
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    filter: "brightness(0) invert(1)",
+                  }}
+                />
+              </a>
+              <a
+                href="https://instagram.com/areta_informaticscollege/"
+                title="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagram}
+                  alt="Instagram"
+                  style={{
+                    width: "24px",
+                    height: "24px",
+                    filter: "brightness(0) invert(1)",
+                  }}
+                />
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-    );
+
+        {/* Copyright */}
+        <div
+          className="content has-text-centered"
+          style={{
+            marginTop: "2rem",
+            borderTop: "1px solid rgba(255,255,255,0.2)",
+            paddingTop: "1rem",
+            fontSize: "0.9rem",
+          }}
+        >
+          © {new Date().getFullYear()} Areta Training Center. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

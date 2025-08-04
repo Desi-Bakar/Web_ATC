@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "🎯 Manajemen Proyek Perangkat Lunak: Strategi Efektif untuk Tim Pengembang"
+title: "Manajemen Proyek Perangkat Lunak: Strategi Efektif untuk Tim Pengembang"
 date: 2025-07-30T03:26:17.101Z
 description: >+
   🔍 Deskripsi Artikel:

@@ -3,59 +3,56 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-
 const BlogRollTemplate = (props) => {
-  
   const { edges: posts } = props.data.allMarkdownRemark;
 
   return (
-    <div className="columns is-multiline">
+    <div className="columns is-multiline is-variable is-4">
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="is-parent column is-6" key={post.id}>
-            <article
-              className={`blog-list-item tile is-child box notification ${
-                ''
-              }`}
-            >
-              <header>
-                {post?.frontmatter?.featuredimage && (
-                  <div className="featured-thumbnail">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        width:
-                          post.frontmatter.featuredimage.childImageSharp
-                            .gatsbyImageData.width,
-                        height:
-                          post.frontmatter.featuredimage.childImageSharp
-                            .gatsbyImageData.height,
-                      }}
-                    />
-                  </div>
-                ) }
-                <p className="post-meta">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
-                </p>
-              </header>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
+          <div className="column is-6" key={post.id}>
+            <article className="box blog-card is-flex is-flex-direction-column is-justify-space-between" style={{ height: '100%' }}>
+              <div>
+                <header>
+                  {post?.frontmatter?.featuredimage && (
+                    <div className="featured-thumbnail mb-4">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          width:
+                            post.frontmatter.featuredimage.childImageSharp
+                              .gatsbyImageData.width,
+                          height:
+                            post.frontmatter.featuredimage.childImageSharp
+                              .gatsbyImageData.height,
+                        }}
+                      />
+                    </div>
+                  )}
+                  <p className="post-meta">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <br />
+                    <span className="subtitle is-size-6 has-text-grey">
+                      {post.frontmatter.date}
+                    </span>
+                  </p>
+                </header>
+                <p className="mt-3">{post.excerpt}</p>
+              </div>
+              <div className="mt-4">
+                <Link
+                  className="button is-small has-background-white has-text-link"
+                  to={post.fields.slug}
+                >
                   Keep Reading →
                 </Link>
-              </p>
+              </div>
             </article>
           </div>
         ))}
@@ -70,7 +67,6 @@ BlogRoll.propTypes = {
     }),
   }),
 }
-
 
 export default function BlogRoll() {
   return (
@@ -100,7 +96,6 @@ export default function BlogRoll() {
                         quality: 100
                         layout: CONSTRAINED
                       )
-
                     }
                   }
                 }
@@ -111,5 +106,5 @@ export default function BlogRoll() {
       `}
       render={(data, count) => <BlogRollTemplate data={data} count={count} />}
     />
-  );
+  )
 }

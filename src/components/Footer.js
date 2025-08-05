@@ -7,6 +7,11 @@ import instagram from "../img/social/instagram.svg";
 import tiktok from "../img/social/tik-tok.png";
 
 const Footer = () => {
+  const linkStyle = {
+    backgroundColor: "transparent",
+    boxShadow: "none",
+  };
+
   return (
     <footer
       className="footer has-text-white-ter"
@@ -17,10 +22,42 @@ const Footer = () => {
           {/* Navigasi */}
           <div className="column is-4">
             <ul className="menu-list">
-              <li><Link to="/" className="navbar-item has-text-white">Home</Link></li>
-              <li><Link to="/about" className="navbar-item has-text-white">About</Link></li>
-              <li><Link to="/products" className="navbar-item has-text-white">Products</Link></li>
-              <li><Link to="/contact" className="navbar-item has-text-white">Contact</Link></li>
+              <li>
+                <Link
+                  to="/"
+                  className="navbar-item has-text-white"
+                  style={linkStyle}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="navbar-item has-text-white"
+                  style={linkStyle}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products"
+                  className="navbar-item has-text-white"
+                  style={linkStyle}
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="navbar-item has-text-white"
+                  style={linkStyle}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -32,7 +69,7 @@ const Footer = () => {
                 display: "inline-block",
                 backgroundColor: "#ffffff",
                 padding: "0.5rem",
-                borderRadius: "10px",
+                borderRadius: "0",
                 boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
               }}
             >
@@ -45,6 +82,7 @@ const Footer = () => {
                       maxWidth: "150px",
                       height: "auto",
                       display: "block",
+                      objectFit: "contain",
                     }}
                   />
                 </figure>

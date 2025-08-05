@@ -30,18 +30,25 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   
 
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <p className="columns">{mainpitch.description}</p>
-                    </div>
-                  </div>
+<div className="content">
+  <div className="tile">
+    <h1
+      className="title"
+      style={{
+        display: "inline-block",
+        marginBottom: "10px", // kecilkan agar lebih rapat
+      }}
+    >
+      {mainpitch.title}
+    </h1>
+  </div>
+  <p style={{ marginTop: "0.5rem" }}>{description}</p>
+</div>
+
 
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-1"
+                      <h3 className="has-text-weight-semibold is-size-3"
                        >
                         {heading}
                       </h3>
@@ -60,7 +67,7 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-3">
-                      Latest stories
+                      Blog
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">

@@ -4,7 +4,7 @@ image: /img/college_areta.png
 
 mainpitch: 
   title: Mengapa Areta Training Center?
-  title: Mau Jago IT? Belajar dari Ahlinya di Areta Training Center!git
+  title: Mau Jago IT? Belajar dari Ahlinya di Areta Training Center!
   description: >
     Areta Training Center merupakan lembaga kursus dan pelatihan yang berfokus pada dunia IT dan Bisnis Digital. Kami menyediakan berbagai program pelatihan berbasis 100% praktik langsung, dirancang untuk membekali peserta dengan keterampilan yang sesuai dengan kebutuhan industri saat ini.
     

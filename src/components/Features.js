@@ -18,9 +18,18 @@ const FeatureGrid = ({ gridItems }) => (
             transition: "transform 0.2s",
           }}
         >
-          <div style={{ marginBottom: "1rem" }}>
-            <PreviewCompatibleImage imageInfo={item} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "1rem",
+            }}
+          >
+            <div style={{ width: "240px" }}>
+              <PreviewCompatibleImage imageInfo={item} />
+            </div>
           </div>
+
           <p
             className="has-text-weight-semibold"
             style={{ textAlign: "left", marginTop: "0.5rem" }}

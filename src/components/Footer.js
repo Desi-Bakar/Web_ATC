@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 import logo from "../img/Training.png";
-import facebook from "../img/social/facebook.svg";
+import facebook from "../img/social/facebook-app-symbol.png";
 import instagram from "../img/social/instagram.svg";
 import tiktok from "../img/social/tik-tok.png";
 

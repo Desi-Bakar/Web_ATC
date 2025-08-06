@@ -3,9 +3,9 @@ templateKey: 'product-page'
 path: /products
 title: 
 image: /img/college_areta.png
-heading: Teknik Informatika
+heading: 
 description: >-
- Belajar dan berlatih Networking seperti CISCO, MIKROTIK, Networking with Linux/UNIX, Linux Server, Hacking Penetration & Security, Firewall, Database MySQL/PostgreSQL/Oracle. Mendapatkan BONUS GRATIS Keahlian Web Design.
+ 
 intro:
   blurbs:
     - image: /img/linuxadv.png

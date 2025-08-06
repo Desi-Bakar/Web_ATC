@@ -2,7 +2,7 @@
 templateKey: 'product-page'
 path: /products
 title: 
-image: /img/college_areta.png
+image: /img/DESIGNN.png
 heading: 
 description: >-
  

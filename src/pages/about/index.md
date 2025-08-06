@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our "ARETA TRAINING CENTER"
+title:  ARETA TRAINING CENTER
 ---
 **Areta Training Center** adalah lembaga pelatihan yang berfokus pada pengembangan keterampilan di bidang teknologi informasi (IT) dan bisnis digital. Kami hadir untuk menjawab kebutuhan dunia kerja dan industri yang terus berkembang, dengan menyelenggarakan program-program pelatihan praktis dan aplikatif.
 Kami percaya bahwa keterampilan digital dan penguasaan teknologi adalah kunci sukses di era modern. Oleh karena itu, setiap program yang kami rancang selalu mengutamakan praktik langsung, studi kasus nyata, dan pendekatan yang mudah dipahami oleh peserta dari berbagai latar belakang.

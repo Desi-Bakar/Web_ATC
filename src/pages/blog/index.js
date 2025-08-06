@@ -20,6 +20,7 @@ export default class BlogIndexPage extends React.Component {
               backgroundColor: "#f40",
               color: "white",
               padding: "1rem",
+              borderRadius: "15px"
             }}
           >
             Latest Stories

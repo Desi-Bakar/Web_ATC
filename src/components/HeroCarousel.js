@@ -7,18 +7,18 @@ import "swiper/css/pagination";
 
 const images = [
   "/img/DESIGNN.png",
-  "/img/DESIGNN1.png",
-  "/img/aretanet.png",
+  "/img/dEsign2.png",
+  "/img/Design3.png",
 ];
 
 const HeroCarousel = () => {
   return (
      <div
       style={{
-        maxWidth: "1280px",
-        height: "360px",
-        margin: "0 auto", // center secara horizontal
-        borderRadius: "16px",
+        Width: "1351px",
+        height: "400px",
+        margin: "auto", // center secara horizontal
+        
         overflow: "hidden", // untuk rounded corners
       }}
     >

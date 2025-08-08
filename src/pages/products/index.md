@@ -126,9 +126,9 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Kurikulum berbasis Industri
+  heading: 
   description: >
-    Kurikulum IT dan Bisnis Digital yang dikembangkan sesuai dengan kebutuhan industri yang dibuat oleh para praktisi dibidangnya. Sehingga keterampilan yang dimiliki oleh mahasiswa/i kami cepat diserap didunia industri.
+   
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image:

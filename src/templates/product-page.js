@@ -7,7 +7,11 @@ import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import FullWidthImage from "../components/FullWidthImage";
+import HeroCarousel from "../components/HeroCarousel";
+import BottomFullWidthImage from "../components/BottomFullWidthImage";
+
+
+ // ganti import
 
 // eslint-disable-next-line
 export const ProductPageTemplate = ({
@@ -26,7 +30,11 @@ export const ProductPageTemplate = ({
 
   return (
     <div className="content">
-      <FullWidthImage img={heroImage} title={title} />
+    {/* Ganti FullWidthImage pertama jadi HeroCarousel */}
+<HeroCarousel images={[heroImage]} title={title} />
+
+
+      
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -76,22 +84,24 @@ export const ProductPageTemplate = ({
           </div>
         </div>
       </section>
-      <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
-      <section className="section section--gradient">
+
+   {/* Gambar bawah pakai komponen statis */}
+<BottomFullWidthImage image={fullWidthImage} title={title} imgPosition="bottom" />
+
+      
         <div className="container">
-          <div className="section">
+          
             <div className="columns">
-              <div className="column is-10 is-offset-1">
+            
                 <h2 className="has-text-weight-semibold is-size-2">
                   {pricing.heading}
                 </h2>
                 <p className="is-size-5">{pricing.description}</p>
-                
               </div>
-            </div>
+            
           </div>
-        </div>
-      </section>
+       
+      
     </div>
   );
 };
@@ -206,15 +216,12 @@ export const productPageQuery = graphql`
           author
           quote
         }
-
         full_image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
         pricing {
-         
-          
           plans {
             description
             items

@@ -13,13 +13,13 @@ const images = [
 
 const HeroCarousel = () => {
   return (
-     <div
+    <div
       style={{
-        Width: "1351px",
-        height: "400px",
-        margin: "auto", // center secara horizontal
-        
-        overflow: "hidden", // untuk rounded corners
+        width: "100%",
+        height: "auto",
+        margin: "auto",
+        overflow: "hidden",
+        backgroundColor: "#fffff", // biar ada background kalau ada ruang kosong
       }}
     >
       <Swiper
@@ -39,7 +39,7 @@ const HeroCarousel = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
+                objectFit: "contain", // biar gambar tidak terpotong
               }}
             />
           </SwiperSlide>

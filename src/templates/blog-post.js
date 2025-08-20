@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import HeroCarousel from "../components/HeroCarousel"; // ✅ import carousel
 
 // Template Komponen untuk Halaman Blog Post
 export const BlogPostTemplate = ({
@@ -18,9 +19,20 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
+  // ✅ daftar gambar carousel
+  const imageList = [
+    "/img/DESIGNN.png",
+    "/img/DESIGNN1.png",
+    "/img/aretanet.png",
+  ];
+
   return (
     <section className="section">
       {helmet || ""}
+
+      {/* ✅ HeroCarousel muncul di atas */}
+      <HeroCarousel images={imageList} />
+
       <div className="container content blog-post">
         <div className="columns">
           <div className="column is-10 is-offset-1">

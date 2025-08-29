@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 
 const LinuxBasic = () => {
-  const cardStyle = {
+    const cardStyle = {
     borderRadius: "12px",
     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
     overflow: "hidden",
@@ -26,6 +26,7 @@ const LinuxBasic = () => {
     gap: "1.5rem",
     justifyContent: "center",
   };
+
 
   return (
     <Layout>
@@ -51,10 +52,10 @@ const LinuxBasic = () => {
             </div>
 
             {/* Card 2 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
 
             {/* Card 3 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
 
             {/* Card 4 */}
             

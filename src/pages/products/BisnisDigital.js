@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 
 const BisnisDigital = () => {
-  const cardStyle = {
+ const cardStyle = {
     borderRadius: "12px",
     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
     overflow: "hidden",
@@ -22,7 +22,7 @@ const BisnisDigital = () => {
   // grid dengan max 3 kolom
   const gridStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
     gap: "1.5rem",
     justifyContent: "center",
   };
@@ -51,10 +51,12 @@ const BisnisDigital = () => {
             </div>
 
             {/* Card 2 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 3 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 4 */}
             

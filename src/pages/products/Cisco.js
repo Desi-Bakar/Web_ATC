@@ -53,10 +53,12 @@ Bagi pemula yang belajar jaringan, Cisco menjadi standar karena produknya banyak
             </div>
 
             {/* Card 2 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 3 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 4 */}
             

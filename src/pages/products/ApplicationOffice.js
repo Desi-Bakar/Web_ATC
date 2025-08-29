@@ -27,6 +27,7 @@ const ApplicationOffice = () => {
     justifyContent: "center",
   };
 
+
   return (
     <Layout>
       <section className="section">
@@ -68,7 +69,8 @@ const ApplicationOffice = () => {
             </div>
 
             {/* Card 3 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 4 */}
             

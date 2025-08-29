@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 
 const Networking = () => {
-  const cardStyle = {
+ const cardStyle = {
     borderRadius: "12px",
     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
     overflow: "hidden",

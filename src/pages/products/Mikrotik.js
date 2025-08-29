@@ -1,13 +1,12 @@
 import React from "react";
 import Layout from "../../components/Layout";
 
-const Mikrotik = () => {
+const Mikrotik= () => {
   const cardStyle = {
     borderRadius: "12px",
     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
     overflow: "hidden",
     backgroundColor: "#fff",
-    maxWidth: "320px", // biar ukuran card gak melebar
   };
 
   const imageStyle = {
@@ -20,18 +19,13 @@ const Mikrotik = () => {
     lineHeight: "1.6",
   };
 
-  // grid fix 2 kolom dan center
-const gridStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "0.25rem",           // Semakin kecil, jarak semakin rapat
-  margin: "0 auto",
-  maxWidth: "700px",        // Ukuran grid lebih kecil untuk merapatkan
-  alignItems: "stretch",
-  justifyContent: "center", // Untuk memastikan grid tetap di tengah
-};
-
-
+  // grid dengan max 3 kolom
+  const gridStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "1.5rem",
+    justifyContent: "center",
+  };
 
   return (
     <Layout>
@@ -48,12 +42,10 @@ const gridStyle = {
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  Mikrotik & Networking Basic 
+                Mikrotik & Networking Basic
                 </h1>
                 <p>
-                  <strong>Materi:</strong> Pengantar Mikrotik & TCP/IP,
-                  Instalasi Mikrotik, Paket Instalasi Mikrotik, Dasar - dasar
-                  Perintah Mikrotik, Konfigurasi Mikrotik, Studi Kasus.
+                  <strong>Materi:</strong> Pengantar Mikrotik & TCP/IP, Instalasi Mikrotik, Paket Instalasi Mikrotik, Dasar - dasar Perintah Mikrotik, Konfigurasi Mikrotik, Studi Kasus.
                 </p>
               </div>
             </div>
@@ -67,14 +59,23 @@ const gridStyle = {
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  Mikrotik & Firewall Advanced
+                 Mikrotik & Firewall Advanced
                 </h1>
                 <p>
-                  <strong>Materi:</strong> Konsep Dasar Routing & Firewall,
-                  Winbox, Konfigurasi Router, Firewall, Studi Kasus.
+                  <strong>Materi:</strong> Konsep Dasar Routing & Firewall, Winbox, Konfigurasi Router, Firewall, Studi Kasus.
                 </p>
               </div>
             </div>
+
+            {/* Card 3 */}
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
+
+            {/* Card 4 */}
+           
+
+            {/* Card 5 */}
+            
 
           </div>
         </div>

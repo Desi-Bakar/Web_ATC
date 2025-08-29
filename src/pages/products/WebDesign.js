@@ -26,7 +26,6 @@ const WebDesign = () => {
     gap: "1.5rem",
     justifyContent: "center",
   };
-
   return (
     <Layout>
       <section className="section">
@@ -51,10 +50,12 @@ const WebDesign = () => {
             </div>
 
             {/* Card 2 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 3 */}
-            
+            <div style={{ visibility: "hidden" }}>kosong</div>
+
 
             {/* Card 4 */}
             

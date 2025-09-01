@@ -34,6 +34,23 @@ const Networking = () => {
           <div style={gridStyle}>
             
             {/* Card 1 */}
+              <div style={cardStyle}>
+              <img
+                src="/img/Pertemuan.png"
+                alt="Linux Networking & Windows Networking"
+                style={imageStyle}
+              />
+              <div style={contentStyle}>
+                <h1 className="title" style={{ marginBottom: "1rem" }}>
+                  Linux Networking & Windows Networking
+                </h1>
+                <p>
+                  <strong>Materi:</strong>Konsep TCP/IP, Membuat Router / Gateway Linux, Firewall Linux, DHCP, Proxy, DNS, FTP, Web Server Linux, PDC Windows Server & Backup Linux, Instalasi Client Windows, Teknik Backup.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
             <div style={cardStyle}>
               <img
                 src="/img/21.png"
@@ -46,23 +63,6 @@ const Networking = () => {
                 </h1>
                 <p>
                   <strong>Materi:</strong>  Materi: Konsep & Design Linux Enterprise, DNS, Mail Server Postfix, Imap, POP3, Instalasi, Konfigurasi, Trouble Shooting & Testing Zimbra.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div style={cardStyle}>
-              <img
-                src="/img/Pertemuan.png"
-                alt="Linux Networking & Windows Networking"
-                style={imageStyle}
-              />
-              <div style={contentStyle}>
-                <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  Linux Networking & Windows Networking
-                </h1>
-                <p>
-                  <strong>Materi:</strong>Konsep TCP/IP, Membuat Router / Gateway Linux, Firewall Linux, DHCP, Proxy, DNS, FTP, Web Server Linux, PDC Windows Server & Backup Linux, Instalasi Client Windows, Teknik Backup.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Networking = () => {
             </div>
 
             {/* Card 4 */}
-           
+          
 
             {/* Card 5 */}
             

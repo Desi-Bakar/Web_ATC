@@ -20,19 +20,19 @@ description: >-
 
 intro:
   blurbs:
-     - image: /img/linuxadv.png
+     - image: /img/1.png
        text: >
         Linux Basic
         Materi : Cara memulai Linux, Instalasi Linux, Perintah-Dasar,Monitoring Jaringan, Pembuatan Direktori & Manajeman File, Teks Editor, Alur Direktori, Pemanfaatan Perintah bantuan, Teknik Berkomunikasi dengan Pengguna Lainnya, X-Window ( Bekerja di Lingkungan Dekstop & File Manager Linux.)
-     - image: /img/linux2.png
+     - image: /img/2.png
        text: >
         Linux System Administrator 
         Materi : Karnel Linux, Konfigurasi Hardware, Otomatisasi System-(Penjadwalan), File System, Menangani Masalah - dengan Linux, System File dan Printer (NFS, Printer & Samba), Instalasi Server - Linux, Penggunaan Bantuan bagi Administrator, Managemen User & Group, Paket Managemen ( Instalasi, Uninstall, Upgrade )
-     - image: /img/network.png
+     - image: /img/3.png
        text: >
         Linux System Administrator
         Materi : Konsep Dasar TCP/IP, Routing, Subnetting, DNS server, Mall Server, Web Server, NFS, FTP Server, Proxy & Firewalling, Teknik Koneksi ke Internet.
-     - image: /img/teknik.png
+     - image: /img/15.png
        text: >
         Linux for Networking Computer -Technic
         Materi: TCP/IP. Cabling, Instalasi PC Router Debian & PC-

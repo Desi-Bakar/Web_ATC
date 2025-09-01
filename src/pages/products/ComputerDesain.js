@@ -71,7 +71,7 @@ const ComputerDesain = () => {
             <div style={cardStyle}>
               <img
                 src="/img/26.png"
-                alt="Networking"
+                alt="Macromedia Flash"
                 style={imageStyle}
               />
               <div style={contentStyle}>
@@ -87,8 +87,8 @@ const ComputerDesain = () => {
             {/* Card 4 */}
             <div style={cardStyle}>
               <img
-                src="/img/Pertemuan.png"
-                alt="Linux for Networking Computer -Technic"
+                src="/img/13.png"
+                alt="AutoCAD Basic"
                 style={imageStyle}
               />
               <div style={contentStyle}>
@@ -104,8 +104,8 @@ const ComputerDesain = () => {
             {/* Card 5 */}
             <div style={cardStyle}>
               <img
-                src="/img/Pertemuan.png"
-                alt="Linux Security"
+                src="/img/27.png"
+                alt=" AutoCAD Advanced"
                 style={imageStyle}
               />
               <div style={contentStyle}>
@@ -118,10 +118,11 @@ const ComputerDesain = () => {
               </div>
             </div>
 
+             {/* Card 6 */}
              <div style={cardStyle}>
               <img
-                src="/img/Pertemuan.png"
-                alt="Linux Security"
+                src="/img/14.png"
+                alt=" CorelDRAW"
                 style={imageStyle}
               />
               <div style={contentStyle}>

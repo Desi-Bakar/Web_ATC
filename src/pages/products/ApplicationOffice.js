@@ -37,7 +37,7 @@ const ApplicationOffice = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/Pertemuan.png"
+                src="/img/9.png"
                 alt="MS Office/Open Office "
                 style={imageStyle}
               />
@@ -54,7 +54,7 @@ const ApplicationOffice = () => {
             {/* Card 2 */}
             <div style={cardStyle}>
               <img
-                src="/img/Pertemuan.png"
+                src="/img/23.png"
                 alt="MS PowerPoint for Business  "
                 style={imageStyle}
               />

@@ -54,24 +54,22 @@ const LinuxBasic = () => {
             </div>
 
             {/* Card 2 */}
-            <div style={cardStyle}>
+           <div style={cardStyle}>
               <img
-                src="/img/2.png"
-                alt="Linux System Administrator "
+                src="/img/16.png"
+                alt="Linux Security"
                 style={imageStyle}
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  Linux System Administrator 
+                  Linux Security
                 </h1>
                 <p>
-                  <strong>Materi:</strong> Karnel Linux, Konfigurasi Hardware, Otomatisasi System,
-                  File System, Troubleshooting Linux, System File & Printer (NFS, Samba),
-                  Instalasi Server Linux, Manajemen User & Group, Paket Managemen
-                  (Install, Uninstall, Upgrade).
+                  <strong>Materi:</strong> APengantar Keamanan, Boot Security, General Linux Security, Cryptography, Root Jail, Server Security, VPN, Firewall, IDS.
                 </p>
               </div>
             </div>
+
 
             {/* Card 3 */}
             <div style={cardStyle}>
@@ -111,21 +109,26 @@ const LinuxBasic = () => {
             </div>
 
             {/* Card 5 */}
-            <div style={cardStyle}>
+           <div style={cardStyle}>
               <img
-                src="/img/16.png"
-                alt="Linux Security"
+                src="/img/2.png"
+                alt="Linux System Administrator "
                 style={imageStyle}
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  Linux Security
+                  Linux System Administrator 
                 </h1>
                 <p>
-                  <strong>Materi:</strong> APengantar Keamanan, Boot Security, General Linux Security, Cryptography, Root Jail, Server Security, VPN, Firewall, IDS.
+                  <strong>Materi:</strong> Karnel Linux, Konfigurasi Hardware, Otomatisasi System,
+                  File System, Troubleshooting Linux, System File & Printer (NFS, Samba),
+                  Instalasi Server Linux, Manajemen User & Group, Paket Managemen
+                  (Install, Uninstall, Upgrade).
                 </p>
               </div>
             </div>
+
+             
 
           </div>
         </div>

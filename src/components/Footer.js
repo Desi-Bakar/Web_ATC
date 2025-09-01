@@ -5,6 +5,7 @@ import logo from "../img/Training.png";
 import facebook from "../img/social/facebook-app-symbol.png";
 import instagram from "../img/social/instagram.svg";
 import tiktok from "../img/social/tik-tok.png";
+import maps from "../img/maps.png"; // pastikan file maps.png ada di src/img/
 
 const Footer = () => {
   const linkStyle = {
@@ -19,46 +20,31 @@ const Footer = () => {
     >
       <div className="container">
         <div className="columns is-variable is-8 is-multiline">
-          {/* Navigasi */}
+          {/* Lokasi */}
           <div className="column is-4">
-            <ul className="menu-list">
-              <li>
-                <Link
-                  to="/"
-                  className="navbar-item has-text-white"
-                  style={linkStyle}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="navbar-item has-text-white"
-                  style={linkStyle}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products"
-                  className="navbar-item has-text-white"
-                  style={linkStyle}
-                >
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="navbar-item has-text-white"
-                  style={linkStyle}
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            <div>
+              <h4 className="title is-5" style={{ color: "#ffffff", marginBottom: "0.5rem" }}>
+                Lokasi
+              </h4>
+              <a
+                href="https://www.google.com/maps/place/Areta+Informatics+College/@-6.2539912,106.5937312,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={maps}
+                  alt="Lokasi Areta College"
+                  style={{
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+                    width: "190px",
+                    transition: "transform 0.3s",
+                  }}
+                  onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+                  onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                />
+              </a>
+            </div>
           </div>
 
           {/* Logo & Deskripsi */}

@@ -31,12 +31,7 @@ const Footer = () => {
             margin-bottom: 0.5rem;
           }
 
-          /* Efek link aktif */
-          .footer .active-footer-link {
-            color: #ffffff;
-            font-weight: bold;
-          }
-
+       
          
 
           /* Hover efek */

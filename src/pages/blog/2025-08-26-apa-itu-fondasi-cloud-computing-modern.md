@@ -9,7 +9,7 @@ description: Fondasi cloud computing modern adalah sekumpulan prinsip,
   kecerdasan buatan tanpa harus memiliki dan mengelola infrastruktur fisik
   sendiri.
 featuredpost: true
-featuredimage: https://deriota.com/img/20241207135934-2024-12-07news135433.png
+featuredimage: /img/chatgpt-image-1-sep-2025-15.26.28.png
 tags:
   - "#AWS"
   - "#Amazon Web Services"

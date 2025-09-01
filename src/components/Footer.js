@@ -5,12 +5,15 @@ import logo from "../img/Training.png";
 import facebook from "../img/social/facebook-app-symbol.png";
 import instagram from "../img/social/instagram.svg";
 import tiktok from "../img/social/tik-tok.png";
-import maps from "../img/maps.png"; // pastikan file maps.png ada di src/img/
 
 const Footer = () => {
   const linkStyle = {
-    backgroundColor: "transparent",
+    color: "#ffffff",
+    background: "transparent",
     boxShadow: "none",
+    display: "block",
+    marginBottom: "0.5rem",
+    transition: "transform 0.2s ease, color 0.2s ease",
   };
 
   return (
@@ -18,32 +21,69 @@ const Footer = () => {
       className="footer has-text-white-ter"
       style={{ backgroundColor: "#004aad", padding: "3rem 1.5rem" }}
     >
+      <style>
+        {`
+          .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: transform 0.2s ease, color 0.2s ease;
+            display: block;
+            margin-bottom: 0.5rem;
+          }
+
+          /* Efek link aktif */
+          .footer .active-footer-link {
+            color: #ffffff;
+            font-weight: bold;
+          }
+
+         
+
+          /* Hover efek */
+          .footer a:hover {
+            transform: translateY(-2px);
+          }
+
+          /* Klik (active) efek ditekan */
+          .footer a:active {
+            transform: translateY(3px) scale(0.96);
+          }
+        `}
+      </style>
+
       <div className="container">
         <div className="columns is-variable is-8 is-multiline">
-          {/* Lokasi */}
+          {/* Menu Navigasi */}
           <div className="column is-4">
             <div>
-              <h4 className="title is-5" style={{ color: "#ffffff", marginBottom: "0.5rem" }}>
-                Lokasi
-              </h4>
-              <a
-                href="https://www.google.com/maps/place/Areta+Informatics+College/@-6.2539912,106.5937312,17z"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/"
+                style={linkStyle}
+                activeClassName="active-footer-link"
               >
-                <img
-                  src={maps}
-                  alt="Lokasi Areta College"
-                  style={{
-                    borderRadius: "8px",
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-                    width: "190px",
-                    transition: "transform 0.3s",
-                  }}
-                  onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-                  onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                />
-              </a>
+                Home
+              </Link>
+              <Link
+                to="/about"
+                style={linkStyle}
+                activeClassName="active-footer-link"
+              >
+                About
+              </Link>
+              <Link
+                to="/blog"
+                style={linkStyle}
+                activeClassName="active-footer-link"
+              >
+                Blog
+              </Link>
+              <Link
+                to="/contact"
+                style={linkStyle}
+                activeClassName="active-footer-link"
+              >
+                Contact
+              </Link>
             </div>
           </div>
 
@@ -93,13 +133,7 @@ const Footer = () => {
               Ikuti Kami
             </h4>
 
-            <div
-              style={{
-                display: "inline-flex",
-                gap: "15px",
-                marginTop: "0.5rem",
-              }}
-            >
+            <div style={{ display: "inline-flex", gap: "15px", marginTop: "0.5rem" }}>
               <a
                 href="https://www.facebook.com/AretaCollege/"
                 title="Facebook"

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const BlogRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
@@ -10,12 +11,25 @@ const BlogRollTemplate = (props) => {
       {posts &&
         posts.map(({ node: post }) => (
           <div className="column is-6" key={post.id}>
-            <article
-              className="box blog-card is-flex is-flex-direction-column is-justify-space-between"
-              style={{ height: '100%' }}
-            >
+            <article className="box blog-card is-flex is-flex-direction-column is-justify-space-between" style={{ height: '100%' }}>
               <div>
                 <header>
+                  {post?.frontmatter?.featuredimage && (
+                    <div className="featured-thumbnail mb-4">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          width:
+                            post.frontmatter.featuredimage.childImageSharp
+                              .gatsbyImageData.width,
+                          height:
+                            post.frontmatter.featuredimage.childImageSharp
+                              .gatsbyImageData.height,
+                        }}
+                      />
+                    </div>
+                  )}
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -46,7 +60,7 @@ const BlogRollTemplate = (props) => {
   )
 }
 
-BlogRollTemplate.propTypes = {
+BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -75,6 +89,15 @@ export default function BlogRoll() {
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
+                  featuredimage {
+                    childImageSharp {
+                      gatsbyImageData(
+                        width: 120
+                        quality: 100
+                        layout: CONSTRAINED
+                      )
+                    }
+                  }
                 }
               }
             }

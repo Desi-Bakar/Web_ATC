@@ -1,67 +1,57 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import React from "react"
+import PropTypes from "prop-types"
+import { Link, graphql, StaticQuery } from "gatsby"
 
-const BlogRollTemplate = (props) => {
-  const { edges: posts } = props.data.allMarkdownRemark;
+class BlogRoll extends React.Component {
+  render() {
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
-  return (
-    <div className="columns is-multiline is-variable is-4">
-      {posts &&
-        posts.map(({ node: post }) => {
-          // Ambil gambar dari childImageSharp
-          const image = getImage(post.frontmatter.featuredimage)
-
-          return (
-            <div className="column is-6" key={post.id}>
+    return (
+      <div className="columns is-multiline">
+        {posts &&
+          posts.map(({ node: post }) => (
+            <div className="is-parent column is-6" key={post.id}>
               <article
-                className="box blog-card is-flex is-flex-direction-column is-justify-space-between"
-                style={{ height: '100%' }}
+                className={`blog-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? "is-featured" : ""
+                }`}
               >
-                <div>
-                  <header>
-                    {image && (
-                      <div className="featured-thumbnail mb-4">
-                        <GatsbyImage
-                          image={image}
-                          alt={`Thumbnail for ${post.frontmatter.title}`}
-                          style={{ borderRadius: '8px' }}
-                        />
-                      </div>
-                    )}
-                    <p className="post-meta">
-                      <Link
-                        className="title has-text-primary is-size-4"
-                        to={post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                      <br />
-                      <span className="subtitle is-size-6 has-text-grey">
-                        {post.frontmatter.date}
-                      </span>
-                    </p>
-                  </header>
-                  <p className="mt-3">{post.excerpt}</p>
-                </div>
-                <div className="mt-4">
-                  <Link
-                    className="button is-small has-background-white has-text-link"
-                    to={post.fields.slug}
-                  >
+                <header>
+                  <p className="post-meta">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
+                    <span className="subtitle is-size-5 is-block">
+                      {post.frontmatter.date}
+                    </span>
+                  </p>
+                </header>
+                
+                {/* 🔹 HAPUS featuredimage */}
+                {/* Tidak ada lagi <img /> di sini */}
+
+                <p>
+                  {post.excerpt}
+                  <br />
+                  <br />
+                  <Link className="button" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
-                </div>
+                </p>
               </article>
             </div>
-          )
-        })}
-    </div>
-  )
+          ))}
+      </div>
+    )
+  }
 }
 
-BlogRollTemplate.propTypes = {
+BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -69,43 +59,32 @@ BlogRollTemplate.propTypes = {
   }),
 }
 
-export default function BlogRoll() {
-  return (
-    <StaticQuery
-      query={graphql`
-        query BlogRollQuery {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 400)
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  templateKey
-                  date(formatString: "MMMM DD, YYYY")
-                  featuredpost
-                  featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(
-                        width: 600
-                        quality: 90
-                        layout: CONSTRAINED
-                      )
-                    }
-                  }
-                }
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query BlogRollQuery {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 400)
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                featuredpost
+                # featuredimage <- tetap ada di data tapi tidak ditampilkan
               }
             }
           }
         }
-      `}
-      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
-    />
-  )
-}
+      }
+    `}
+    render={(data) => <BlogRoll data={data} />}
+  />
+)

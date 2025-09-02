@@ -44,22 +44,36 @@ const WebDesign = () => {
                   Web Standard (HTML, CSS & JavaScript)
                 </h1>
                 <p>
-                  <strong>Materi:</strong>  Materi Pengenalan Web & Persiapan, Pengenalan HTML.; Membuat Gambar, Membuat Link; Heading; List; Memahami Tag Div; Form; Tabel; Studi Kasus 1-(Konversi Desaign ke HTML); Semantik; CSS; Box-Model; Typography; CSS-Image; Floating; Positioning; Pseudo-Class; Studi Kasus 2 (Pemberian Style/CSS); Studi Kasus 3-(Slicing); JavaScript.
+                  <strong>Materi:</strong>   Pengenalan Web & Persiapan, Pengenalan HTML.; Membuat Gambar, Membuat Link; Heading; List; Memahami Tag Div; Form; Tabel; Studi Kasus 1-(Konversi Desaign ke HTML); Semantik; CSS; Box-Model; Typography; CSS-Image; Floating; Positioning; Pseudo-Class; Studi Kasus 2 (Pemberian Style/CSS); Studi Kasus 3-(Slicing); JavaScript.
                 </p>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div style={{ visibility: "hidden" }}>kosong</div>
+             <div style={cardStyle}>
+              <img
+                src="/img/22.png"
+                alt="UI/UX Pemula"
+                style={imageStyle}
+              />
+              <div style={contentStyle}>
+                <h1 className="title" style={{ marginBottom: "1rem" }}>
+                  UI/UX Pemula
+                </h1>
+                <p>
+                  <strong>Materi:</strong> UI/UX adalah dua hal penting dalam desain digital. UI (User Interface) berfokus pada tampilan visual seperti warna, font, ikon, dan tata letak, sedangkan UX (User Experience) menekankan pada pengalaman pengguna agar aplikasi mudah, nyaman, dan menyenangkan digunakan.
 
+
+                </p>
+              </div>
+            </div>
 
             {/* Card 3 */}
             <div style={{ visibility: "hidden" }}>kosong</div>
 
 
             {/* Card 4 */}
-            
-
+           
             {/* Card 5 */}
            
              

@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import HeroCarousel from "../components/HeroCarousel"; // ✅ import carousel
+import HeroCarousel from "../components/HeroCarousel";
 
-// Template Komponen untuk Halaman Blog Post
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -16,10 +16,11 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  featuredimage,
 }) => {
   const PostContent = contentComponent || Content;
+  const image = getImage(featuredimage);
 
-  // ✅ daftar gambar carousel
   const imageList = [
     "/img/DESIGNN.png",
     "/img/DESIGNN1.png",
@@ -29,25 +30,25 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-
-      {/* ✅ HeroCarousel muncul di atas */}
       <HeroCarousel images={imageList} />
 
       <div className="container content blog-post">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            {/* Judul */}
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
 
-            {/* Deskripsi */}
             <p>{description}</p>
 
-            {/* Konten Utama */}
+            {image && (
+              <div className="featured-image mb-4">
+                <GatsbyImage image={image} alt={title} />
+              </div>
+            )}
+
             <PostContent content={content} />
 
-            {/* Tag */}
             {tags && tags.length > 0 && (
               <div style={{ marginTop: "4rem" }}>
                 <h4>Tags</h4>
@@ -68,15 +69,15 @@ export const BlogPostTemplate = ({
 };
 
 BlogPostTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
   tags: PropTypes.array,
   helmet: PropTypes.object,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
-// Komponen Utama BlogPost
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
@@ -88,13 +89,11 @@ const BlogPost = ({ data }) => {
         description={post.frontmatter.description}
         title={post.frontmatter.title}
         tags={post.frontmatter.tags}
+        featuredimage={post.frontmatter.featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{post.frontmatter.title}</title>
-            <meta
-              name="description"
-              content={post.frontmatter.description}
-            />
+            <meta name="description" content={post.frontmatter.description} />
           </Helmet>
         }
       />
@@ -110,6 +109,7 @@ BlogPost.propTypes = {
         title: PropTypes.string,
         description: PropTypes.string,
         tags: PropTypes.array,
+        featuredimage: PropTypes.object,
       }),
     }),
   }),
@@ -117,7 +117,6 @@ BlogPost.propTypes = {
 
 export default BlogPost;
 
-// GraphQL Query
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -128,6 +127,11 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(width: 800, quality: 90, layout: CONSTRAINED)
+          }
+        }
       }
     }
   }

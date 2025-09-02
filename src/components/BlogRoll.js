@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const BlogRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
@@ -9,58 +9,59 @@ const BlogRollTemplate = (props) => {
   return (
     <div className="columns is-multiline is-variable is-4">
       {posts &&
-        posts.map(({ node: post }) => (
-          <div className="column is-6" key={post.id}>
-            <article className="box blog-card is-flex is-flex-direction-column is-justify-space-between" style={{ height: '100%' }}>
-              <div>
-                <header>
-                  {post?.frontmatter?.featuredimage && (
-                    <div className="featured-thumbnail mb-4">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  )}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <br />
-                    <span className="subtitle is-size-6 has-text-grey">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p className="mt-3">{post.excerpt}</p>
-              </div>
-              <div className="mt-4">
-                <Link
-                  className="button is-small has-background-white has-text-link"
-                  to={post.fields.slug}
-                >
-                  Keep Reading →
-                </Link>
-              </div>
-            </article>
-          </div>
-        ))}
+        posts.map(({ node: post }) => {
+          // Ambil gambar dari childImageSharp
+          const image = getImage(post.frontmatter.featuredimage)
+
+          return (
+            <div className="column is-6" key={post.id}>
+              <article
+                className="box blog-card is-flex is-flex-direction-column is-justify-space-between"
+                style={{ height: '100%' }}
+              >
+                <div>
+                  <header>
+                    {image && (
+                      <div className="featured-thumbnail mb-4">
+                        <GatsbyImage
+                          image={image}
+                          alt={`Thumbnail for ${post.frontmatter.title}`}
+                          style={{ borderRadius: '8px' }}
+                        />
+                      </div>
+                    )}
+                    <p className="post-meta">
+                      <Link
+                        className="title has-text-primary is-size-4"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                      <br />
+                      <span className="subtitle is-size-6 has-text-grey">
+                        {post.frontmatter.date}
+                      </span>
+                    </p>
+                  </header>
+                  <p className="mt-3">{post.excerpt}</p>
+                </div>
+                <div className="mt-4">
+                  <Link
+                    className="button is-small has-background-white has-text-link"
+                    to={post.fields.slug}
+                  >
+                    Keep Reading →
+                  </Link>
+                </div>
+              </article>
+            </div>
+          )
+        })}
     </div>
   )
 }
 
-BlogRoll.propTypes = {
+BlogRollTemplate.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -92,8 +93,8 @@ export default function BlogRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
-                        quality: 100
+                        width: 600
+                        quality: 90
                         layout: CONSTRAINED
                       )
                     }

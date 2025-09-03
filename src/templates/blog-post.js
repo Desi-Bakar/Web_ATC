@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
-import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from "react"
+import PropTypes from "prop-types"
+import { kebabCase } from "lodash"
+import { Helmet } from "react-helmet"
+import { graphql, Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
-import HeroCarousel from "../components/HeroCarousel";
+import Layout from "../components/Layout"
+import Content, { HTMLContent } from "../components/Content"
+import HeroCarousel from "../components/HeroCarousel"
 
 export const BlogPostTemplate = ({
   content,
@@ -18,14 +18,15 @@ export const BlogPostTemplate = ({
   helmet,
   featuredimage,
 }) => {
-  const PostContent = contentComponent || Content;
-  const image = getImage(featuredimage);
+  const PostContent = contentComponent || Content
 
-  const imageList = [
-    "/img/DESIGNN.png",
-    "/img/DESIGNN1.png",
-    "/img/aretanet.png",
-  ];
+  // ✅ amanin: kalau featuredimage object → getImage, kalau string → undefined
+  let image
+  if (featuredimage && typeof featuredimage === "object") {
+    image = getImage(featuredimage)
+  }
+
+  const imageList = ["/img/DESIGNN.png", "/img/DESIGNN1.png", "/img/aretanet.png"]
 
   return (
     <section className="section">
@@ -39,11 +40,11 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
 
-            <p>{description}</p>
+            {description && <p>{description}</p>}
 
             {image && (
               <div className="featured-image mb-4">
-                <GatsbyImage image={image} alt={title} />
+                <GatsbyImage image={image} alt={title || "Blog featured image"} />
               </div>
             )}
 
@@ -65,8 +66,8 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
@@ -76,13 +77,13 @@ BlogPostTemplate.propTypes = {
   tags: PropTypes.array,
   helmet: PropTypes.object,
   featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-};
+}
 
 const BlogPost = ({ data }) => {
-  const post = data?.markdownRemark; // ✅ cek dulu
+  const post = data?.markdownRemark
 
   if (!post) {
-    return <div>Loading...</div>; // Supaya CMS preview ga crash
+    return <div>Loading...</div> // ✅ aman buat CMS preview
   }
 
   return (
@@ -90,21 +91,23 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        title={post.frontmatter.title}
-        tags={post.frontmatter.tags}
-        featuredimage={post.frontmatter.featuredimage}
+        description={post.frontmatter?.description}
+        title={post.frontmatter?.title}
+        tags={post.frontmatter?.tags}
+        featuredimage={post.frontmatter?.featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{post.frontmatter.title}</title>
-            <meta name="description" content={post.frontmatter.description} />
+            <title>{post.frontmatter?.title}</title>
+            <meta
+              name="description"
+              content={post.frontmatter?.description || ""}
+            />
           </Helmet>
         }
       />
     </Layout>
-  );
-};
-
+  )
+}
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
@@ -114,13 +117,13 @@ BlogPost.propTypes = {
         title: PropTypes.string,
         description: PropTypes.string,
         tags: PropTypes.array,
-        featuredimage: PropTypes.object,
+        featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       }),
     }),
   }),
-};
+}
 
-export default BlogPost;
+export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -140,4 +143,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

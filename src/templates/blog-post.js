@@ -79,7 +79,11 @@ BlogPostTemplate.propTypes = {
 };
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const post = data?.markdownRemark; // ✅ cek dulu
+
+  if (!post) {
+    return <div>Loading...</div>; // Supaya CMS preview ga crash
+  }
 
   return (
     <Layout>
@@ -100,6 +104,7 @@ const BlogPost = ({ data }) => {
     </Layout>
   );
 };
+
 
 BlogPost.propTypes = {
   data: PropTypes.shape({

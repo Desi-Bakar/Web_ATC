@@ -36,24 +36,38 @@ const CiscoBasic = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/20.png"
-                alt="Basic Cisco Networking"
+                src="/img/28.png"
+                alt="CISCO Basic"
                 style={imageStyle}
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-              Basic Cisco Networking
+              CISCO Basic
                 </h1>
                 <p>
-                 <strong>Materi:</strong> perusahaan teknologi global yang bergerak di bidang jaringan komputer. Cisco terkenal karena memproduksi perangkat keras jaringan seperti router, switch, firewall, dan access point, serta perangkat lunak pendukungnya.
+                 <strong>Materi:</strong> Pendahuluan Jaringan & Cisco, Perangkat Jaringan Cisco, Konsep Jaringan Dasar, Switching & VLAN, Routing Fundamental, Teknologi Wireless Cisco (Dasar), Keamanan Jaringan Dasar, Cisco Packet Tracer (Simulasi), Praktikum & Studi Kasus, Evaluasi & Sertifikasi Internal
 
-Bagi pemula yang belajar jaringan, Cisco menjadi standar karena produknya banyak dipakai di dunia kerja dan juga menyediakan sertifikasi resmi seperti CCNA (Cisco Certified Network Associate).
                 </p>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div style={{ visibility: "hidden" }}>kosong</div>
+            <div style={cardStyle}>
+              <img
+                src="/img/31.png"
+                alt="CISCO Advanced"
+                style={imageStyle}
+              />
+              <div style={contentStyle}>
+                <h1 className="title" style={{ marginBottom: "1rem" }}>
+             CISCO Advanced
+                </h1>
+                <p>
+                 <strong>Materi:</strong>Advanced Routing Protocols, Advanced Switching, Network Security (Cisco Security Fundamentals), QoS (Quality of Service), MPLS (Multiprotocol Label Switching), Troubleshooting & Monitoring
+
+                </p>
+              </div>
+            </div>
 
 
             {/* Card 3 */}

@@ -52,16 +52,16 @@ const WebDesign = () => {
             {/* Card 2 */}
              <div style={cardStyle}>
               <img
-                src="/img/22.png"
-                alt="UI/UX Pemula"
+                src="/img/30.png"
+                alt="UI/UX Design with Figma"
                 style={imageStyle}
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-                  UI/UX Pemula
+                 UI/UX Design with Figma
                 </h1>
                 <p>
-                  <strong>Materi:</strong> UI/UX adalah dua hal penting dalam desain digital. UI (User Interface) berfokus pada tampilan visual seperti warna, font, ikon, dan tata letak, sedangkan UX (User Experience) menekankan pada pengalaman pengguna agar aplikasi mudah, nyaman, dan menyenangkan digunakan.
+                  <strong>Materi:</strong> Pengenalan UI/UX Design, Research & User-Centered Design, Dasar-Dasar Figma, Wireframing, UI Design di Figma, UX Prototyping, User Testing & Iterasi, Kolaborasi & Handoff ke Developer, Studi Kasus & Project Akhir
 
 
                 </p>

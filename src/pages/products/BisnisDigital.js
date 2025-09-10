@@ -36,22 +36,39 @@ const BisnisDigital = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/20.png"
-                alt="Bisnis Digital Pemula: Fondasi Karir dan Usaha di Era Teknologi"
+                src="/img/29.png"
+                alt="Social Media Marketing"
                 style={imageStyle}
               />
               <div style={contentStyle}>
                 <h1 className="title" style={{ marginBottom: "1rem" }}>
-             Bisnis Digital Pemula: Fondasi Karir dan Usaha di Era Teknologi
+             Social Media Marketing
                 </h1>
                 <p>
-                 <strong>Materi:</strong> kegiatan usaha yang memanfaatkan teknologi dan internet sebagai alat utama dalam menjalankan operasional, pemasaran, hingga transaksi.
+                 <strong>Materi:</strong> Pengenalan Social Media Marketing, Strategi & Perencanaan Konten, Pembuatan Konten Kreatif, Manajemen Media Sosial, Social Media Advertising (Iklan Berbayar), Analisis & Optimasi, Strategi Pertumbuhan & Monetisasi, Studi Kasus & Proyek Akhir
+
                 </p>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div style={{ visibility: "hidden" }}>kosong</div>
+             <div style={cardStyle}>
+              <img
+                src="/img/32.png"
+                alt="Content Marketing"
+                style={imageStyle}
+              />
+              <div style={contentStyle}>
+                <h1 className="title" style={{ marginBottom: "1rem" }}>
+            Content Marketing
+                </h1>
+                <p>
+                 <strong>Materi:</strong> Pengenalan Content Marketing, Strategi Dasar Content Marketing
+
+                </p>
+              </div>
+            </div>
+
 
 
             {/* Card 3 */}

@@ -5,9 +5,8 @@ import logo from "../img/TrainingCenter.jpg";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isProductsOpen, setIsProductsOpen] = useState(false); // ✅ tambahan
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
 
-  // Data array untuk products
   const products = [
     { name: "Networking & Administrator", path: "/products/NetworkingAdministrator" },
     { name: "Mikrotik", path: "/products/Mikrotik" },
@@ -18,101 +17,218 @@ const Navbar = () => {
     { name: "Hacking", path: "/products/Hacking" },
     { name: "Application Office", path: "/products/ApplicationOffice" },
     { name: "Database Administrator", path: "/products/DatabaseAdministrator" },
-    { name: "Training Cisco", path: "/products/Cisco" },
-    { name: "Training Digital Marketing", path: "/products/BisnisDigital" }
+    { name: "Cisco", path: "/products/Cisco" },
+    { name: "Digital Marketing", path: "/products/BisnisDigital" }
   ];
 
   return (
     <>
       <style>{`
-        /* Dropdown Products */
+        /* Navbar fixed di atas */
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1100;
+          background: #fff;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        body {
+          padding-top: 70px; /* biar konten ga ketiban */
+        }
+
+        /* Container */
+        .navbar .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        /* Burger button */
+        .navbar-burger {
+          display: none;
+          cursor: pointer;
+          background: none;
+          border: none;
+          z-index: 1101;
+        }
+        .navbar-burger span {
+          display: block;
+          height: 3px;
+          width: 24px;
+          background: #004AAD;
+          margin: 5px auto;
+          border-radius: 2px;
+          transition: all 0.3s ease;
+        }
+        .navbar-burger.is-active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        .navbar-burger.is-active span:nth-child(2) {
+          opacity: 0;
+        }
+        .navbar-burger.is-active span:nth-child(3) {
+          transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Default menu (desktop) */
+        .navbar-menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-grow: 1;
+        }
+
+        /* Rapiin spacing navbar item (desktop) */
+        .navbar-start .navbar-item,
+        .navbar-end .navbar-item {
+          padding: 0 14px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .navbar-start {
+          display: flex;
+          align-items: center;
+          gap: 0; /* rapihin biar jaraknya konsisten */
+        }
+        .navbar-end {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .navbar-item:hover {
+          color: #004AAD;
+        }
+
+        /* Khusus Products link */
+        .navbar-item.products .navbar-link {
+          display: flex;
+          align-items: center;
+          justify-content: center; /* teks biar ketengah */
+          padding: 0 14px;          /* sama dengan item lain */
+          font-weight: 500;
+        }
+
+        /* Mobile overlay menu */
+        @media (max-width: 1024px) {
+          .navbar-burger {
+            display: block;
+          }
+
+          .navbar-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ffffff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            opacity: 0;
+            transform: translateY(-20px);
+            pointer-events: none;
+            transition: all 0.4s ease;
+            z-index: 1100;
+          }
+          .navbar-menu.is-active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+          }
+
+          .navbar-start, .navbar-end {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .navbar-item {
+            font-size: 18px;
+            margin: 6px 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            transition: color 0.2s ease;
+          }
+          .navbar-item:hover {
+            color: #004AAD;
+          }
+
+          /* Dropdown in mobile */
+          .navbar-item.products .navbar-dropdown {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 6px;
+            align-items: center;
+          }
+          .navbar-item.products.open .navbar-dropdown {
+            display: flex;
+          }
+
+          .navbar-item.products .navbar-dropdown .navbar-item {
+            justify-content: center;
+          }
+        }
+
+        /* Dropdown Products (desktop) */
         .navbar-item.products.has-dropdown {
           position: relative;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
         }
-        .navbar-item.products.has-dropdown .navbar-dropdown {
+        .navbar-item.products .navbar-link::after {
+          display: none !important; /* hilangin arrow bawaan */
+        }
+        .navbar-item.products .navbar-dropdown {
           position: absolute;
           top: 100%;
           left: 0;
           background: white;
           display: flex;
           flex-direction: column;
-          min-width: 200px;
-          padding: 0.5rem 0;
-          border: 1px solid #ddd;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          min-width: 220px;
+          padding: 6px 0;
+          border-radius: 6px;
+          border: 1px solid #eee;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.1);
           opacity: 0;
           visibility: hidden;
           transform: translateY(-10px);
           transition: all 0.3s ease;
           z-index: 1000;
         }
-        .navbar-item.products.has-dropdown:hover .navbar-dropdown {
+        .navbar-item.products.open .navbar-dropdown {
           opacity: 1;
           visibility: visible;
           transform: translateY(0);
         }
-        .navbar-item.products.has-dropdown .navbar-dropdown .navbar-item {
+        .navbar-item.products .navbar-dropdown .navbar-item {
           padding: 10px 16px;
-          white-space: nowrap;
+          font-size: 15px;
+          transition: background 0.2s ease;
         }
-        .navbar-item.products.has-dropdown .navbar-dropdown .navbar-item:hover {
-          background: #f5f5f5;
-        }
-
-        /* ✅ Burger cobalt blue */
-        .navbar-burger {
-          display: none; /* default disembunyikan */
-          cursor: pointer;
-        }
-        .navbar-burger span {
-          display: block;
-          height: 2px;
-          width: 20px;
-          background: #004AAD; /* cobalt blue */
-          margin: 4px auto;
-          border-radius: 2px;
-          transition: all 0.3s ease;
-        }
-        .navbar-burger:hover span {
-          background: #0056D2; /* lebih terang saat hover */
-        }
-        .navbar-burger.is-active span:nth-child(1) {
-          transform: rotate(45deg) translate(5px, 5px);
-          background: #004AAD;
-        }
-        .navbar-burger.is-active span:nth-child(2) {
-          opacity: 0;
-        }
-        .navbar-burger.is-active span:nth-child(3) {
-          transform: rotate(-45deg) translate(5px, -5px);
-          background: #004AAD;
-        }
-
-        /* ✅ Tampilkan burger hanya di tablet & HP */
-        @media (max-width: 1024px) {
-          .navbar-burger {
-            display: block;
-          }
-          .navbar-item.products.has-dropdown .navbar-dropdown {
-            position: static; /* biar inline di mobile */
-            opacity: 1;
-            visibility: visible;
-            transform: none;
-            box-shadow: none;
-            border: none;
-            display: ${isProductsOpen ? "flex" : "none"}; /* ✅ kontrol buka/tutup */
-          }
+        .navbar-item.products .navbar-dropdown .navbar-item:hover {
+          background: #f5f7ff;
+          color: #004AAD;
         }
       `}</style>
 
-      <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+      <nav className="navbar" role="navigation" aria-label="main-navigation">
         <div className="container">
+          {/* Logo */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Logo" style={{ width: "88px" }} />
             </Link>
 
-            {/* ✅ Burger Button */}
+            {/* Burger button */}
             <button
               className={`navbar-burger ${isActive ? "is-active" : ""}`}
               aria-label="menu"
@@ -125,23 +241,19 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div id="navMenu" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+          {/* Menu */}
+          <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+            <div className="navbar-start">
+              <Link className="navbar-item" to="/about" onClick={() => setIsActive(false)}>
                 About
               </Link>
 
-              {/* ✅ Dropdown Products pakai array */}
+              {/* Products dropdown */}
               <div
-                className={`navbar-item products has-dropdown ${isProductsOpen ? "is-active" : ""}`}
+                className={`navbar-item products has-dropdown ${isProductsOpen ? "open" : ""}`}
+                onClick={() => setIsProductsOpen(!isProductsOpen)}
               >
-                <span
-                  className="navbar-link"
-                  onClick={() => setIsProductsOpen(!isProductsOpen)} // ✅ toggle di mobile
-                  role="button"
-                >
-                  Products
-                </span>
+                <span className="navbar-link">Products</span>
                 <div className="navbar-dropdown">
                   {products.map((product, index) => (
                     <Link
@@ -149,8 +261,8 @@ const Navbar = () => {
                       className="navbar-item"
                       to={product.path}
                       onClick={() => {
-                        setIsActive(false); // ✅ close navbar setelah klik link
-                        setIsProductsOpen(false); // ✅ tutup dropdown
+                        setIsActive(false);
+                        setIsProductsOpen(false);
                       }}
                     >
                       {product.name}
@@ -176,7 +288,8 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="navbar-end has-text-centered">
+            {/* WhatsApp button */}
+            <div className="navbar-end">
               <a
                 className="navbar-item"
                 href="https://api.whatsapp.com/send?phone=6281285234904&text=Hallo%20kak%2C%20saya%20Desi.%20Ada%20yang%20bisa%20saya%20bantu%3F"
@@ -185,7 +298,7 @@ const Navbar = () => {
                 onClick={() => setIsActive(false)}
               >
                 <span className="icon whatsapp">
-                  <img src={whatsapp} alt="whatsapp" />
+                  <img src={whatsapp} alt="whatsapp" style={{ width: "22px" }} />
                 </span>
               </a>
             </div>

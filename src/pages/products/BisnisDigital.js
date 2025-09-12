@@ -63,7 +63,7 @@ const BisnisDigital = () => {
             Content Marketing
                 </h1>
                 <p>
-                 <strong>Materi:</strong> Pengenalan Content Marketing, Strategi Dasar Content Marketing
+                 <strong>Materi:</strong> Pengenalan Content Marketing, Strategi Dasar Content Marketing, Riset & Perencanaan Konten, Jenis & Format Konten, Copywriting & Storytelling, Distribusi & Promosi Konten, SEO & Content Marketing, Content Marketing Tools, Analisis & Optimasi Konten, Proyek Akhir.
 
                 </p>
               </div>

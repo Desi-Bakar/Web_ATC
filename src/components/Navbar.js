@@ -80,7 +80,6 @@ const Navbar = () => {
           flex-grow: 1;
         }
 
-        /* Rapiin spacing navbar item (desktop) */
         .navbar-start .navbar-item,
         .navbar-end .navbar-item {
           padding: 0 14px;
@@ -90,7 +89,7 @@ const Navbar = () => {
         .navbar-start {
           display: flex;
           align-items: center;
-          gap: 0; /* rapihin biar jaraknya konsisten */
+          gap: 0;
         }
         .navbar-end {
           display: flex;
@@ -105,8 +104,8 @@ const Navbar = () => {
         .navbar-item.products .navbar-link {
           display: flex;
           align-items: center;
-          justify-content: center; /* teks biar ketengah */
-          padding: 0 14px;          /* sama dengan item lain */
+          justify-content: center;
+          padding: 0 14px;
           font-weight: 500;
         }
 
@@ -159,7 +158,6 @@ const Navbar = () => {
             color: #004AAD;
           }
 
-          /* Dropdown in mobile */
           .navbar-item.products .navbar-dropdown {
             display: none;
             flex-direction: column;
@@ -170,7 +168,6 @@ const Navbar = () => {
           .navbar-item.products.open .navbar-dropdown {
             display: flex;
           }
-
           .navbar-item.products .navbar-dropdown .navbar-item {
             justify-content: center;
           }
@@ -184,7 +181,7 @@ const Navbar = () => {
           cursor: pointer;
         }
         .navbar-item.products .navbar-link::after {
-          display: none !important; /* hilangin arrow bawaan */
+          display: none !important;
         }
         .navbar-item.products .navbar-dropdown {
           position: absolute;
@@ -217,6 +214,24 @@ const Navbar = () => {
         .navbar-item.products .navbar-dropdown .navbar-item:hover {
           background: #f5f7ff;
           color: #004AAD;
+        }
+
+        /* === FIX: Logo khusus HP/tablet ke kiri === */
+        @media (max-width: 1024px) {
+          .navbar-brand {
+            display: flex;
+            justify-content: flex-start; /* logo di kiri */
+            align-items: center;
+            width: 100%;
+          }
+
+          .navbar-brand .navbar-item img {
+            margin-left: 0; /* rapetin logo */
+          }
+
+          .navbar-burger {
+            margin-left: auto; /* burger tetap di kanan */
+          }
         }
       `}</style>
 

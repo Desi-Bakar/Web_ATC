@@ -9,173 +9,143 @@ import tiktok from "../img/social/tik-tok.png";
 const Footer = () => {
   const linkStyle = {
     color: "#ffffff",
-    background: "transparent",
-    boxShadow: "none",
-    display: "block",
+    textDecoration: "none",
     marginBottom: "0.5rem",
-    transition: "transform 0.2s ease, color 0.2s ease",
+    display: "block",
+    fontSize: "0.95rem",
+    transition: "all 0.3s ease",
   };
 
   return (
-    <footer
-      className="footer has-text-white-ter"
-      style={{ backgroundColor: "#004aad", padding: "3rem 1.5rem" }}
-    >
-      <style>
-        {`
-          .footer a {
-            color: #ffffff;
-            text-decoration: none;
-            transition: transform 0.2s ease, color 0.2s ease;
-            display: block;
-            margin-bottom: 0.5rem;
+    <footer style={{ backgroundColor: "#004aad", padding: "3rem 1.5rem" }}>
+      <style>{`
+        .footer-title {
+          color: #ffd700;
+          margin-bottom: 0.8rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1rem;
+          letter-spacing: 0.5px;
+        }
+
+        .footer a:hover {
+          color: #ffd700;
+          transform: translateY(-2px);
+        }
+
+        .social-icon {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.15);
+          transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+          background: #ffffff;
+          transform: scale(1.15);
+        }
+        .social-icon img {
+          width: 20px;
+          height: 20px;
+          filter: brightness(0) invert(1);
+        }
+        .social-icon:hover img {
+          filter: none;
+        }
+
+        /* Logo Box (diperkecil) */
+        .logo-box {
+          background: #ffffff;
+          padding: 0.4rem 0.7rem; /* lebih kecil dari sebelumnya */
+          border-radius: 6px;
+          display: inline-block;
+          margin-bottom: 1rem;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        .logo-box img {
+          max-width: 160px; /* tetap sama */
+          height: auto;
+          display: block;
+        }
+
+        /* Atas: logo + deskripsi */
+        .top-section {
+          text-align: center;
+          max-width: 500px;
+          margin: 0 auto 2.5rem auto;
+        }
+
+        /* Bawah: 2 kolom */
+        .bottom-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+          align-items: start;
+        }
+
+        .link-col {
+          text-align: center;
+        }
+
+        .socials {
+          display: flex;
+          gap: 15px;
+          margin-top: 1rem;
+          justify-content: center;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+          .bottom-section {
+            gap: 1.5rem;
           }
+        }
+      `}</style>
 
-       
-         
+      <div className="container" style={{ color: "#ffffff" }}>
+        {/* Atas */}
+        <div className="top-section">
+          <div className="logo-box">
+            <img src={logo} alt="Logo Areta" />
+          </div>
+          <p
+            style={{
+              margin: "1rem auto 0 auto",
+              lineHeight: "1.6",
+              color: "#ffffff",
+            }}
+          >
+            Areta Training Center menyediakan pelatihan berbasis praktek untuk
+            mengembangkan potensi generasi muda di bidang IT & industri kreatif.
+          </p>
+        </div>
 
-          /* Hover efek */
-          .footer a:hover {
-            transform: translateY(-2px);
-          }
-
-          /* Klik (active) efek ditekan */
-          .footer a:active {
-            transform: translateY(3px) scale(0.96);
-          }
-        `}
-      </style>
-
-      <div className="container">
-        <div className="columns is-variable is-8 is-multiline">
-          {/* Menu Navigasi */}
-          <div className="column is-4">
-            <div>
-              <Link
-                to="/"
-                style={linkStyle}
-                activeClassName="active-footer-link"
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                style={linkStyle}
-                activeClassName="active-footer-link"
-              >
-                About
-              </Link>
-              <Link
-                to="/blog"
-                style={linkStyle}
-                activeClassName="active-footer-link"
-              >
-                Blog
-              </Link>
-              <Link
-                to="/contact"
-                style={linkStyle}
-                activeClassName="active-footer-link"
-              >
-                Contact
-              </Link>
-            </div>
+        {/* Bawah */}
+        <div className="bottom-section">
+          {/* Peta Situs */}
+          <div className="link-col">
+            <h4 className="footer-title">Peta Situs</h4>
+            <Link to="/" style={linkStyle}>Home</Link>
+            <Link to="/about" style={linkStyle}>Tentang Kami</Link>
+            <Link to="/blog" style={linkStyle}>Artikel</Link>
+            <Link to="/contact" style={linkStyle}>Kontak</Link>
           </div>
 
-          {/* Logo & Deskripsi */}
-          <div className="column is-4 has-text-centered">
-            <div
-              className="card"
-              style={{
-                display: "inline-block",
-                backgroundColor: "#ffffff",
-                padding: "0.5rem",
-                borderRadius: "5px",
-                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <div className="card-image">
-                <figure className="image" style={{ margin: 0 }}>
-                  <img
-                    src={logo}
-                    alt="Logo Areta"
-                    style={{
-                      maxWidth: "150px",
-                      height: "auto",
-                      display: "block",
-                      objectFit: "contain",
-                    }}
-                  />
-                </figure>
-              </div>
-            </div>
-
-            <p
-              style={{
-                maxWidth: "300px",
-                margin: "1rem auto 0",
-                color: "#ffffff",
-              }}
-            >
-              Areta Training Center menyediakan pelatihan berbasis praktek untuk
-              mengembangkan potensi generasi muda di bidang IT & industri kreatif.
-            </p>
-          </div>
-
-          {/* Sosial Media */}
-          <div className="column is-4" style={{ textAlign: "right" }}>
-            <h4 className="title is-5" style={{ color: "#ffffff" }}>
-              Ikuti Kami
-            </h4>
-
-            <div style={{ display: "inline-flex", gap: "15px", marginTop: "0.5rem" }}>
-              <a
-                href="https://www.facebook.com/AretaCollege/"
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={facebook}
-                  alt="Facebook"
-                  style={{
-                    width: "24px",
-                    height: "24px",
-                    filter: "brightness(0) invert(1)",
-                  }}
-                />
+          {/* Hubungi Kami */}
+          <div className="link-col">
+            <h4 className="footer-title">Hubungi Kami</h4>
+            <div className="socials">
+              <a href="https://www.facebook.com/AretaCollege/" className="social-icon">
+                <img src={facebook} alt="Facebook" />
               </a>
-              <a
-                href="https://www.tiktok.com/@areta_informaticscollege"
-                title="TikTok"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={tiktok}
-                  alt="TikTok"
-                  style={{
-                    width: "24px",
-                    height: "24px",
-                    filter: "brightness(0) invert(1)",
-                  }}
-                />
+              <a href="https://www.tiktok.com/@areta_informaticscollege" className="social-icon">
+                <img src={tiktok} alt="TikTok" />
               </a>
-              <a
-                href="https://instagram.com/areta_informaticscollege/"
-                title="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  style={{
-                    width: "24px",
-                    height: "24px",
-                    filter: "brightness(0) invert(1)",
-                  }}
-                />
+              <a href="https://instagram.com/areta_informaticscollege/" className="social-icon">
+                <img src={instagram} alt="Instagram" />
               </a>
             </div>
           </div>
@@ -183,12 +153,14 @@ const Footer = () => {
 
         {/* Copyright */}
         <div
-          className="content has-text-centered"
+          className="has-text-centered"
           style={{
-            marginTop: "2rem",
+            marginTop: "3rem",
             borderTop: "1px solid rgba(255,255,255,0.2)",
             paddingTop: "1rem",
             fontSize: "0.9rem",
+            color: "#ddd",
+            textAlign: "center",
           }}
         >
           © {new Date().getFullYear()} Areta Training Center. All rights reserved.

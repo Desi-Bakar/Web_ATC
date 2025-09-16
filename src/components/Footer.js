@@ -129,9 +129,9 @@ const Footer = () => {
           <div className="link-col">
             <h4 className="footer-title">Peta Situs</h4>
             <Link to="/" style={linkStyle}>Home</Link>
-            <Link to="/about" style={linkStyle}>Tentang Kami</Link>
-            <Link to="/blog" style={linkStyle}>Artikel</Link>
-            <Link to="/contact" style={linkStyle}>Kontak</Link>
+            <Link to="/about" style={linkStyle}>About</Link>
+            <Link to="/blog" style={linkStyle}>Blog</Link>
+            <Link to="/contact" style={linkStyle}>contact</Link>
           </div>
 
           {/* Hubungi Kami */}

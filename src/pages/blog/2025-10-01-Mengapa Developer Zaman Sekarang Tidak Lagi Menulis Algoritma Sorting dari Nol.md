@@ -52,7 +52,7 @@ Sudah mampu menangani kasus-kasus khusus, seperti:
 2. Pengurutan objek yang kompleks
 3. Unicode dan lokal
    Contoh:
-   sorted(data, key=lambda x: x. name, reverse=True)
+      sorted(data, key=lambda x: x. name, reverse=True)
    Sangat ekspresif dan kuat tanpa perlu memikirkan partisi atau pertukaran elemen secara manual.
 
 #### 4. Menulis Algoritma Sorting dari Nol = Risiko Bug
@@ -63,8 +63,8 @@ Membuat algoritma sendiri berarti kamu harus:
 2. Mengoptimalkan kinerja
 3. Menghindari loop tak terhingga atau kesalahan logika
 4. Padahal… tujuanmu hanya ingin mengurutkan daftar nama.
-      Contoh nyata:
-      Seorang pengembang membuat *quicksort* sendiri untuk sistem e-commerce, tetapi lupa menangani elemen yang sama akibatnya? Daftar pesanan pelanggan menjadi acak.
+    Contoh nyata:
+    Seorang pengembang membuat *quicksort* sendiri untuk sistem e-commerce, tetapi lupa menangani elemen yang sama akibatnya? Daftar pesanan pelanggan menjadi acak.
 
 #### 5. Tapi… Bukan Berarti Tidak Penting Sama Sekali
 
@@ -74,7 +74,7 @@ Membuat algoritma sorting tetap relevan untuk memahami konsep dasar, terutama da
 2. Algoritma dan struktur data (bagi pemula)
 3. Pekerjaan khusus seperti compiler, sistem tertanam, atau pemrograman kompetitif
 4. Optimalisasi untuk kasus ekstrem (seperti miliaran data khusus)
-      Artinya: memahami cara kerja sorting itu penting, tetapi menulisnya dari awal hampir tidak diperlukan dalam keseharian.
+    Artinya: memahami cara kerja sorting itu penting, tetapi menulisnya dari awal hampir tidak diperlukan dalam keseharian.
 
 #### 6. Paradigma “Gunakan, Bukan Ciptakan Kembali Roda”
 

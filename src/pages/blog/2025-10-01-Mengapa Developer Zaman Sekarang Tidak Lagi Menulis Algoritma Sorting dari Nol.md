@@ -26,19 +26,16 @@ Pada awal era komputer, tidak ada pustaka pemrograman yang canggih. Para pengemb
 * C++: std::sort()
 
 Alasan:
-
-1. Telah dioptimalkan.
-2. Diuji dalam berbagai keadaan.
-3. Dikelola oleh tim ahli yang berkompeten dalam setiap bahasa pemrograman.
+    1. Telah dioptimalkan.
+    2. Diuji dalam berbagai keadaan.
+    3. Dikelola oleh tim ahli yang berkompeten dalam setiap bahasa pemrograman.
 
 #### 2. Fokus Developer Modern Sudah Berbeda
 
 Dulu:
 Fokus: Memahami cara kerja sistem internal
-
 Sekarang:
 Fokus: Menciptakan sesuatu yang berfungsi secara efektif dan cepat
-
 Di sektor industri, waktu sangat berharga. Mengulang penulisan algoritma sorting yang sudah ada hanya akan memperlambat tahap pengembangan kecuali ada kebutuhan tertentu.
 
 #### 3. Library dan Framework Sudah Luar Biasa Canggih
@@ -49,46 +46,37 @@ Dalam banyak situasi, pustaka sorting:
 * Menggunakan algoritma hibrida (seperti TimSort pada Python dan Java)
 
 Sudah mampu menangani kasus-kasus khusus, seperti:
-
-1. Stabilitas
-2. Pengurutan objek yang kompleks
-3. Unicode dan lokal
-
+    1. Stabilitas
+    2. Pengurutan objek yang kompleks
+    3. Unicode dan lokal
 Contoh:
-
 sorted(data, key=lambda x: x. name, reverse=True)
 Sangat ekspresif dan kuat tanpa perlu memikirkan partisi atau pertukaran elemen secara manual.
 
 #### 4. Menulis Algoritma Sorting dari Nol = Risiko Bug
 
 Membuat algoritma sendiri berarti kamu harus:
-
-1. Menangani kasus-kasus khusus
-2. Mengoptimalkan kinerja
-3. Menghindari loop tak terhingga atau kesalahan logika
-4. Padahal… tujuanmu hanya ingin mengurutkan daftar nama.
-
-Contoh nyata:
-
-Seorang pengembang membuat *quicksort* sendiri untuk sistem e-commerce, tetapi lupa menangani elemen yang sama akibatnya? Daftar pesanan pelanggan menjadi acak.
+    1. Menangani kasus-kasus khusus
+    2. Mengoptimalkan kinerja
+    3. Menghindari loop tak terhingga atau kesalahan logika
+    4. Padahal… tujuanmu hanya ingin mengurutkan daftar nama.
+   Contoh nyata:
+   Seorang pengembang membuat *quicksort* sendiri untuk sistem e-commerce, tetapi lupa menangani elemen yang sama akibatnya? Daftar pesanan pelanggan menjadi acak.
 
 #### 5. Tapi… Bukan Berarti Tidak Penting Sama Sekali
 
 Membuat algoritma sorting tetap relevan untuk memahami konsep dasar, terutama dalam situasi:
-
-1. Wawancara teknis (coding di papan tulis)
-2. Algoritma dan struktur data (bagi pemula)
-3. Pekerjaan khusus seperti compiler, sistem tertanam, atau pemrograman kompetitif
-4. Optimalisasi untuk kasus ekstrem (seperti miliaran data khusus)
-
-Artinya: memahami cara kerja sorting itu penting, tetapi menulisnya dari awal hampir tidak diperlukan dalam keseharian.
+    1. Wawancara teknis (coding di papan tulis)
+    2. Algoritma dan struktur data (bagi pemula)
+    3. Pekerjaan khusus seperti compiler, sistem tertanam, atau pemrograman kompetitif
+    4. Optimalisasi untuk kasus ekstrem (seperti miliaran data khusus)
+   Artinya: memahami cara kerja sorting itu penting, tetapi menulisnya dari awal hampir tidak diperlukan dalam keseharian.
 
 #### 6. Paradigma “Gunakan, Bukan Ciptakan Kembali Roda”
 
 Kita berada di era di mana abstraksi menjadi dasar produktivitas.
 Mengapa menulis algoritma sorting sendiri, jika kamu bisa lebih fokus untuk mengembangkan fitur yang menyelesaikan masalah nyata?
 Ini seperti:
-
-1. Kamu tidak perlu membuat oven sendiri untuk memanggang kue.
-2. Kamu tidak perlu membuat peta sendiri untuk menjelajahi tempat baru.
-3. Kamu tidak perlu menciptakan algoritma sorting sendiri jika sudah ada yang terbukti efektif.
+    1. Kamu tidak perlu membuat oven sendiri untuk memanggang kue.
+    2. Kamu tidak perlu membuat peta sendiri untuk menjelajahi tempat baru.
+    3. Kamu tidak perlu menciptakan algoritma sorting sendiri jika sudah ada yang terbukti efektif.

@@ -53,7 +53,7 @@ Sudah mampu menangani kasus-kasus khusus, seperti:
 3. Unicode dan lokal
 
 Contoh:
-   sorted(data, key=lambda x: x. name, reverse=True)
+sorted(data, key=lambda x: x. name, reverse=True)
 Sangat ekspresif dan kuat tanpa perlu memikirkan partisi atau pertukaran elemen secara manual.
 
 #### 4. Menulis Algoritma Sorting dari Nol = Risiko Bug

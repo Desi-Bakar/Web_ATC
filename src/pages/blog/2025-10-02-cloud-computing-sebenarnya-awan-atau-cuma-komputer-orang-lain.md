@@ -14,16 +14,16 @@ description: "konsep cloud computing dengan bahasa yang simpel dan nggak bikin
 featuredpost: false
 featuredimage: /img/chatgpt-image-2-okt-2025-09.41.35.png
 tags:
-  - "#CloudComputing"
-  - "#KomputerOrangLain"
-  - "#AwanDigital"
-  - "#DataTanpaRibet"
-  - "#TeknologiMudah"
-  - "#NgertiCloud"
-  - "#HidupLebihPraktis"
-  - "#SimpanDataOnline"
-  - "#TeknologiSehariHari"
-  - "#InternetBikinSimple"
+  - CloudComputing
+  - KomputerOrangLain
+  - AwanDigital
+  - DataTanpaRibet
+  - TeknologiMudah
+  - NgertiCloud
+  - HidupLebihPraktis
+  - SimpanDataOnline
+  - TeknologiSehariHari
+  - InternetBikinSimple
 ---
 ## *Cloud Computing*: Sesungguhnya Awan atau Hanya Komputer Milik Orang Lain?
 

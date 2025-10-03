@@ -9,7 +9,7 @@ description: Di dunia pengembangan perangkat lunak modern, Git adalah salah satu
   dipelajari oleh siapa pun. Itulah mengapa pelatihan dasar Git sangat
   bermanfaat untuk semua level.
 featuredpost: true
-featuredimage: https://sdmntprnortheu.oaiusercontent.com/files/00000000-3988-61f4-93bd-634c43466b47/raw?se=2025-10-03T07%3A30%3A44Z&sp=r&sv=2024-08-04&sr=b&scid=3a1f62e5-b432-5834-9169-265ba4deb5b0&skoid=9063adf3-a524-4acf-b70a-8731b33f2f50&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-03T00%3A23%3A30Z&ske=2025-10-04T00%3A23%3A30Z&sks=b&skv=2024-08-04&sig=Bw8QcRAE4y%2BMRE%2By71G%2B2JGjLgjGLNjKTsOmW8lY5hc%3D
+featuredimage: /img/chatgpt-image-oct-3-2025-02_18_26-pm.png
 tags:
   - Git
   - Pelatihan Git

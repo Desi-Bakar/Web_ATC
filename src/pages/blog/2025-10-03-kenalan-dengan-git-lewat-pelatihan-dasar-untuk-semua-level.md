@@ -43,7 +43,9 @@ Beberapa keuntungan utama dari Git:
 Banyak pengembang pemula merasa kesulitan dengan Git karena banyaknya perintah dan istilah yang baru. Namun, dengan metode pelatihan yang teroganisir, Git dapat dipelajari dengan cepat. Pelatihan Git biasanya dirancang untuk:
 
 **1. Pemula** – memahami prinsip dasar seperti *commit*, *branch*, dan *merge*.
+
 **2. Tingkat Menengah** – mempelajari strategi kolaborasi seperti *pull request* atau *rebase.*
+
 **3. Tingkat Lanjut** – menguasai kerja tim besar, integrasi *CI/CD*, serta penyelesaian konflik.
 
 Artinya, pelatihan Git dapat disesuaikan dengan kebutuhan peserta berdasarkan level mereka.
@@ -53,26 +55,32 @@ Artinya, pelatihan Git dapat disesuaikan dengan kebutuhan peserta berdasarkan le
 Dalam pelatihan tingkat dasar, peserta biasanya akan dikenalkan kepada hal-hal berikut:
 
 **1. Instalasi dan Pengaturan**
-- Menginstal Git pada komputer.
-- Mengatur identitas pengguna (*username* dan *email*).
+
+* Menginstal Git pada komputer.
+* Mengatur identitas pengguna (*username* dan *email*).
 
 **2. Perintah Dasar**
-- git init → memulai repositori baru.
-- git clone → menduplikasi proyek dari jarak jauh.
-- git add dan git commit → menyimpan perubahan pada kode.
-- git status dan git log → memantau riwayat proyek.
+
+* git init → memulai repositori baru.
+* git clone → menduplikasi proyek dari jarak jauh.
+* git add dan git commit → menyimpan perubahan pada kode.
+* git status dan git log → memantau riwayat proyek.
 
 **3. Branching dan Merging**
-- Membuat cabang baru untuk fitur tertentu.
-- Menggabungkan hasil kerja ke cabang utama.
+
+* Membuat cabang baru untuk fitur tertentu.
+* Menggabungkan hasil kerja ke cabang utama.
 
 **4. Repositori Jarak Jauh**
-- Menghubungkan dengan GitHub atau GitLab.
-- Menggunakan git push dan git pull untuk sinkronisasi dengan tim.
+
+* Menghubungkan dengan GitHub atau GitLab.
+* Menggunakan git push dan git pull untuk sinkronisasi dengan tim.
 
 #### Siapa yang Bisa Mengikuti?
+
 Pelatihan dasar Git terbuka untuk:
-- Mahasiswa yang baru memasuki dunia pemrograman.
-- Freelancer yang ingin berkolaborasi lebih teratur dengan klien.
-- Pengembang profesional yang ingin memperdalam pemahaman tentang workflow Git.
-- Bahkan orang non-teknis, seperti Manajer Proyek yang ingin memahami proses kerja tim pengembang
+
+* Mahasiswa yang baru memasuki dunia pemrograman.
+* Freelancer yang ingin berkolaborasi lebih teratur dengan klien.
+* Pengembang profesional yang ingin memperdalam pemahaman tentang workflow Git.
+* Bahkan orang non-teknis, seperti Manajer Proyek yang ingin memahami proses kerja tim pengembang

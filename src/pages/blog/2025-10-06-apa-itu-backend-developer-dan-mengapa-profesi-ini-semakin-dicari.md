@@ -59,7 +59,7 @@ Berikut beberapa hal yang menjadi tanggung jawab *backend developer*:
 3. Menjamin keamanan data dan pengguna.
 4. Mengoptimalkan performa aplikasi agar tetap cepat dan stabil.
 5. Menangani *debugging*, *logging*, dan *monitoring* sistem.
-6. Bekerja sama dengan tim frontend, UI/UX, dan DevOps.
+6. Bekerja sama dengan tim *frontend*, UI/UX, dan DevOps.
 
 - - -
 

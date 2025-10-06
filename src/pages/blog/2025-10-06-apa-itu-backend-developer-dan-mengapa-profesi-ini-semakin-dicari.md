@@ -15,7 +15,6 @@ tags:
   - Kursus Backend Developer
   - Belajar Backend dari Nol
   - Training Backend Developer
-  - Pelatihan Backend Developer Online
   - Pelatihan Beckend Developer Dasar
   - Pekerjaan di Bidang IT
 ---

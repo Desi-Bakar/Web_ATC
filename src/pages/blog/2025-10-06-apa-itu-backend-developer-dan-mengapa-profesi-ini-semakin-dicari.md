@@ -26,7 +26,7 @@ Mereka mengatur bagaimana data dikirim, disimpan, dan diproses agar aplikasi dap
 
 Contoh sederhananya:
 
-> Saat kamu mengisi formulir login di sebuah website, data yang kamu masukkan akan dikirim ke *server*, diverifikasi, lalu memberikan respon apakah login berhasil atau tidak — semua proses ini dikelola oleh *backend developer*.
+Saat kamu mengisi formulir login di sebuah website, data yang kamu masukkan akan dikirim ke *server*, diverifikasi, lalu memberikan respon apakah login berhasil atau tidak — semua proses ini dikelola oleh *backend developer*.
 
 - - -
 

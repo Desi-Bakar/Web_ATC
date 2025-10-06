@@ -17,7 +17,7 @@ tags:
   - Training Backend Developer
   - Pelatihan Backend Developer Online
   - Pelatihan Beckend Developer Dasar
-  - Pekerjaan di Bidang Teknologi
+  - Pekerjaan di Bidang IT
 ---
 #### 1. Apa Itu Backend Developer?
 

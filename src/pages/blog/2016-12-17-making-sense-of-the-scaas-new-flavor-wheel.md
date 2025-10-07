@@ -1,11 +1,9 @@
 ---
 templateKey: blog-post
-title: Pelatihan CorelDRAW untuk Pemula, Mahir Desain Grafis dari Dasar
+title: "Pelatihan CorelDRAW untuk Pemula, Mahir Desain Grafis dari Dasar"
 date: 2025-06-20T15:04:10.000Z
-description: Selamat datang di Areta Training Center tempat kamu untuk
-  Meningkatkan Skill bukan hanya dibidang IT tapi juga Bisnis Digital dengan
-  Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki
-  hari ini menentukan masa depan kariermu.
+description: >
+  Selamat datang di Areta Training Center tempat kamu untuk meningkatkan skill bukan hanya di bidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 featuredpost: false
 featuredimage: /img/corel.png
 tags:
@@ -23,11 +21,11 @@ tags:
 
 Di era digital kreatif seperti sekarang, kemampuan desain grafis menjadi salah satu skill yang sangat dibutuhkan, terutama bagi pelajar SMK, mahasiswa jurusan desain, multimedia, maupun siapa saja yang tertarik berkarir di dunia kreatif. Salah satu software desain grafis populer dan banyak digunakan di industri percetakan hingga periklanan adalah *CorelDRAW*.
 
-Melihat kebutuhan tersebut, *Areta Training Center* menghadirkan Pelatihan CorelDRAW untuk Pemula yang dirancang khusus agar mudah dipahami oleh siswa SMK, mahasiswa, dan pemula yang ingin mahir membuat desain profesional.
+Melihat kebutuhan tersebut, *Areta Training Center* menghadirkan **Pelatihan CorelDRAW untuk Pemula** yang dirancang khusus agar mudah dipahami oleh siswa SMK, mahasiswa, dan pemula yang ingin mahir membuat desain profesional.
 
 ## Kenapa Harus Belajar CorelDRAW?
 CorelDRAW adalah software desain vektor yang banyak digunakan untuk membuat berbagai karya grafis seperti spanduk, brosur, logo, desain kaos, kartun, kalender, dan berbagai kebutuhan cetak lainnya. Dengan menguasai CorelDRAW, kamu akan bisa:
-* Membuat desain kreatif dengan tampilan profesional.
+ Membuat desain kreatif dengan tampilan profesional.
 * Mengolah gambar dan objek dengan berbagai teknik editing.
 * Mendesain materi promosi seperti spanduk, brosur, poster, dan kalender.
 * Menjadi modal awal untuk berkarir sebagai Desainer Grafis, Operator Cetak, atau membuka usaha percetakan dan sablon.

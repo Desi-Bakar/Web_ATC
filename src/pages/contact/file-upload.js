@@ -4,31 +4,36 @@ import Layout from "../../components/Layout";
 
 function encode(data) {
   const formData = new FormData();
-
-  for (const key of Object.keys(data)) {
+  Object.keys(data).forEach((key) => {
     formData.append(key, data[key]);
-  }
-
+  });
   return formData;
 }
 
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: "",
+      attachment: null,
+      "bot-field": "",
+    };
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
   };
 
   handleAttachment = (e) => {
-    this.setState({ [e.target.name]: e.target.files[0] });
+    const file = e.target.files[0];
+    this.setState({ [e.target.name]: file });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
+
     fetch("/", {
       method: "POST",
       body: encode({
@@ -37,7 +42,10 @@ export default class Contact extends React.Component {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch((error) => alert(error));
+      .catch((error) => {
+        // eslint-disable-next-line no-alert
+        alert(`Submission failed: ${error.message}`);
+      });
   };
 
   render() {
@@ -47,45 +55,61 @@ export default class Contact extends React.Component {
           <div className="container">
             <div className="content">
               <h1>File Upload</h1>
+
               <form
                 name="file-upload"
                 method="post"
                 action="/contact/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                encType="multipart/form-data" // ✅ fix: diperlukan untuk upload file
                 onSubmit={this.handleSubmit}
               >
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                {/* Required hidden field */}
                 <input type="hidden" name="form-name" value="file-upload" />
+
+                {/* Honeypot anti-spam */}
                 <div hidden>
-                  <label>
+                  <label htmlFor="bot-field">
                     Don’t fill this out:{" "}
-                    <input name="bot-field" onChange={this.handleChange} />
+                    <input
+                      id="bot-field"
+                      name="bot-field"
+                      onChange={this.handleChange}
+                      aria-hidden="true"
+                    />
                   </label>
                 </div>
+
+                {/* Name input */}
                 <div className="field">
-                  <label className="label" htmlFor={"name"}>
+                  <label className="label" htmlFor="name">
                     Your name
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type={"text"}
-                      name={"name"}
+                      type="text"
+                      name="name"
+                      id="name"
                       onChange={this.handleChange}
-                      id={"name"}
-                      required={true}
+                      required
+                      aria-required="true"
                     />
                   </div>
                 </div>
+
+                {/* File input */}
                 <div className="field">
                   <div className="file">
-                    <label className="file-label">
+                    <label className="file-label" htmlFor="attachment">
                       <input
                         className="file-input"
                         type="file"
                         name="attachment"
+                        id="attachment"
                         onChange={this.handleAttachment}
+                        aria-label="Choose a file to upload"
                       />
                       <span className="file-cta">
                         <span className="file-label">Choose a file…</span>
@@ -93,8 +117,14 @@ export default class Contact extends React.Component {
                     </label>
                   </div>
                 </div>
+
+                {/* Submit button */}
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <button
+                    className="button is-link"
+                    type="submit"
+                    aria-label="Send file"
+                  >
                     Send
                   </button>
                 </div>

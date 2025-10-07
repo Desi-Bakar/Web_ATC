@@ -1,11 +1,11 @@
-const _ = require('lodash')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
+const _ = require("lodash");
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions;
 
-  return graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark(limit: 1000) {
         edges {
@@ -22,64 +22,73 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then((result) => {
-    if (result.errors) {
-      result.errors.forEach((e) => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  `);
 
-    const posts = result.data.allMarkdownRemark.edges
+  // 🔹 Tangani error GraphQL dengan reporter bawaan Gatsby (lebih aman)
+  if (result.errors) {
+    reporter.panicOnBuild("❌ Error while running GraphQL query.", result.errors);
+    return;
+  }
 
-    posts.forEach((edge) => {
-      const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
-    })
+  const posts = result.data.allMarkdownRemark.edges;
 
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach((edge) => {
-      if (_.get(edge, `node.frontmatter.tags`)) {
-        tags = tags.concat(edge.node.frontmatter.tags)
-      }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
+  // 🔹 Generate halaman untuk setiap post
+  posts.forEach(({ node }) => {
+    const id = node.id;
+    const template = node.frontmatter.templateKey
+      ? path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`)
+      : path.resolve("src/templates/blog-post.js");
 
-    // Make tag pages
-    tags.forEach((tag) => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`
+    createPage({
+      path: node.fields.slug,
+      component: template,
+      context: { id },
+    });
+  });
 
-      createPage({
-        path: tagPath,
-        component: path.resolve(`src/templates/tags.js`),
-        context: {
-          tag,
-        },
-      })
-    })
-  })
-}
+  // 🔹 Generate halaman tag unik
+  const tags = _.uniq(
+    _.flatMap(posts, (edge) => edge.node.frontmatter.tags || [])
+  );
 
+  tags.forEach((tag) => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag)}/`,
+      component: path.resolve("src/templates/tags.js"),
+      context: { tag },
+    });
+  });
+};
+
+// 🔹 Buat slug otomatis untuk setiap file markdown
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+  if (node.internal.type === "MarkdownRemark") {
+    const value = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: "slug",
       node,
       value,
-    })
+    });
   }
-}
+};
+
+// 🔹 Tambahkan fix agar warning Decap CMS hilang
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  const config = getConfig();
+
+  config.ignoreWarnings = [
+    {
+      module: /gatsby-plugin-decap-cms/,
+      message: /Critical dependency/,
+    },
+  ];
+
+  config.resolve = {
+    ...config.resolve,
+    fallback: { fs: false },
+  };
+
+  actions.replaceWebpackConfig(config);
+};

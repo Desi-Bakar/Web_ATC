@@ -1,36 +1,40 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { kebabCase } from "lodash"
-import { Helmet } from "react-helmet"
-import { graphql, Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import { Helmet } from "react-helmet";
+import { graphql, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Layout from "../components/Layout"
-import Content, { HTMLContent } from "../components/Content"
-import HeroCarousel from "../components/HeroCarousel"
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
+import HeroCarousel from "../components/HeroCarousel";
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
-  title,
+  tags = [], // ✅ default biar gak undefined
+  title = "",
   helmet,
   featuredimage,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
-  // ✅ amanin: kalau featuredimage object → getImage, kalau string → undefined
-  let image
-  if (featuredimage && typeof featuredimage === "object") {
-    image = getImage(featuredimage)
-  }
+  // ✅ amanin: handle berbagai bentuk featuredimage
+  const image =
+    featuredimage && typeof featuredimage === "object"
+      ? getImage(featuredimage)
+      : null;
 
-  const imageList = ["/img/DESIGNN.png", "/img/DESIGNN1.png", "/img/aretanet.png"]
+  const imageList = [
+    "/img/DESIGNN.png",
+    "/img/DESIGNN1.png",
+    "/img/aretanet.png",
+  ];
 
   return (
     <section className="section">
-      {helmet || ""}
+      {helmet || null}
       <HeroCarousel images={imageList} />
 
       <div className="container content blog-post">
@@ -44,18 +48,21 @@ export const BlogPostTemplate = ({
 
             {image && (
               <div className="featured-image mb-4">
-                <GatsbyImage image={image} alt={title || "Blog featured image"} />
+                <GatsbyImage
+                  image={image}
+                  alt={title || "Blog featured image"}
+                />
               </div>
             )}
 
             <PostContent content={content} />
 
-            {tags && tags.length > 0 && (
+            {tags.length > 0 && (
               <div style={{ marginTop: "4rem" }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map((tag) => (
-                    <li key={`${tag}-tag`}>
+                    <li key={kebabCase(tag)}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
@@ -66,48 +73,67 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  tags: PropTypes.array,
-  helmet: PropTypes.object,
-  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-}
+  tags: PropTypes.arrayOf(PropTypes.string),
+  helmet: PropTypes.node,
+  featuredimage: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+    PropTypes.oneOf([null]),
+  ]),
+};
+
+BlogPostTemplate.defaultProps = {
+  tags: [],
+  title: "",
+  description: "",
+  featuredimage: null,
+};
 
 const BlogPost = ({ data }) => {
-  const post = data?.markdownRemark
+  const post = data?.markdownRemark;
 
   if (!post) {
-    return <div>Loading...</div> // ✅ aman buat CMS preview
+    return (
+      <Layout>
+        <div className="section">
+          <div className="container">Loading...</div>
+        </div>
+      </Layout>
+    );
   }
+
+  const { frontmatter = {}, html } = post;
+  const { title, description, tags, featuredimage } = frontmatter;
 
   return (
     <Layout>
       <BlogPostTemplate
-        content={post.html}
+        content={html}
         contentComponent={HTMLContent}
-        description={post.frontmatter?.description}
-        title={post.frontmatter?.title}
-        tags={post.frontmatter?.tags}
-        featuredimage={post.frontmatter?.featuredimage}
+        description={description}
+        title={title}
+        tags={tags}
+        featuredimage={featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{post.frontmatter?.title}</title>
-            <meta
-              name="description"
-              content={post.frontmatter?.description || ""}
-            />
+            <title>{title}</title>
+            {description && (
+              <meta name="description" content={description || ""} />
+            )}
           </Helmet>
         }
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
@@ -116,14 +142,18 @@ BlogPost.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         description: PropTypes.string,
-        tags: PropTypes.array,
-        featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        tags: PropTypes.arrayOf(PropTypes.string),
+        featuredimage: PropTypes.oneOfType([
+          PropTypes.object,
+          PropTypes.string,
+          PropTypes.oneOf([null]),
+        ]),
       }),
     }),
   }),
-}
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -143,4 +173,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

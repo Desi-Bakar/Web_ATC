@@ -1,49 +1,47 @@
 import * as React from "react";
-import { useStaticQuery,graphql } from "gatsby";
-import PropTypes from "prop-types"; //SEO Description
-import { propTypes } from "gatsby-plugin-image/dist/src/components/gatsby-image.server";
+import { useStaticQuery, graphql } from "gatsby";
+import PropTypes from "prop-types";
 
-function SEO ({description, title, children}){
-    const {site} = useStaticQuery(
-    graphql`
+function SEO({ description, title, children }) {
+  const { site } = useStaticQuery(graphql`
     query {
-    site {
-    siteMetadata {
-    title
-    description
-    author
-    keywords
+      site {
+        siteMetadata {
+          title
+          description
+          keywords
+        }
+      }
     }
-    }
-    }
-    `
-)
+  `);
 
-const keywords = site.siteMetadata.keywords
-const metaDescription = description||site.siteMetadata.description
-const defaultTitle = site.siteMetadata.title
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata.title;
+
+  return (
+    <>
+      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      {children}
+    </>
+  );
+}
 
 SEO.defaultProps = {
-    lang: `en`,
-    meta: [],
-    description: ``,
-}
-SEO.propTypes = {
-    description: PropTypes.string,
-    lang: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object),
-    title: PropTypes.string.isRequired
-}
-return (
-    <>
-    <title>{defaultTitle? `${title}|${defaultTitle}`:title}</title>
-    <meta name="description" content={metaDescription} />
-    <meta property="og;title" content={title} />
-    <meta property="og;description" content={metaDescription} />
-    <meta property="og;keywords" content={keywords} />
-    <meta property="og;type" content="website" />
-    </>
-)
-}
+  lang: `en`,
+  meta: [],
+  description: ``,
+};
 
-export default SEO
+SEO.propTypes = {
+  description: PropTypes.string,
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};
+
+export default SEO;

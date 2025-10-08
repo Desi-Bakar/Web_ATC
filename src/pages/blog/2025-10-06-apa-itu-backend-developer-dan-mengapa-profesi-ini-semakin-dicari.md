@@ -18,7 +18,7 @@ tags:
   - Pelatihan Beckend Developer Dasar
   - Pekerjaan di Bidang IT
 ---
-#### 1. Apa Itu Backend Developer?
+#### Apa Itu Backend Developer?
 
 Backend developer adalah pengembang perangkat lunak yang bertanggung jawab atas bagian “belakang layar” dari sebuah aplikasi atau situs web — bagian yang tidak terlihat oleh pengguna, namun menjadi tulang punggung utama sistem.
 
@@ -28,9 +28,9 @@ Contoh sederhananya:
 
 Saat kamu mengisi formulir login di sebuah website, data yang kamu masukkan akan dikirim ke *server*, diverifikasi, lalu memberikan respon apakah login berhasil atau tidak — semua proses ini dikelola oleh *backend developer*.
 
-- - -
 
-#### 2. Teknologi yang Digunakan Backend Developer
+
+#### Teknologi yang Digunakan Backend Developer
 
 Untuk menjalankan tugasnya, backend developer biasanya menggunakan beberapa bahasa pemrograman dan teknologi, seperti:
 
@@ -47,9 +47,7 @@ Selain bahasa pemrograman, mereka juga harus memahami:
 * **Server & Deployment:** Nginx, Docker, AWS, atau VPS
 * **Keamanan & Otentikasi:** OAuth, JWT, enkripsi data
 
-- - -
-
-#### 3. Tanggung Jawab Utama Backend Developer
+#### Tanggung Jawab Utama Backend Developer
 
 Berikut beberapa hal yang menjadi tanggung jawab *backend developer*:
 
@@ -60,31 +58,27 @@ Berikut beberapa hal yang menjadi tanggung jawab *backend developer*:
 5. Menangani *debugging*, *logging*, dan *monitoring* sistem.
 6. Bekerja sama dengan tim *frontend*, UI/UX, dan DevOps.
 
-- - -
-
-#### 4. Mengapa Profesi Ini Semakin Dicari?
+#### Mengapa Profesi Ini Semakin Dicari?
 
 Ada beberapa alasan utama mengapa *backend developer* kini menjadi salah satu profesi paling dicari di industri teknologi:
 
-🔹 **1. Kebutuhan Aplikasi Digital yang Meningkat**
+**1. Kebutuhan Aplikasi Digital yang Meningkat**
 
 Hampir semua bisnis kini beralih ke platform digital — mulai dari *e-commerce*, *fintech*, hingga layanan publik. Semua aplikasi ini membutuhkan sistem *backend* yang stabil dan aman.
 
-🔹 **2. Kompleksitas Sistem yang Tinggi**
+**2. Kompleksitas Sistem yang Tinggi**
 
 Aplikasi modern memerlukan integrasi dengan banyak layanan, seperti pembayaran *online*, notifikasi real-time, atau kecerdasan buatan. Semuanya bergantung pada *backend* yang kuat.
 
-🔹 **3. Skalabilitas dan Keamanan**
+**3. Skalabilitas dan Keamanan**
 
 Perusahaan membutuhkan developer yang mampu membangun sistem yang tahan beban besar dan aman dari serangan siber. Inilah keahlian utama seorang *backend developer*.
 
-🔹 **4. Gaji dan Karier yang Menjanjikan**
+**4. Gaji dan Karier yang Menjanjikan**
 
 Karena permintaannya tinggi dan jumlah ahlinya masih terbatas, *backend developer* memiliki peluang karier dan gaji yang sangat kompetitif, baik di perusahaan lokal maupun global.
 
-- - -
-
-#### 5. Bagaimana Cara Menjadi Backend Developer?
+#### Bagaimana Cara Menjadi Backend Developer?
 
 Bagi kamu yang tertarik menekuni bidang ini, langkah-langkah umumnya adalah:
 

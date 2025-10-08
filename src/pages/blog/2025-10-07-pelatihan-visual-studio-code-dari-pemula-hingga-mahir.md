@@ -7,7 +7,7 @@ description: Visual Studio Code (VS Code) kini menjadi salah satu editor kode
   Microsoft, VS Code menawarkan kombinasi ringan, cepat, dan fleksibel untuk
   berbagai bahasa pemrograman.
 featuredpost: true
-featuredimage: /img/a3d5211dbfade36_file_000000001ce862308c6b599e0022f091_wm.png
+featuredimage: /img/whatsapp-image-2025-10-08-at-14.46.09.jpeg
 tags:
   - Pelatihan Visual Studio Code
   - Belajar Visual Studio Code

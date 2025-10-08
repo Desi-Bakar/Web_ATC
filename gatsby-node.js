@@ -24,7 +24,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `);
 
-  // 🔹 Tangani error GraphQL dengan reporter bawaan Gatsby (lebih aman)
+  // 🔹 Tangani error GraphQL
   if (result.errors) {
     reporter.panicOnBuild("❌ Error while running GraphQL query.", result.errors);
     return;
@@ -46,14 +46,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   });
 
-  // 🔹 Generate halaman tag unik
+  // 🔹 Ambil semua tag unik, buang yang kosong/null
   const tags = _.uniq(
-    _.flatMap(posts, (edge) => edge.node.frontmatter.tags || [])
+    _.compact(
+      _.flatMap(posts, (edge) => edge.node.frontmatter.tags || [])
+    )
   );
 
+  // 🔹 Generate halaman tag dengan slug kebab-case & filter aman
   tags.forEach((tag) => {
+    const cleanTag = _.kebabCase(tag.trim());
+    if (!cleanTag) return; // skip tag kosong
+
     createPage({
-      path: `/tags/${_.kebabCase(tag)}/`,
+      path: `/tags/${cleanTag}/`,
       component: path.resolve("src/templates/tags.js"),
       context: { tag },
     });
@@ -74,7 +80,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-// 🔹 Tambahkan fix agar warning Decap CMS hilang
+// 🔹 Tambahkan fix agar warning Decap CMS hilang (optional tapi bagus)
 exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   const config = getConfig();
 

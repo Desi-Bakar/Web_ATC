@@ -3,7 +3,7 @@ module.exports = {
     title: "Areta Training Center",
     description:
       "Areta Training Center tempat kamu untuk Meningkatkan Skill, Areta Training Center hadir sebagai tempat terbaik untuk belajar IT, Jaringan, dan Digital Marketing, Areta Training Center merupakan lembaga kursus dan pelatihan yang berfokus pada dunia IT dan Bisnis Digital.",
-    url: "https://aretatrainingcenter.biz.id",
+    siteUrl: "https://aretatrainingcenter.space", // ✅ Ganti 'url' jadi 'siteUrl'
     keywords:
       "Kampus IT Tangerang, Kampus IT Tangerang Selatan, Kampus IT Tangerang Kabupaten, Kampus IT Terdekat, Kampus IT Terdekat dari lokasi saya, kampus full praktek, kampus bisnis digital, Kampus digital marketing, Kuliah IT Tangerang, Kuliah Jurusan Teknik Informatika, Jurusan Teknik Informatika, Areta Informatics College, full praktek, Pelatihan Jaringan Tangerang, Ahli Jaringan, Pelatihan IT, Pelatihan Jaringan Komputer, Mikrotik Training Seminar, MikroTik Certified Network Associate, Mikrotik Full Praktek, MikroTik Tangerang",
   },
@@ -75,6 +75,7 @@ module.exports = {
         printRejected: true,
       },
     },
+    `gatsby-plugin-sitemap`, // ✅ Sitemap plugin ditambahkan di sini
     "gatsby-plugin-netlify",
   ],
 };

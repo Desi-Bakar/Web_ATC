@@ -33,11 +33,9 @@ Alasan:
 
 #### Fokus Developer Modern Sudah Berbeda
 
-Dulu:
-Fokus: Memahami cara kerja sistem internal
+Dulu: Fokus Memahami cara kerja sistem internal
 
-Sekarang:
-Fokus: Menciptakan sesuatu yang berfungsi secara efektif dan cepat
+Sekarang: Fokus Menciptakan sesuatu yang berfungsi secara efektif dan cepat
 Di sektor industri, waktu sangat berharga. Mengulang penulisan algoritma sorting yang sudah ada hanya akan memperlambat tahap pengembangan kecuali ada kebutuhan tertentu.
 
 #### Library dan Framework Sudah Luar Biasa Canggih

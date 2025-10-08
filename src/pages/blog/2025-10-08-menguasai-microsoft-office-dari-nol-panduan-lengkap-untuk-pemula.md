@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Menguasai Microsoft Office dari Nol: Panduan Lengkap untuk Pemula"
-date: 2025-10-08T04:49:41.753Z
+date: 2025-10-08T06:57:56.998Z
 description: >-
   Di era digital saat ini, kemampuan menggunakan Microsoft Office bukan lagi
   sekadar nilai tambah — melainkan keterampilan dasar yang wajib dimiliki oleh

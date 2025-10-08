@@ -7,13 +7,12 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import HeroCarousel from "../components/HeroCarousel";
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags = [], // ✅ default biar gak undefined
+  tags = [],
   title = "",
   helmet,
   featuredimage,
@@ -26,16 +25,9 @@ export const BlogPostTemplate = ({
       ? getImage(featuredimage)
       : null;
 
-  const imageList = [
-    "/img/DESIGNN.png",
-    "/img/DESIGNN1.png",
-    "/img/aretanet.png",
-  ];
-
   return (
     <section className="section">
       {helmet || null}
-      <HeroCarousel images={imageList} />
 
       <div className="container content blog-post">
         <div className="columns">

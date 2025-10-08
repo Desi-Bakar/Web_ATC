@@ -16,7 +16,7 @@ tags:
   - Pelatihan Software Engineer
   - Kelas Algoritma Dan Coding
 ---
-#### 1. Dulu, Itu Perlu Sampai Sekarang, Tidak Lagi (Dalam Banyak Kasus)
+#### Dulu, Itu Perlu Sampai Sekarang, Tidak Lagi (Dalam Banyak Kasus)
 
 Pada awal era komputer, tidak ada pustaka pemrograman yang canggih. Para pengembang diharuskan menciptakan semuanya dari nol termasuk algoritma pengurutan. Namun, saat ini hampir semua bahasa pemrograman yang umum memiliki fungsi sorting yang sangat efisien:
 
@@ -31,15 +31,16 @@ Alasan:
 2. Diuji dalam berbagai keadaan.
 3. Dikelola oleh tim ahli yang berkompeten dalam setiap bahasa pemrograman.
 
-#### 2. Fokus Developer Modern Sudah Berbeda
+#### Fokus Developer Modern Sudah Berbeda
 
 Dulu:
 Fokus: Memahami cara kerja sistem internal
+
 Sekarang:
 Fokus: Menciptakan sesuatu yang berfungsi secara efektif dan cepat
 Di sektor industri, waktu sangat berharga. Mengulang penulisan algoritma sorting yang sudah ada hanya akan memperlambat tahap pengembangan kecuali ada kebutuhan tertentu.
 
-#### 3. Library dan Framework Sudah Luar Biasa Canggih
+#### Library dan Framework Sudah Luar Biasa Canggih
 
 Dalam banyak situasi, pustaka sorting:
 
@@ -58,7 +59,7 @@ sorted(data, key=lambda x: x. name, reverse=True)
 
 Sangat ekspresif dan kuat tanpa perlu memikirkan partisi atau pertukaran elemen secara manual.
 
-#### 4. Menulis Algoritma Sorting dari Nol = Risiko Bug
+#### Menulis Algoritma Sorting dari Nol = Risiko Bug
 
 Membuat algoritma sendiri berarti kamu harus:
 
@@ -69,7 +70,7 @@ Membuat algoritma sendiri berarti kamu harus:
    Contoh nyata:
    Seorang pengembang membuat *quicksort* sendiri untuk sistem e-commerce, tetapi lupa menangani elemen yang sama akibatnya? Daftar pesanan pelanggan menjadi acak.
 
-#### 5. Tapi… Bukan Berarti Tidak Penting Sama Sekali
+#### Tapi… Bukan Berarti Tidak Penting Sama Sekali
 
 Membuat algoritma sorting tetap relevan untuk memahami konsep dasar, terutama dalam situasi:
 
@@ -79,7 +80,7 @@ Membuat algoritma sorting tetap relevan untuk memahami konsep dasar, terutama da
 4. Optimalisasi untuk kasus ekstrem (seperti miliaran data khusus)
    Artinya: memahami cara kerja sorting itu penting, tetapi menulisnya dari awal hampir tidak diperlukan dalam keseharian.
 
-#### 6. Paradigma “Gunakan, Bukan Ciptakan Kembali Roda”
+#### Paradigma “Gunakan, Bukan Ciptakan Kembali Roda”
 
 Kita berada di era di mana abstraksi menjadi dasar produktivitas.
 Mengapa menulis algoritma sorting sendiri, jika kamu bisa lebih fokus untuk mengembangkan fitur yang menyelesaikan masalah nyata?

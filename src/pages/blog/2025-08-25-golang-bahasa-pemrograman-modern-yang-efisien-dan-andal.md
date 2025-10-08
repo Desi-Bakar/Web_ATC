@@ -11,18 +11,18 @@ description: Di tengah pesatnya perkembangan teknologi, kebutuhan akan bahasa
 featuredpost: true
 featuredimage: /img/foto-untuk-golang.webp
 tags:
-  - "#Golang"
-  - "#GoLangProgramming"
-  - "#GoProgramming"
-  - "#GoDeveloper"
-  - "#GoLanguage"
-  - "#Go"
-  - "#GoLangTips"
-  - "#GoLangCode"
-  - "#GoLangProject"
-  - "#GoLangWeb"
-  - "#GoLangCommunity"
-  - "#GoLangFun"
+  - "Golang"
+  - "GoLangProgramming"
+  - "GoProgramming"
+  - "GoDeveloper"
+  - "GoLanguage"
+  - "Go"
+  - "GoLangTips"
+  - "GoLangCode"
+  - "GoLangProject"
+  - "GoLangWeb"
+  - "GoLangCommunity"
+  - "GoLangFun"
 ---
 **Latar Belakang dan Tujuan Pengembangan**
 

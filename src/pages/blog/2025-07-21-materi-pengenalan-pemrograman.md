@@ -7,16 +7,16 @@ description: Dokumen ini memberikan gambaran umum tentang dunia pemrograman yang
 featuredpost: true
 featuredimage: /img/Hack.png
 tags:
-  - "#Materi Pengenalan Pemrograman"
-  - "#Materi Dasar Pemrograman"
-  - "#Materi Pemrograman Komputer"
-  - "#Materi Coding untuk Pemula"
-  - "#Materi Belajar Pemrograman"
-  - "#Materi Pemrograman Dasar"
-  - "#Materi Logika Pemrograman"
-  - "#Materi Bahasa Pemrograman"
-  - "#Materi Algoritma Pemrograman"
-  - "#Materi Pemrograman untuk Siswa"
+  - "Materi Pengenalan Pemrograman"
+  - "Materi Dasar Pemrograman"
+  - "Materi Pemrograman Komputer"
+  - "Materi Coding untuk Pemula"
+  - "Materi Belajar Pemrograman"
+  - "Materi Pemrograman Dasar"
+  - "Materi Logika Pemrograman"
+  - "Materi Bahasa Pemrograman"
+  - "Materi Algoritma Pemrograman"
+  - "Materi Pemrograman untuk Siswa"
 ---
 **1.** Apa Itu Pemrograman?
 

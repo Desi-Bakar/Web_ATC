@@ -10,12 +10,12 @@ description: >+
 featuredpost: true
 featuredimage: /img/133ca5ba-1ebb-417e-b6a5-056f1ef83259.png
 tags:
-  - ManajemenProyek
-  - RekayasaPerangkatLunak
-  - ProjectManagement
-  - SoftwareEngineering
-  - TimPengembang
-  - ManajemenTimIT
+  - Manajemen Proyek
+  - Rekayasa Perangkat Lunak
+  - Project Management
+  - Software Engineering
+  - Tim Pengembang
+  - Manajemen Tim IT
 ---
 
 

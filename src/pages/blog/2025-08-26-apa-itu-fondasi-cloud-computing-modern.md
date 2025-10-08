@@ -11,13 +11,13 @@ description: Fondasi cloud computing modern adalah sekumpulan prinsip,
 featuredpost: true
 featuredimage: /img/chatgpt-image-1-sep-2025-15.26.28.png
 tags:
-  - "#AWS"
-  - "#Amazon Web Services"
-  - "#Cloud Computing"
-  - "#Fondasi Cloud Computing Modern"
-  - "#IaaS (Infrastructure as a Service)"
-  - "#PaaS (Platform as a Service)"
-  - "#SaaS (Software as a Service)"
+  - "AWS"
+  - "Amazon Web Services"
+  - "Cloud Computing"
+  - "Fondasi Cloud Computing Modern"
+  - "IaaS (Infrastructure as a Service)"
+  - "PaaS (Platform as a Service)"
+  - "SaaS (Software as a Service)"
 ---
 Cloud computing adalah penyediaan layanan komputasi (seperti penyimpanan, jaringan, dan analitik) melalui internet (cloud
 

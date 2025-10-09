@@ -7,18 +7,18 @@ featuredpost: true
 featuredimage: /img/training-mikrotik-tangerang-1.png
 tags:
   - Training Mikrotik Tangerang
-  - Training Mikrotik
-  - Training 
-  - Mikrotik
   - Pelatihan Mikrotik
   - Kursus Mikrotik
+  - Areta Informatics College
   - Belajar Jaringan Komputer
-  - Sertifikasi Mikrotik
   - Pelatihan IT Tangerang
+  - Sertifikasi Mikrotik
   - Training Networking
   - Kampus IT Tangerang
   - Mikrotik Indonesia
   - Network Engineering
+  - Belajar Router Mikrotik
+
 ---
 
 #### Yuk, Kenalan Dulu Sama Training Mikrotik!

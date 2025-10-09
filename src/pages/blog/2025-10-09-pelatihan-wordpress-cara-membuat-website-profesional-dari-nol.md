@@ -11,12 +11,12 @@ description: Membuat website profesional kini bukanlah hal yang sulit dengan
 featuredpost: true
 featuredimage: /img/img-20251009-wa0092.jpg
 tags:
-  - PelatihanWordPress
-  - BelajarWordPress
-  - MembuatWebsite
-  - WebsiteProfesional
-  - WordPressUntukPemula
-  - KursusWordPress
+  - Pelatihan WordPress
+  - Belajar WordPress
+  - Membuat Website
+  - Website Profesional
+  - WordPress Untuk Pemula
+  - Kursus WordPress
 ---
 #### Mengapa Memilih WordPress?
 

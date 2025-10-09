@@ -17,7 +17,7 @@ tags:
   - Kampus IT Tangerang
   - Mikrotik Indonesia
   - Network Engineering
-  - Belajar Router Mikrotik
+  - Belajar Mikrotik
 
 ---
 

@@ -20,7 +20,8 @@ module.exports = {
       "Training Networking",
       "Kampus IT Tangerang",
       "Mikrotik Indonesia",
-      "Network Engineering"
+      "Network Engineering",
+      "Belajar Mikrotik",
     ],
   },
 

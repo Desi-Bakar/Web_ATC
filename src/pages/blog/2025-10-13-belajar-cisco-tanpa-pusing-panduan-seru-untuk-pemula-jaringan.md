@@ -3,7 +3,7 @@ title: "Cara Asyik Menguasai Database: Dari Nol Hingga Mahir Tanpa Stres"
 date: 2025-10-13T03:44:31.242Z
 description: "Areta Informatics College adalah tempat terbaik buat kamu yang mau
   belajar Database dengan cara santai tapi tetap fokus dan menyenangkan.  "
-featuredpost: true
+featuredpost: false
 featuredimage: /img/chatgpt-image-oct-13-2025-10_42_41-am.png
 tags:
   - Pelatihan Database

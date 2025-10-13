@@ -6,7 +6,15 @@ description: Areta Informatics College adalah tempat terbaik buat kamu yang mau
   belajar Database dengan cara santai tapi tetap fokus dan menyenangkan.
 featuredpost: false
 featuredimage: /img/chatgpt-image-oct-13-2025-10_42_41-am.png
-tags: []
+tags:
+  - Pelatihan Database
+  - Training Database
+  - Areta Informatics College
+  - Belajar SQL
+  - Kelas Database
+  - Belajar Data
+  - Pelatihan IT Tangerang
+  - Kampus IT Tangerang
 ---
 #### Yuk Kenalan Dulu Sama Database
 

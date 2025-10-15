@@ -4,8 +4,8 @@ title: "Belajar Jaringan Profesional Lewat Training Mikrotik"
 date: 2025-10-14T14:00:00.000Z
 description: Pelatihan Mikrotik di Areta Informatics College siap bantu kamu jadi ahli jaringan dari dasar hingga mahir. Belajar langsung dari instruktur berpengalaman dan dapatkan sertifikat resmi!
 featuredpost: true
-featuredimage: /img/training-mikrotik-tangerang-2.png
-tags:
+featuredimage: /img/
+
   - Training Mikrotik Tangerang
   - Pelatihan Mikrotik
   - Kursus Mikrotik

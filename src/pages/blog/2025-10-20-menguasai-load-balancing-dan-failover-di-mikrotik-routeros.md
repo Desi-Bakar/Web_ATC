@@ -14,6 +14,7 @@ description: >-
 featuredpost: false
 featuredimage: /img/chatgpt-image-oct-20-2025-01_22_48-pm.png
 tags:
+  - Kampus IT Tangerang
   - Pelatihan Mikrotik
   - Training Mikrotik RouterOS
   - Load Balancing Mikrotik

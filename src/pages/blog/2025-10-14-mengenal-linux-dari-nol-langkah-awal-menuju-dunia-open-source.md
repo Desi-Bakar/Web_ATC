@@ -11,7 +11,7 @@ featuredimage: /img/chatgpt-image-oct-14-2025-11_14_15-am.png
 tags:
   - Pelatihan Linux
   - Training Linux
-  - Areta Training Center
+  - Areta Informatics College
   - Belajar Linux
   - Open Source
   - Training IT
@@ -50,13 +50,13 @@ Tak heran, banyak perusahaan teknologi global seperti Google, Amazon, dan Facebo
 Bagi pemula, langkah terbaik adalah mengikuti **pelatihan Linux terstruktur** yang dipandu oleh instruktur berpengalaman.
 Melalui training, kamu tidak hanya belajar teori, tetapi juga langsung mempraktikkan penggunaan Linux dalam skenario nyata — mulai dari instalasi, manajemen file, konfigurasi jaringan, hingga manajemen server.
 
-#### 🎓 Pelatihan Linux di Areta Training Center
+#### 🎓 Pelatihan Linux di Areta Informatics College
 
 Areta Training Center hadir sebagai solusi bagi kamu yang ingin **belajar Linux dari dasar hingga mahir.**
 Pelatihan ini dirancang untuk membantu peserta memahami Linux dengan pendekatan *hands-on*, dilengkapi modul interaktif, dan didampingi oleh mentor berpengalaman di bidang *IT Infrastructure* & *System Administration.*
 
-Baik kamu seorang pelajar, profesional IT, atau bahkan pemula yang baru ingin terjun ke dunia teknologi — **pelatihan Linux di Areta Training Center** akan menjadi fondasi kuat dalam perjalanan kariermu di dunia open source.
+Baik kamu seorang pelajar, profesional IT, atau bahkan pemula yang baru ingin terjun ke dunia teknologi — **pelatihan Linux di Areta Informatics College** akan menjadi fondasi kuat dalam perjalanan kariermu di dunia open source.
 
 #### 💻 Siap memulai perjalananmu di dunia Linux?
 
-Daftar sekarang di **Pelatihan Linux Areta Training Center** dan jadilah bagian dari generasi IT yang tangguh dan siap bersaing di era digital!
+Daftar sekarang di **Pelatihan Linux Areta Informatics College** dan jadilah bagian dari generasi IT yang tangguh dan siap bersaing di era digital!

@@ -34,6 +34,8 @@ Bayangkan kamu memiliki dua atau lebih ISP (penyedia internet). Dengan Load Bala
 * Mengurangi beban pada satu koneksi.
 * Meningkatkan efisiensi dan performa jaringan.
 
+---
+
 #### 🔄 Apa Itu Failover di Mikrotik?
 
 Berbeda dengan Load Balancing, **Failover** berfungsi sebagai **backup koneksi internet.**
@@ -44,6 +46,8 @@ Jika salah satu ISP mengalami gangguan, Mikrotik akan secara otomatis **berpinda
 * Menjamin koneksi internet tetap aktif 24 jam.
 * Menghindari downtime jaringan.
 * Cocok untuk bisnis dan lembaga pendidikan yang membutuhkan koneksi stabil.
+
+---
 
 #### 💡 Mengapa Harus Belajar Langsung di Areta Training Center?
 
@@ -56,6 +60,8 @@ Keunggulan Training Mikrotik di Areta:
 * **Simulasi dan praktik langsung di Router Mikrotik ✅**
 * **Kelas bisa offline maupun online ✅**
 
+---
+
 #### 🚀 Apa yang Akan Kamu Kuasai di Kelas Ini?
 
 Setelah mengikuti pelatihan, kamu akan mampu:
@@ -64,6 +70,8 @@ Setelah mengikuti pelatihan, kamu akan mampu:
 * Membangun sistem Failover otomatis di jaringan kantor atau sekolah
 * Memonitor performa koneksi menggunakan tools bawaan Mikrotik
 * Memahami prinsip routing dan manajemen trafik lanjutan
+
+---
 
 #### 🎯 Cocok Untuk Siapa?
 

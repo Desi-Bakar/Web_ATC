@@ -10,7 +10,7 @@ description: >-
   Mikrotik RouterOS.
 
 
-  Di artikel ini, kita akan membahas apa itu Load Balancing dan Failover, mengapa keduanya penting, dan bagaimana Areta Training Center bisa membantu kamu menguasainya dengan mudah!
+  Di artikel ini, kita akan membahas apa itu Load Balancing dan Failover, mengapa keduanya penting, dan bagaimana Areta Informatics College bisa membantu kamu menguasainya dengan mudah!
 featuredpost: false
 featuredimage: /img/chatgpt-image-oct-20-2025-01_22_48-pm.png
 tags:
@@ -18,7 +18,7 @@ tags:
   - Training Mikrotik RouterOS
   - Load Balancing Mikrotik
   - Failover Mikrotik
-  - Areta Training Center
+  - Areta Informatics College
   - Kursus Mikrotik Bersertifikat
   - Training Mikrotik
   - Pelatihan IT Tangerang
@@ -34,7 +34,7 @@ Bayangkan kamu memiliki dua atau lebih ISP (penyedia internet). Dengan Load Bala
 * Mengurangi beban pada satu koneksi.
 * Meningkatkan efisiensi dan performa jaringan.
 
----
+- - -
 
 #### 🔄 Apa Itu Failover di Mikrotik?
 
@@ -47,11 +47,11 @@ Jika salah satu ISP mengalami gangguan, Mikrotik akan secara otomatis **berpinda
 * Menghindari downtime jaringan.
 * Cocok untuk bisnis dan lembaga pendidikan yang membutuhkan koneksi stabil.
 
----
+- - -
 
-#### 💡 Mengapa Harus Belajar Langsung di Areta Training Center?
+#### 💡 Mengapa Harus Belajar Langsung di Areta Informatics College?
 
-Pelatihan Mikrotik di **Areta** dirancang agar peserta tidak hanya paham teori, tapi juga **bisa langsung praktik di perangkat nyata.**
+Pelatihan Mikrotik di **Areta Informatics College** dirancang agar peserta tidak hanya paham teori, tapi juga **bisa langsung praktik di perangkat nyata.**
 
 Keunggulan Training Mikrotik di Areta:
 
@@ -60,7 +60,7 @@ Keunggulan Training Mikrotik di Areta:
 * **Simulasi dan praktik langsung di Router Mikrotik ✅**
 * **Kelas bisa offline maupun online ✅**
 
----
+- - -
 
 #### 🚀 Apa yang Akan Kamu Kuasai di Kelas Ini?
 
@@ -71,7 +71,7 @@ Setelah mengikuti pelatihan, kamu akan mampu:
 * Memonitor performa koneksi menggunakan tools bawaan Mikrotik
 * Memahami prinsip routing dan manajemen trafik lanjutan
 
----
+- - -
 
 #### 🎯 Cocok Untuk Siapa?
 

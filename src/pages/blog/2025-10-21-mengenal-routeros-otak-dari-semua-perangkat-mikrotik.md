@@ -81,7 +81,7 @@ Didampingi oleh **trainer bersertifikat internasional**, kamu akan dibimbing sam
 
 * 🧑‍🏫 Instruktur berpengalaman & tersertifikasi Mikrotik
 * 💻 Fasilitas lab jaringan lengkap dengan perangkat asli Mikrotik
-* 📜 Sertifikat resmi & kesempatan mengikuti ujian MTCNA
+* 📜 Sertifikat resmi & kesempatan mengikuti ujian **MTCNA**
 * 🔍 Pendekatan pembelajaran berbasis praktik langsung (hands-on)
 * 🤝 Dukungan karier dan koneksi industri setelah lulus
 

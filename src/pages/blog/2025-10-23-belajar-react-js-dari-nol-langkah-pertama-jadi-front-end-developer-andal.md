@@ -56,10 +56,15 @@ Tidak hanya teori, kamu akan langsung membuat proyek nyata seperti aplikasi web 
 Apa yang Akan Kamu Pelajari?
 
 ✅ Dasar JavaScript modern (ES6)
+
 ✅ Konsep komponen dan props
+
 ✅ State & Hooks (useState, useEffect)
+
 ✅ Routing dengan React Router
+
 ✅ Konsumsi API & integrasi backend
+
 ✅ Optimasi performa aplikasi React
 
 Kurikulum dirancang agar peserta siap menghadapi tantangan dunia kerja IT, dengan bimbingan mentor berpengalaman di bidang pengembangan web.

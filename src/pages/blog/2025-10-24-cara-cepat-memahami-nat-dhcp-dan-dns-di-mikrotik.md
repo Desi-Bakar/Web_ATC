@@ -59,7 +59,7 @@ Daripada harus memasukkan IP manual di setiap perangkat, DHCP-lah yang akan mend
 
 Kalau kamu bisa membuka situs areta.ac.id tanpa mengetikkan deretan angka panjang seperti 103.8.79.1, itu karena DNS.
 
-DNS berfungsi menerjemahkan nama domain menjadi alamat IP.
+DNS berfungsi untuk menerjemahkan nama domain ke dalam alamat IP.
 Di Mikrotik, kamu bisa mengatur DNS server agar koneksi lebih cepat, stabil, dan bisa difilter sesuai kebutuhan.
 
 🔧 Fungsi penting DNS di Mikrotik:

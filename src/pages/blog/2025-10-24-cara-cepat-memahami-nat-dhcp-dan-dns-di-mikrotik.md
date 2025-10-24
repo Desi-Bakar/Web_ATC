@@ -79,7 +79,7 @@ Di Mikrotik, kamu bisa mengatur DNS server agar koneksi lebih cepat, stabil, dan
 Menguasai Mikrotik tidak cukup hanya teori — kamu perlu latihan langsung (hands-on practice) dengan perangkat dan simulasi nyata.
 Di Areta Informatics College, kamu akan belajar dari instruktur berpengalaman yang sudah tersertifikasi MTCNA (MikroTik Certified Network Associate).
 
-###### 🎓 Keunggulan Training Mikrotik di Areta:
+**🎓 Keunggulan Training Mikrotik di Areta:**
 
 * Materi lengkap: dari dasar konfigurasi hingga routing dan keamanan jaringan.
 * Praktik langsung menggunakan perangkat Mikrotik asli.

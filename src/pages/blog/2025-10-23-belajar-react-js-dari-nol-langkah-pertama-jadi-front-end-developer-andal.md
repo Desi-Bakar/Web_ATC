@@ -30,7 +30,6 @@ Dengan React.js, kamu bisa membuat tampilan seperti:
 
 * Aplikasi dashboard interaktif
 * Website portofolio profesional
-* Platform e-commerce
 * Bahkan sistem internal perusahaan besar
 
 Tak heran, perusahaan seperti Netflix, Instagram, dan Shopee juga mengandalkan React.js dalam pengembangan produknya.
@@ -71,11 +70,10 @@ Kurikulum dirancang agar peserta siap menghadapi tantangan dunia kerja IT, denga
 
 - - -
 
-#### 🎯 Siapa yang Cocok untuk Mengikuti Pelatihan Ini?
+#### 🎯 Siapa yang Cocok untuk Mengikuti Pelatihan?
 
-Pelatihan ini cocok untuk:
+Pelatihan ini dirancang untuk:
 
 * Mahasiswa atau lulusan baru yang ingin masuk ke dunia IT
-* Karyawan non-IT yang ingin beralih karier ke bidang teknologi
 * Developer pemula yang ingin meningkatkan kemampuan front-end
 * Siapa pun yang ingin membuat website modern dan interaktif

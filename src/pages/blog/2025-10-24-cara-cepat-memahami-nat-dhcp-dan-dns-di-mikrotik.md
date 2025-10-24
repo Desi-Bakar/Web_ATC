@@ -57,7 +57,7 @@ Daripada harus memasukkan IP manual di setiap perangkat, DHCP-lah yang akan mend
 
 #### 🌍 Apa Itu DNS (Domain Name System)?
 
-Kalau kamu bisa membuka situs areta.ac.id tanpa mengetikkan deretan angka panjang seperti 103.8.79.1, itu karena DNS.
+Kalau kamu bisa membuka situs aretatrainingcenter.space tanpa mengetikkan deretan angka panjang seperti 103.8.79.1, itu karena DNS.
 
 DNS berfungsi untuk menerjemahkan nama domain ke dalam alamat IP.
 Di Mikrotik, kamu bisa mengatur DNS server agar koneksi lebih cepat, stabil, dan bisa difilter sesuai kebutuhan.

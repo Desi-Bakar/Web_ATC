@@ -76,7 +76,7 @@ Di Areta Informatics College kamu akan belajar:
 * 🧠 Studi kasus dan simulasi topologi jaringan modern.
 * 🎓 Tips dan trik dari mentor berpengalaman di dunia jaringan.
 
-Pelatihan ini cocok untuk:
+Pelatihan ini untuk:
 
 * Mahasiswa IT,
 * Calon Network Engineer,

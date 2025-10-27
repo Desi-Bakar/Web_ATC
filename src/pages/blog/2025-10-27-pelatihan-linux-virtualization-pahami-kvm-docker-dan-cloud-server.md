@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Pelatihan Linux Virtualization: Pahami KVM, Docker, dan Cloud Server"
-date: 2025-10-27T03:30:52.471Z
+date: 2025-10-27T02:30:52.471Z
 description: Pelatihan Linux Virtualization di Areta Informatics College
   menghadirkan metode full praktik untuk memahami teknologi KVM, Docker, dan
   Cloud Server. Cocok untuk mahasiswa, profesional IT, dan siapa pun yang ingin

@@ -26,30 +26,30 @@ tags:
 ---
 #### 🔍 Apa yang dimaksud dengan Routing dan Switching?
 
-Routing merupakan kegiatan untuk menentukan jalur paling efisien dalam pengiriman data antar jaringan. Router bertugas menghubungkan berbagai jaringan dan memastikan data mencapai tujuan dengan cepat dan efisien.
+**Routing** merupakan kegiatan untuk menentukan jalur paling efisien dalam pengiriman data antar jaringan. Router bertugas menghubungkan berbagai jaringan dan memastikan data mencapai tujuan dengan cepat dan efisien.
 
-Switching berfokus pada pengiriman data di dalam jaringan lokal (LAN). Switch mengatur lalu lintas data antar perangkat agar komunikasi berjalan lancar dan tanpa hambatan.
+**Switching** berfokus pada pengiriman data di dalam jaringan lokal (LAN). Switch mengatur lalu lintas data antar perangkat agar komunikasi berjalan lancar dan tanpa hambatan.
 
 Kedua teknologi ini merupakan inti dari setiap sistem jaringan, baik di perusahaan kecil, kampus, maupun pusat data besar.
 
---- 
+- - -
 
 #### 🧠 Mengapa Belajar Routing dan Switching Itu Penting?
 
-* 💼 Menjadi Dasar Karier di Dunia Jaringan
+* 💼 **Menjadi Dasar Karier di Dunia Jaringan**
   Semua Network Engineer profesional memulai kariernya dengan memahami konsep Routing dan Switching.
-* 🚀 Membuka Peluang Sertifikasi Cisco (CCNA, CCNP, dst)
+* 🚀 **Membuka Peluang Sertifikasi Cisco (CCNA, CCNP, dst)**
   Training ini menjadi langkah pertama menuju sertifikasi internasional dari Cisco yang diakui secara global.
-* 🛠️ Skill yang Dibutuhkan di Industri IT Modern
+* 🛠️ **Skill yang Dibutuhkan di Industri IT Modern**
   Hampir semua perusahaan besar menggunakan perangkat Cisco. Menguasai teknologi ini membuatmu lebih siap menghadapi tantangan dunia kerja.
-* 🌐 Fondasi untuk Belajar Teknologi Lanjut
+* 🌐 **Fondasi untuk Belajar Teknologi Lanjut**
   Setelah menguasai Routing dan Switching, kamu dapat melanjutkan ke bidang seperti Network Security, Cloud Networking, atau Data Center Technologies.
 
----
+- - -
 
 #### 🧩 Keunggulan Training Cisco di Areta Informatics College
 
-Di Areta Informatics College, kami tidak hanya mengajarkan teori. Kami menerapkan metode Full Praktik, di mana setiap peserta langsung:
+Di **Areta Informatics College**, kami tidak hanya mengajarkan teori. Kami menerapkan metode **Full Praktek**, di mana setiap peserta langsung:
 
 * ✅ Melakukan konfigurasi router dan switch Cisco.
 * ✅ Penggunaan Cisco Packet Tracer memudahkan simulasi jaringan.
@@ -58,7 +58,7 @@ Di Areta Informatics College, kami tidak hanya mengajarkan teori. Kami menerapka
 
 Dengan pendekatan praktis dan berbasis proyek, kamu tidak hanya paham konsep, tapi juga siap kerja di dunia nyata.
 
----
+- - -
 
 #### 🎯 Siapa Yang Cocok Mengikuti Pelatihan ini?
 

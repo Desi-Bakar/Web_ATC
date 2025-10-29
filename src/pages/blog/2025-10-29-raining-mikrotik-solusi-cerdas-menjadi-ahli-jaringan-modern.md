@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "raining Mikrotik: Solusi Cerdas Menjadi Ahli Jaringan Modern"
+title: "Training Mikrotik: Solusi Cerdas Menjadi Ahli Jaringan Modern"
 date: 2025-10-29T02:42:44.959Z
 description: >-
   Di era digital saat ini, kebutuhan akan tenaga ahli jaringan (Network

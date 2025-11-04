@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Training MikroTik Ini Bikin Kamu Ngerasa Jadi “Tukang Jaringan Profesional”!
-date: 2025-11-03T02:32:38.175Z
+date: 2025-11-05T03:17:52.705Z
 description: >-
   Pernah nggak sih kamu penasaran, gimana caranya bikin jaringan internet tetap
   stabil dan nggak lemot? Atau gimana sih setting router biar semua pengguna

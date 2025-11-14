@@ -38,6 +38,7 @@ Perusahaan juga menganggap kemampuan ini sebagai salah satu kemampuan dasar untu
 Flutter menyediakan banyak package untuk berkomunikasi dengan API. Salah satu yang paling sering digunakan adalah http.
 
 Berikut langkah umumnya:
+
 1. Tentukan Endpoint API
    Misalnya API publik:
    `https://jsonplaceholder.typicode.com/posts`
@@ -63,8 +64,6 @@ Program ini dirancang agar peserta benar-benar menguasai dasar dan praktiknya, s
 * Pembuatan halaman dinamis dari data API
 * Implementasi autentikasi (login/register)
 * Studi kasus aplikasi katalog/data
-
-
 
 #### 👥 Siapa yang Cocok Mengikuti Training Ini?
 

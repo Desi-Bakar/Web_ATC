@@ -38,23 +38,10 @@ Perusahaan juga menganggap kemampuan ini sebagai salah satu kemampuan dasar untu
 Flutter menyediakan banyak package untuk berkomunikasi dengan API. Salah satu yang paling sering digunakan adalah http.
 
 Berikut langkah umumnya:
-
 1. Tentukan Endpoint API
    Misalnya API publik:
    `https://jsonplaceholder.typicode.com/posts`
 2. Mengambil Data Menggunakan http
-   Contoh kode sederhana yang biasa dipelajari dalam training:
-      `import 'package:http/http.dart' as http;`
-      `import 'dart:convert';`
-      `Future<void> fetchPosts() async {`
-        `final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));`
-      `if (response.statusCode == 200) {
-          final List data = jsonDecode(response.body);
-          print(data);
-        } else {
-          print('Request gagal');
-        }
-      }`
 3. Mengubah JSON Menjadi Model
    Agar lebih rapi, data diubah menjadi model sebelum ditampilkan.
 4. Menampilkan Data ke UI

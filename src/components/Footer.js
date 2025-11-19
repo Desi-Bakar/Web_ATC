@@ -56,32 +56,30 @@ const Footer = () => {
           filter: none;
         }
 
-        /* Logo Box (diperkecil) */
         .logo-box {
           background: #ffffff;
-          padding: 0.4rem 0.7rem; /* lebih kecil dari sebelumnya */
+          padding: 0.4rem 0.7rem;
           border-radius: 6px;
           display: inline-block;
           margin-bottom: 1rem;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
         .logo-box img {
-          max-width: 160px; /* tetap sama */
+          max-width: 160px;
           height: auto;
           display: block;
         }
 
-        /* Atas: logo + deskripsi */
         .top-section {
           text-align: center;
           max-width: 500px;
           margin: 0 auto 2.5rem auto;
         }
 
-        /* Bawah: 2 kolom */
+        /* BAWAH JADI 3 KOLOM */
         .bottom-section {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           gap: 2rem;
           align-items: start;
         }
@@ -97,41 +95,46 @@ const Footer = () => {
           justify-content: center;
         }
 
-        /* Mobile */
         @media (max-width: 768px) {
           .bottom-section {
+            grid-template-columns: 1fr;
             gap: 1.5rem;
           }
         }
       `}</style>
 
       <div className="container" style={{ color: "#ffffff" }}>
-        {/* Atas */}
+
+        {/* TOP */}
         <div className="top-section">
           <div className="logo-box">
             <img src={logo} alt="Logo Areta" />
           </div>
-          <p
-            style={{
-              margin: "1rem auto 0 auto",
-              lineHeight: "1.6",
-              color: "#ffffff",
-            }}
-          >
+          <p style={{ margin: "1rem auto 0", lineHeight: "1.6", color: "#ffffff" }}>
             Areta Training Center menyediakan pelatihan berbasis praktek untuk
             mengembangkan potensi generasi muda di bidang IT & industri kreatif.
           </p>
         </div>
 
-        {/* Bawah */}
+        {/* BOTTOM 3 KOLOM */}
         <div className="bottom-section">
+
           {/* Peta Situs */}
           <div className="link-col">
             <h4 className="footer-title">Peta Situs</h4>
             <Link to="/" style={linkStyle}>Home</Link>
             <Link to="/about" style={linkStyle}>About</Link>
             <Link to="/blog" style={linkStyle}>Blog</Link>
-            <Link to="/contact" style={linkStyle}>contact</Link>
+            <Link to="/contact" style={linkStyle}>Contact</Link>
+          </div>
+
+          {/* Jadwal (Tengah) */}
+          <div className="link-col">
+            <h4 className="footer-title">Jadwal</h4>
+            <p style={{ margin: "0.3rem 0" }}>Senin – Jumat</p>
+            <p style={{ margin: "0.3rem 0" }}>08:00 – 10.00 WIB | 14.00 – 16:00 WIB</p>
+            <p style={{ margin: "0.3rem 0" }}>10.00 – 12:00 WIB | 16.00 – 18:00 WIB</p>
+            <p style={{ margin: "0.3rem 0" }}>12.00 – 14:00 WIB | 19.00 – 21:00 WIB</p>
           </div>
 
           {/* Hubungi Kami */}
@@ -153,7 +156,6 @@ const Footer = () => {
 
         {/* Copyright */}
         <div
-          className="has-text-centered"
           style={{
             marginTop: "3rem",
             borderTop: "1px solid rgba(255,255,255,0.2)",
@@ -165,6 +167,7 @@ const Footer = () => {
         >
           © {new Date().getFullYear()} Areta Training Center. All rights reserved.
         </div>
+
       </div>
     </footer>
   );

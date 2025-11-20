@@ -11,7 +11,7 @@ import Content, { HTMLContent } from "../components/Content";
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
+  description = "",
   tags = [],
   title = "",
   helmet,
@@ -19,31 +19,45 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
-  // ✅ amanin: handle berbagai bentuk featuredimage
-  const image =
-    featuredimage && typeof featuredimage === "object"
-      ? getImage(featuredimage)
-      : null;
+  // --- SAFE IMAGE HANDLING ---
+  let image = null;
+  let imageSharp = null;
+
+  if (featuredimage) {
+    // case: GraphQL object (correct)
+    if (featuredimage.childImageSharp) {
+      imageSharp = getImage(featuredimage);
+    }
+    // case: string path
+    else if (typeof featuredimage === "string") {
+      image = featuredimage;
+    }
+  }
 
   return (
-    <section className="section">
+    <section className="section blog-post">
       {helmet || null}
 
-      <div className="container content blog-post">
+      <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
 
             {description && <p>{description}</p>}
 
+            {/* FEATURED IMAGE */}
+            {imageSharp && (
+              <div className="featured-image mb-4">
+                <GatsbyImage image={imageSharp} alt={title} />
+              </div>
+            )}
+
             {image && (
               <div className="featured-image mb-4">
-                <GatsbyImage
-                  image={image}
-                  alt={title || "Blog featured image"}
-                />
+                <img src={image} alt={title} />
               </div>
             )}
 
@@ -61,6 +75,7 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             )}
+
           </div>
         </div>
       </div>
@@ -75,18 +90,7 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
   helmet: PropTypes.node,
-  featuredimage: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.string,
-    PropTypes.oneOf([null]),
-  ]),
-};
-
-BlogPostTemplate.defaultProps = {
-  tags: [],
-  title: "",
-  description: "",
-  featuredimage: null,
+  featuredimage: PropTypes.any,
 };
 
 const BlogPost = ({ data }) => {
@@ -102,47 +106,28 @@ const BlogPost = ({ data }) => {
     );
   }
 
-  const { frontmatter = {}, html } = post;
-  const { title, description, tags, featuredimage } = frontmatter;
+  const { frontmatter, html } = post;
 
   return (
     <Layout>
       <BlogPostTemplate
         content={html}
         contentComponent={HTMLContent}
-        description={description}
-        title={title}
-        tags={tags}
-        featuredimage={featuredimage}
+        title={frontmatter.title}
+        description={frontmatter.description}
+        tags={frontmatter.tags || []}
+        featuredimage={frontmatter.featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{title}</title>
-            {description && (
-              <meta name="description" content={description || ""} />
+            <title>{frontmatter.title}</title>
+            {frontmatter.description && (
+              <meta name="description" content={frontmatter.description} />
             )}
           </Helmet>
         }
       />
     </Layout>
   );
-};
-
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      html: PropTypes.string,
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string,
-        description: PropTypes.string,
-        tags: PropTypes.arrayOf(PropTypes.string),
-        featuredimage: PropTypes.oneOfType([
-          PropTypes.object,
-          PropTypes.string,
-          PropTypes.oneOf([null]),
-        ]),
-      }),
-    }),
-  }),
 };
 
 export default BlogPost;
@@ -153,13 +138,12 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
         description
         tags
         featuredimage {
           childImageSharp {
-            gatsbyImageData(width: 800, quality: 90, layout: CONSTRAINED)
+            gatsbyImageData(width: 900, quality: 90, layout: CONSTRAINED)
           }
         }
       }

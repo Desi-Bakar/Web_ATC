@@ -36,6 +36,7 @@ export const ProductPageTemplate = ({
                   <p>{main.description}</p>
                 </div>
               </div>
+
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
@@ -57,7 +58,7 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </div>
-              {/* ✅ Bagian WebDesign sudah dihapus */}
+
             </div>
           </div>
         </div>
@@ -82,6 +83,9 @@ ProductPageTemplate.propTypes = {
   }),
 };
 
+// -----------------------
+// PAGE COMPONENT
+// -----------------------
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
@@ -100,7 +104,10 @@ const ProductPage = ({ data }) => {
 
 export default ProductPage;
 
-export const productPageQuery = graphql`
+// -----------------------
+// PAGE QUERY (HARUS NAMA: pageQuery)
+// -----------------------
+export const pageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {

@@ -132,9 +132,9 @@ const Footer = () => {
           <div className="link-col">
             <h4 className="footer-title">Jadwal</h4>
             <p style={{ margin: "0.3rem 0" }}>Senin – Jumat</p>
-            <p style={{ margin: "0.3rem 0" }}>08:00 – 10.00 WIB | 14.00 – 16:00 WIB</p>
-            <p style={{ margin: "0.3rem 0" }}>10.00 – 12:00 WIB | 16.00 – 18:00 WIB</p>
-            <p style={{ margin: "0.3rem 0" }}>12.00 – 14:00 WIB | 19.00 – 21:00 WIB</p>
+            <p style={{ margin: "0.3rem 0" }}>08:00 – 10.00 WIB   |  14.00 – 16:00 WIB</p>
+            <p style={{ margin: "0.3rem 0" }}>10.00 – 12:00 WIB   |  16.00 – 18:00 WIB</p>
+            <p style={{ margin: "0.3rem 0" }}>12.00 – 14:00 WIB   |  19.00 – 21:00 WIB</p>
           </div>
 
           {/* Hubungi Kami */}

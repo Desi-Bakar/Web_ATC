@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Training Cisco: Memahami Konfigurasi Dasar Switch dan Router"
-date: 2025-11-24T03:42:21.496Z
+date: 2025-11-18T03:42:21.496Z
 description: Areta Informatics College adalah tempat terbaik buat kamu yang mau
   belajar jaringan komputer dengan cara santai tapi tetap fokus dan
   menyenangkan.

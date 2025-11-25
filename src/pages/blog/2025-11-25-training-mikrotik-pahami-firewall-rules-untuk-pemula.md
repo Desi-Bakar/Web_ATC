@@ -1,94 +1,93 @@
 ---
-templateKey: blog-post
-title: "Training Mikrotik: Pahami Firewall Rules untuk Pemula"
-date: 2025-11-19T02:42:42.048Z
-description: Di Areta Informatics College, kamu akan belajar firewall rules
-  secara bertahap, dengan contoh nyata, dan yang paling penting full praktek.
-featuredpost: false
-featuredimage: /img/chatgpt-image-nov-25-2025-09_56_11-am.png
+title: "Training Cisco: Memahami Konfigurasi Dasar Switch dan Router"
+date: 2025-11-24T02:59:02.915Z
+description: Areta Informatics College adalah tempat terbaik buat kamu yang mau
+  belajar jaringan komputer dengan cara santai tapi tetap fokus dan
+  menyenangkan.
+featuredpost: true
+featuredimage: /img/chatgpt-image-nov-25-2025-10_33_22-am.png
 tags:
-  - Training Mikrotik
-  - Belajar Mikrotik
-  - Mikrotik Firewall Rules
-  - Kursus Mikrotik
-  - Pelatihan Mikrotik
+  - Training Cisco
+  - Belajar Cisco
+  - Cisco Networking
+  - Cisco Training
+  - Konfigurasi Cisco
+  - Router Cisco
+  - Switch Cisco
+  - Network Engineer
+  - Pelatihan Jaringan
+  - Belajar Jaringan
+  - CCNA
+  - Cisco Indonesia
   - Areta Informatics College
-  - Training Jaringan Komputer
-  - Mikrotik RouterOS
-  - Firewall Mikrotik
-  - Kursus Jaringan Komputer
-  - Pelatihan IT
-  - Pelatihan Router Dan Firewall
-  - Belajar WinBox
-  - Kelas Mikrotik
-  - Full Praktek
   - Kampus IT Tangerang
+  - Pelatihan IT
+  - Full Praktek
+  - IT Networking
+  - Kursus Cisco
 ---
-#### 🔥 Kenapa Firewall Rules Itu Penting?
+#### 🔌 Switch Cisco: Apa yang Harus Dipahami di Awal?
 
-Bayangkan kamu punya jaringan kantor, sekolah, atau bahkan kos-kosan.
-Setiap perangkat bebas masuk—tanpa filter, tanpa batasan, tanpa kontrol.
-Hasilnya?
+Switch berfungsi menghubungkan berbagai perangkat dalam satu jaringan. Di pelatihan Cisco pemula, kamu biasanya akan belajar hal-hal dasar seperti:
 
-* Jaringan lemot,
-* Data riskan bocor,
-* dan user bisa akses website atau layanan yang harusnya tidak diperbolehkan.
+* **Mengubah nama perangkat**
+  `Switch(config)# hostname SWITCH-01`
+* **Mengatur password console & enable**
+  Supaya akses ke switch lebih aman.
+* **Membuat dan Konfigurasi VLAN**
+  Memisahkan jaringan agar lebih rapi dan aman.
+  `Switch(config)# vlan 10`
+* **Konfigurasi port ke VLAN tertentu**
+  `Switch(config-if)# switchport access vlan 10`
 
-Nah, **Firewall Rules** di Mikrotik adalah “penjaga pintu” jaringanmu.
-Dengan firewall, kamu bisa:
+Konsep dasar ini terlihat sederhana, tapi sangat penting untuk topologi jaringan apa pun.
 
-* Memblokir trafik yang berbahaya
-* Membatasi akses user
-* Menambah keamanan router
-* Mengatur jalur trafik agar lebih terkontrol
+#### 🌐 Router Cisco: Langkah Konfigurasi Dasar
 
-Di training Areta, semua konsep ini bukan cuma dijelaskan… tapi langsung kamu praktekkan di device Mikrotik yang asli.
+Berbeda dari switch, router menghubungkan beberapa jaringan sekaligus.
+Di tingkat dasar, kamu akan belajar:
 
-#### 🧩 Apa Saja yang Akan Kamu Pelajari?
+* **Mengatur IP Address pada interface**
+  `Router(config-if)# ip address 192.168.1.1 255.255.255.0`
+* **Routing Static**
+  Memberi tahu router harus melewati jalur mana.
+* **Routing Dynamic seperti OSPF atau RIP**
+  Supaya router bisa “berpikir sendiri” mencari jalur terbaik.
 
-Dalam sesi khusus Firewall for Beginners, kamu akan memahami hal-hal berikut:
+Semua ini jadi dasar sebelum kamu mempelajari konsep lanjutan seperti NAT, ACL, dan troubleshooting.
 
-1️⃣ Chain (Input, Output, Forward)
+#### 🧪 Belajar Cisco Itu Harus Praktik
 
-Kamu belajar kapan harus pakai input, kapan harus pakai forward, dan kapan rule tidak akan bekerja — hal ini sering banget bikin bingung pemula.
+Banyak orang yang bilang sudah paham teori, tapi langsung bingung ketika pegang router.
+Sebab, jaringan itu memang harus dipelajari **dengan praktik langsung.**
 
-2️⃣ Action (Accept, Drop, Reject)
+Dengan latihan nyata, kamu akan:
 
-Belajar membedakan perilaku masing-masing action sambil langsung mencoba rule satu per satu.
+* lebih cepat hafal command,
+* paham alur konfigurasi,
+* dan tahu cara mengatasi error.
 
-3️⃣ Filtering Website dan Port Tertentu
+Inilah kenapa metode belajar itu sangat menentukan hasil akhir.
 
-Kamu langsung praktek memblokir port, membatasi akses layanan, sampai membuat rule keamanan dasar.
+#### 🎓 Training Cisco Full Praktek di Areta Informatics College
 
-4️⃣ Best Practice Firewall untuk Pemula
+Kalau kamu ingin belajar dengan cara yang benar dan langsung memegang perangkat, Areta Informatics College menyediakan Training Cisco Dasar dengan metode full praktik.
+Jadi, bukan hanya mendengar penjelasan—tapi langsung mengerjakan langkah demi langkah.
 
-Mulai dari dasar paling aman (drop-all), hingga bagaimana menambahkan rule yang benar tanpa bikin router “ke-lock”.
+Keunggulan pelatihannya:
 
-Semuanya disampaikan dengan cara praktis, bukan hafalan teori.
+* 🔧 Full Praktek: konfigurasi switch & router langsung
+* 👨‍🏫 Trainer yang berpengalaman
+* 📘 Materi dasar yang mudah dipahami pemula
+* 🧪 Latihan nyata + topologi sederhana sampai yang sering dipakai di dunia kerja
 
-#### ✨ Belajar di Areta Informatics College = Belajar Full Praktek
-
-Areta Informatics College punya pendekatan yang beda dari kebanyakan tempat kursus.
-Di sini, kamu:
-
-* Belajar langsung dengan perangkat asli
-* Tidak hanya mendengar teori — tapi langsung konfigurasi sendiri
-* Dibimbing instruktur berpengalaman
-* Dikasih studi kasus yang mirip dengan kondisi kerja nyata
-* Bisa tanya sampai benar-benar paham
-
-Konsepnya simpel:
-
-> “Bukan sekadar tahu cara konfigurasi… tapi benar-benar BISA dan PAHAM cara kerjanya.”
-
-Itulah kenapa Areta dikenal sebagai tempat training yang cocok banget buat pemula sampai calon IT support atau network engineer.
+Singkatnya, kamu belajar hal yang memang dipakai di lapangan.
 
 #### 🎯 Siapa yang Cocok Ikut?
 
-Training Mikrotik dengan materi Firewall Rules ini cocok untuk:
+Training Cisco ini cocok untuk:
 
-* Pelajar/mahasiswa IT
-* Teknisi jaringan pemula
-* Staff IT kantor yang ingin upgrade skill
-* Freelancer yang ingin memahami dasar jaringan
-* Kamu yang ingin terjun ke dunia networking
+* Siswa SMK jurusan TKJ
+* Mahasiswa IT
+* Karyawan teknisi jaringan
+* Atau siapa pun yang penasaran gimana sih cara kerja cisco

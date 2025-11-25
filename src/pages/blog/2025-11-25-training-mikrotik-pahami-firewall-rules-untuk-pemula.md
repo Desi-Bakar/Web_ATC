@@ -1,6 +1,6 @@
 ---
 title: "Training Mikrotik: Pahami Firewall Rules untuk Pemula"
-date: 2025-11-19T02:59:02.915Z
+date: 2025-11-19T03:54:02.915Z
 description: Areta Informatics College adalah tempat terbaik buat kamu yang mau
   belajar jaringan komputer dengan cara santai tapi tetap fokus dan
   menyenangkan.

@@ -42,7 +42,7 @@ Memblokir trafik yang berbahaya
 * Menambah keamanan router
 * Mengatur jalur trafik agar lebih terkontrol
 
-Di training Areta, semua konsep ini bukan cuma dijelaskan… tapi langsung kamu praktekkan di device Mikrotik yang asli.
+Di **training Areta**, semua konsep ini bukan cuma dijelaskan… tapi langsung kamu praktekkan di device Mikrotik yang asli.
 
 #### 🧩 Apa Saja yang Akan Kamu Pelajari?
 

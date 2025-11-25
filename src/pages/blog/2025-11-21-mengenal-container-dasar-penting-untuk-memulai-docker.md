@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Mengenal Container: Dasar Penting untuk Memulai Docker"
-date: 2025-11-18T03:02:36.634Z
+date: 2025-11-19T03:02:36.634Z
 description: Dalam dunia pengembangan aplikasi modern, kebutuhan akan deployment
   yang cepat dan konsisten menjadi semakin penting. Banyak developer masih
   menghadapi masalah klasik seperti aplikasi berjalan baik di laptop, tetapi

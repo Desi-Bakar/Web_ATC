@@ -23,7 +23,6 @@ const Navbar = () => {
     { name: "Digital Marketing", path: "/products/BisnisDigital" }
   ];
 
-  // Close dropdown if clicked outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -33,9 +32,6 @@ const Navbar = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  // Detect mobile
-  const isMobile = typeof window !== "undefined" && window.innerWidth <= 1024;
 
   return (
     <>
@@ -48,6 +44,10 @@ const Navbar = () => {
           background: #fff;
           z-index: 1100;
           box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+         .navbar-link::after {
+         display: none !important;
         }
         body { padding-top: 70px; }
 
@@ -64,26 +64,32 @@ const Navbar = () => {
           width: 88px;
         }
 
+        /* ---------- BURGER BUTTON ---------- */
         .navbar-burger {
           display: none;
           background: none;
           border: none;
           cursor: pointer;
+          padding: 10px;
+          z-index: 2000;
         }
         .navbar-burger span {
           display: block;
-          width: 25px;
+          width: 28px;
           height: 3px;
           background: #004AAD;
-          margin: 5px 0;
+          margin: 6px 0;
+          border-radius: 2px;
           transition: 0.3s;
         }
+
+        /* Change burger → X */
         .navbar-burger.is-active span:nth-child(1) {
-          transform: translateY(8px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
         }
         .navbar-burger.is-active span:nth-child(2) { opacity: 0; }
         .navbar-burger.is-active span:nth-child(3) {
-          transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-9px) rotate(-45deg);
         }
 
         .navbar-menu {
@@ -100,10 +106,7 @@ const Navbar = () => {
         }
         .navbar-item:hover { color: #004AAD; }
 
-        /* Dropdown desktop */
-        .has-dropdown {
-          position: relative;
-        }
+        .has-dropdown { position: relative; }
         .navbar-dropdown {
           position: absolute;
           top: 100%;
@@ -117,50 +120,95 @@ const Navbar = () => {
           visibility: hidden;
           transform: translateY(-10px);
           transition: 0.25s;
+          display: none;
         }
         .has-dropdown.open .navbar-dropdown {
           opacity: 1;
           visibility: visible;
           transform: translateY(0);
+          display: block;
         }
 
-        /* Mobile */
-        @media (max-width:1024px){
-          .navbar-burger { display: block; }
+        /* ---------- MOBILE STYLES ---------- */
+        @media (max-width: 1024px) {
+
+          .navbar-burger {
+            display: block;
+            position: absolute;
+            right: 20px;
+          }
+
           .navbar-menu {
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 78%;
             background: #fff;
             flex-direction: column;
-            padding-top: 100px;
+            align-items: center;
+            padding-top: 120px;
+            gap: 20px;
             opacity: 0;
             pointer-events: none;
-            transform: translateY(-20px);
-            transition: 0.3s;
+            transform: translateX(100%);
+            transition: 0.3s ease;
+            box-shadow: -3px 0 15px rgba(0,0,0,0.15);
           }
+
           .navbar-menu.is-active {
             opacity: 1;
             pointer-events: auto;
-            transform: translateY(0);
+            transform: translateX(0);
           }
+
           .navbar-item {
             width: 100%;
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
+            padding: 14px 0;
           }
-          .navbar-dropdown {
-            position: relative;
+
+          /* === PERBAIKAN DROPDOWN MOBILE === */
+          .has-dropdown {
             width: 100%;
-            border: none;
+          }
+
+          .has-dropdown .navbar-link {
+            display: block;
+            width: 100%;
+          }
+
+          .navbar-dropdown {
+            position: static;       /* tidak ngambang, ikut flow menu */
+            width: 100%;
+            text-align: center;
             box-shadow: none;
+            border: none;
+            border-radius: 0;
+            margin-top: 4px;
+            padding-bottom: 4px;
+
+            /* hilangkan efek fade/slide di mobile */
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+
+            /* animasi buka-tutup vertikal */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease;
+          }
+
+          .has-dropdown.open .navbar-dropdown {
+            max-height: 600px;    /* cukup tinggi utk semua item */
           }
         }
       `}</style>
 
-      <nav className="navbar" role="navigation">
+      <nav className="navbar">
         <div className="container">
 
-          {/* Logo */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <img src={logo} alt="Logo" />
@@ -174,25 +222,22 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Menu */}
           <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+
             <Link className="navbar-item" to="/about" onClick={() => setIsActive(false)}>
               About
             </Link>
 
-            {/* PRODUCTS */}
-            <div 
+            <div
               className={`navbar-item has-dropdown ${isProductsOpen ? "open" : ""}`}
               ref={dropdownRef}
-              onClick={() => isMobile && setIsProductsOpen(!isProductsOpen)}
-              onMouseEnter={() => !isMobile && setIsProductsOpen(true)}
-              onMouseLeave={() => !isMobile && setIsProductsOpen(false)}
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
             >
               <span className="navbar-link">Products</span>
 
               <div className="navbar-dropdown">
                 {products.map((item, i) => (
-                  <Link 
+                  <Link
                     key={i}
                     className="navbar-item"
                     to={item.path}
@@ -207,19 +252,14 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link className="navbar-item" to="/blog" onClick={() => setIsActive(false)}>
-              Blog
-            </Link>
-
-            <Link className="navbar-item" to="/contact" onClick={() => setIsActive(false)}>
-              Contact
-            </Link>
+            <Link className="navbar-item" to="/blog" onClick={() => setIsActive(false)}>Blog</Link>
+            <Link className="navbar-item" to="/contact" onClick={() => setIsActive(false)}>Contact</Link>
 
             <a 
               className="navbar-item"
               href="https://pmb.aretacollege.com/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               onClick={() => setIsActive(false)}
             >
               Information Campus
@@ -227,12 +267,12 @@ const Navbar = () => {
 
             <a 
               className="navbar-item"
-              href="https://api.whatsapp.com/send?phone=6281285234904&text=Hallo%20kak%2C%20saya%20Desi.%20Ada%20yang%20bisa%20saya%20bantu%3F"
+              href="https://api.whatsapp.com/send?phone=6281285234904"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               onClick={() => setIsActive(false)}
             >
-              <img src={whatsapp} alt="whatsapp" style={{ width: "24px" }} />
+              <img src={whatsapp} alt="wa" style={{ width: "26px" }} />
             </a>
 
           </div>

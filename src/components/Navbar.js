@@ -49,6 +49,7 @@ const Navbar = () => {
         .navbar-link::after {
           display: none !important;
         }
+
         body { padding-top: 70px; }
 
         .navbar .container {
@@ -106,6 +107,7 @@ const Navbar = () => {
         .navbar-item:hover { color: #004AAD; }
 
         .has-dropdown { position: relative; }
+
         .navbar-dropdown {
           position: absolute;
           top: 100%;
@@ -122,7 +124,7 @@ const Navbar = () => {
           display: none;
         }
 
-        /* === DESKTOP HOVER DROPDOWN === */
+        /* === DESKTOP HOVER === */
         @media (min-width: 1025px) {
           .has-dropdown:hover .navbar-dropdown {
             opacity: 1 !important;
@@ -132,7 +134,7 @@ const Navbar = () => {
           }
         }
 
-        /* === MOBILE === */
+        /* === MOBILE FIX === */
         @media (max-width: 1024px) {
 
           .navbar-burger {
@@ -172,27 +174,30 @@ const Navbar = () => {
             padding: 14px 0;
           }
 
+          /* === FIX dropdown di mobile === */
           .navbar-dropdown {
-            position: static;
+            position: static !important;
             width: 100%;
             text-align: center;
-            box-shadow: none;
-            border: none;
-            border-radius: 0;
+            box-shadow: none !important;
+            border: none !important;
             margin-top: 4px;
-            padding-bottom: 4px;
-
-            opacity: 1;
-            visibility: visible;
-            transform: none;
 
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.25s ease;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transition: max-height 0.3s ease;
+            display: block !important; /* FIX PENTING */
           }
 
           .has-dropdown.open .navbar-dropdown {
-            max-height: 600px;
+            max-height: 900px;
+          }
+
+          /* Matikan hover desktop biar tidak ganggu mobile */
+          .has-dropdown:hover .navbar-dropdown {
+            display: none !important;
           }
         }
       `}</style>
@@ -219,7 +224,6 @@ const Navbar = () => {
               About
             </Link>
 
-            {/* DROPDOWN FIXED */}
             <div
               className={`navbar-item has-dropdown ${isProductsOpen ? "open" : ""}`}
               ref={dropdownRef}

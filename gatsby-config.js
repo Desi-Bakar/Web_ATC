@@ -6,27 +6,26 @@ module.exports = {
     siteUrl: "https://aretatrainingcenter.space",
     author: "Areta Training Center",
 
-    // ✅ Tambahkan daftar keyword utama untuk SEO dan sitemap
     keywords: [
-  "Training Mikrotik",
-   "Pelatihan Mikrotik",
-   "Kursus Mikrotik",
-   "Sertifikasi Mikrotik",
-   "Belajar Mikrotik",
-   "Mikrotik Indonesia",
-   "Jaringan Komputer",
-   "Network Engineering",
-   "Training Networking",
-   "Pelatihan IT",
-   "RouterOS",
-   "Teknologi Jaringan",
-   "Mikrotik Tangerang",
-
+      "Training Mikrotik",
+      "Pelatihan Mikrotik",
+      "Kursus Mikrotik",
+      "Sertifikasi Mikrotik",
+      "Belajar Mikrotik",
+      "Mikrotik Indonesia",
+      "Jaringan Komputer",
+      "Network Engineering",
+      "Training Networking",
+      "Pelatihan IT",
+      "RouterOS",
+      "Teknologi Jaringan",
+      "Mikrotik Tangerang",
     ],
   },
 
   plugins: [
     "gatsby-plugin-react-helmet",
+
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -35,6 +34,8 @@ module.exports = {
         },
       },
     },
+
+    // Uploads folder
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -42,6 +43,8 @@ module.exports = {
         name: "uploads",
       },
     },
+
+    // Pages folder
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -49,6 +52,8 @@ module.exports = {
         name: "pages",
       },
     },
+
+    // Images folder
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -56,14 +61,15 @@ module.exports = {
         name: "images",
       },
     },
+
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          "gatsby-remark-relative-images",
           {
             resolve: "gatsby-remark-images",
             options: {
@@ -79,20 +85,14 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        develop: true,
-        purgeOnly: ["/bulma-style.sass"],
-        printRejected: true,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -106,6 +106,7 @@ module.exports = {
           })),
       },
     },
-    "gatsby-plugin-netlify"
+
+    "gatsby-plugin-netlify",
   ],
 };

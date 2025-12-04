@@ -5,7 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.9.0",
-    "decap-cms-app": "^3.3.0",
+    "decap-cms-app": "^3.1.11",
     "decap-cms-media-library-uploadcare": "^3.0.2",
     "gatsby": "^4.25.9",
     "gatsby-plugin-decap-cms": "^4.0.3",
@@ -18,7 +18,6 @@
     "gatsby-plugin-sitemap": "^5.12.0",
     "gatsby-remark-copy-linked-files": "^5.0.0",
     "gatsby-remark-images": "^6.0.0",
-    "gatsby-remark-relative-images": "^2.0.5",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
     "gatsby-transformer-sharp": "^4.0.0",

@@ -46,9 +46,10 @@ const Navbar = () => {
           box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
-         .navbar-link::after {
-         display: none !important;
+        .navbar-link::after {
+          display: none !important;
         }
+
         body { padding-top: 70px; }
 
         .navbar .container {
@@ -83,7 +84,6 @@ const Navbar = () => {
           transition: 0.3s;
         }
 
-        /* Change burger → X */
         .navbar-burger.is-active span:nth-child(1) {
           transform: translateY(9px) rotate(45deg);
         }
@@ -107,6 +107,7 @@ const Navbar = () => {
         .navbar-item:hover { color: #004AAD; }
 
         .has-dropdown { position: relative; }
+
         .navbar-dropdown {
           position: absolute;
           top: 100%;
@@ -122,14 +123,18 @@ const Navbar = () => {
           transition: 0.25s;
           display: none;
         }
-        .has-dropdown.open .navbar-dropdown {
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(0);
-          display: block;
+
+        /* === DESKTOP HOVER === */
+        @media (min-width: 1025px) {
+          .has-dropdown:hover .navbar-dropdown {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+            display: block !important;
+          }
         }
 
-        /* ---------- MOBILE STYLES ---------- */
+        /* === MOBILE FIX === */
         @media (max-width: 1024px) {
 
           .navbar-burger {
@@ -169,39 +174,30 @@ const Navbar = () => {
             padding: 14px 0;
           }
 
-          /* === PERBAIKAN DROPDOWN MOBILE === */
-          .has-dropdown {
-            width: 100%;
-          }
-
-          .has-dropdown .navbar-link {
-            display: block;
-            width: 100%;
-          }
-
+          /* === FIX dropdown di mobile === */
           .navbar-dropdown {
-            position: static;       /* tidak ngambang, ikut flow menu */
+            position: static !important;
             width: 100%;
             text-align: center;
-            box-shadow: none;
-            border: none;
-            border-radius: 0;
+            box-shadow: none !important;
+            border: none !important;
             margin-top: 4px;
-            padding-bottom: 4px;
 
-            /* hilangkan efek fade/slide di mobile */
-            opacity: 1;
-            visibility: visible;
-            transform: none;
-
-            /* animasi buka-tutup vertikal */
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.25s ease;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transition: max-height 0.3s ease;
+            display: block !important; /* FIX PENTING */
           }
 
           .has-dropdown.open .navbar-dropdown {
-            max-height: 600px;    /* cukup tinggi utk semua item */
+            max-height: 900px;
+          }
+
+          /* Matikan hover desktop biar tidak ganggu mobile */
+          .has-dropdown:hover .navbar-dropdown {
+            display: none !important;
           }
         }
       `}</style>
@@ -231,7 +227,11 @@ const Navbar = () => {
             <div
               className={`navbar-item has-dropdown ${isProductsOpen ? "open" : ""}`}
               ref={dropdownRef}
-              onClick={() => setIsProductsOpen(!isProductsOpen)}
+              onClick={() => {
+                if (window.innerWidth <= 1024) {
+                  setIsProductsOpen(!isProductsOpen);
+                }
+              }}
             >
               <span className="navbar-link">Products</span>
 

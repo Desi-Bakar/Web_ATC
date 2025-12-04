@@ -24,6 +24,7 @@ module.exports = {
 
   plugins: [
     "gatsby-plugin-react-helmet",
+
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -32,6 +33,8 @@ module.exports = {
         },
       },
     },
+
+    // ====== Sumber Gambar & File ======
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -52,15 +55,24 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: "images",
       },
-    },  
-    
+    },
 
+    // ====== BLOG MARKDOWN (yang kamu minta ditambahkan) ======
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+
+    // ====== IMAGE PROCESSOR ======
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
 
-    // ❌ remark transformer sudah dihapus
-
+    // ====== CMS ======
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
@@ -68,6 +80,7 @@ module.exports = {
       },
     },
 
+    // ====== Purge CSS ======
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -87,15 +100,4 @@ module.exports = {
 
     "gatsby-plugin-netlify",
   ],
-}
-plugins: [
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `blog`,
-      path: `${__dirname}/src/pages/blog/`,
-    },
-  },
-  `gatsby-transformer-remark`,
-]
-;
+};

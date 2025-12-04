@@ -52,7 +52,8 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: "images",
       },
-    },
+    },  
+    
 
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
@@ -86,4 +87,15 @@ module.exports = {
 
     "gatsby-plugin-netlify",
   ],
-};
+}
+plugins: [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `blog`,
+      path: `${__dirname}/src/pages/blog/`,
+    },
+  },
+  `gatsby-transformer-remark`,
+]
+;

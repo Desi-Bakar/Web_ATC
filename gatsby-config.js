@@ -34,7 +34,11 @@ module.exports = {
       },
     },
 
+<<<<<<< HEAD
     // SOURCE DIRS
+=======
+    // ====== Sumber Gambar & File ======
+>>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -57,11 +61,26 @@ module.exports = {
       },
     },
 
+<<<<<<< HEAD
     // IMAGE TOOLS
+=======
+    // ====== BLOG MARKDOWN (yang kamu minta ditambahkan) ======
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+
+    // ====== IMAGE PROCESSOR ======
+>>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
 
+<<<<<<< HEAD
     // Markdown Remark dengan plugin baru
     {
       resolve: `gatsby-transformer-remark`,
@@ -90,6 +109,9 @@ module.exports = {
     },
 
     // CMS
+=======
+    // ====== CMS ======
+>>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
@@ -97,7 +119,11 @@ module.exports = {
       },
     },
 
+<<<<<<< HEAD
     // PurgeCSS
+=======
+    // ====== Purge CSS ======
+>>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
     {
       resolve: "gatsby-plugin-purgecss",
       options: {

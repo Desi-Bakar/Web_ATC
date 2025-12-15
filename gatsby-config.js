@@ -24,6 +24,7 @@ module.exports = {
 
   plugins: [
     "gatsby-plugin-react-helmet",
+
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -32,6 +33,8 @@ module.exports = {
         },
       },
     },
+
+    // SOURCE DIRS
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -54,12 +57,39 @@ module.exports = {
       },
     },
 
+    // IMAGE TOOLS
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
 
-    // ❌ remark transformer sudah dihapus
+    // Markdown Remark dengan plugin baru
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images-v2`,
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: "static",
+            },
+          },
+        ],
+      },
+    },
 
+    // CMS
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
@@ -67,6 +97,7 @@ module.exports = {
       },
     },
 
+    // PurgeCSS
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -76,6 +107,7 @@ module.exports = {
       },
     },
 
+    // Sitemap
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {

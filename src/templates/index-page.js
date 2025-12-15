@@ -1,84 +1,92 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
+import HeroCarousel from "../components/HeroCarousel";
 import BlogRoll from "../components/BlogRoll";
-import HeroCarousel from "../components/HeroCarousel"; // ganti FullWidthImage dengan HeroCarousel
 
-// eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
   title,
-  heading,
-  mainpitch,
+  subheading,
   description,
   intro,
+  main,
+  image,
 }) => {
-  // Gambar slide untuk carousel (dari folder /static/img)
-  const imageList = [
-    "/img/DESIGNN.png",
-    "/img/DESIGNN1.png",
-    "/img/aretanet.png",
-  ];
-
   return (
     <div>
-      <HeroCarousel images={imageList} />
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
+
+            {/* Title */}
             <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1
-                        className="title"
-                        style={{
-                          display: "inline-block",
-                          marginBottom: "10px",
-                        }}
-                      >
-                        {mainpitch.title}
-                      </h1>
-                    </div>
-                    <p style={{ marginTop: "0.5rem" }}>{description}</p>
-                  </div>
-
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-3">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" href="https://api.whatsapp.com/send?phone=6281285234904&text=Hallo%20kak%2C%20saya%20Desi.%20Ada%20yang%20bisa%20saya%20bantu%3F">
-                        Join Sekarang
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      Blog
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+              <div className="column is-12">
+                <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                  {title}
+                </h1>
+                {subheading && (
+                  <h3 className="subtitle is-size-4 mt-2">{subheading}</h3>
+                )}
               </div>
             </div>
+
+            {/* Description */}
+            <div className="columns">
+              <div className="column is-12">
+                <p>{description}</p>
+              </div>
+            </div>
+
+            {/* INTRO SECTION */}
+            {intro?.blurbs?.length > 0 && (
+              <div className="columns is-multiline mt-4">
+                {intro.blurbs.map((item, index) => (
+                  <div className="column is-6" key={index}>
+                    <div className="box">
+                      {item.image && (
+                        <figure className="image">
+                          <img src={item.image} alt="" />
+                        </figure>
+                      )}
+                      <p className="mt-2">{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* MAIN SECTION */}
+            {main && (
+              <div className="section mt-6">
+                <h2 className="title is-size-3 has-text-weight-bold">
+                  {main.heading}
+                </h2>
+                <p className="mb-4">{main.description}</p>
+
+                <div className="columns">
+                  <div className="column is-6"></div>
+                  <div className="column is-6"></div>
+                </div>
+              </div>
+            )}
+
+            {/* BLOG SECTION */}
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold">Blog</h2>
+
+              <BlogRoll />
+
+              <div className="has-text-centered" style={{ marginTop: "2rem" }}>
+                <a className="btn" href="/blog">
+                  Read more
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -87,13 +95,21 @@ export const IndexPageTemplate = ({
 };
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  mainpitch: PropTypes.object,
+  subheading: PropTypes.string,
   description: PropTypes.string,
+  image: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    blurbs: PropTypes.arrayOf(
+      PropTypes.shape({
+        image: PropTypes.string,
+        text: PropTypes.string,
+      })
+    ),
+  }),
+  main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
   }),
 };
 
@@ -103,23 +119,15 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        mainpitch={frontmatter.mainpitch}
+        subheading={frontmatter.subheading}
         description={frontmatter.description}
+        image={frontmatter.image}
         intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   );
-};
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 };
 
 export default IndexPage;
@@ -129,26 +137,16 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        heading
-        mainpitch {
-          title
-          description
-        }
+        subheading
+        image
         description
         intro {
           blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
+            image
             text
           }
+        }
+        main {
           heading
           description
         }

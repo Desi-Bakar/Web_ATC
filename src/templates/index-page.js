@@ -11,7 +11,6 @@ export const IndexPageTemplate = ({
   description,
   intro,
   main,
-  image,
 }) => {
   return (
     <div>
@@ -22,10 +21,10 @@ export const IndexPageTemplate = ({
         <div className="container">
           <div className="section">
 
-            {/* Title */}
+            {/* TITLE */}
             <div className="columns">
               <div className="column is-12">
-                <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                <h1 className="title is-size-2 has-text-weight-bold">
                   {title}
                 </h1>
                 {subheading && (
@@ -34,45 +33,105 @@ export const IndexPageTemplate = ({
               </div>
             </div>
 
-            {/* Description */}
+            {/* DESCRIPTION */}
             <div className="columns">
               <div className="column is-12">
                 <p>{description}</p>
               </div>
             </div>
 
-            {/* INTRO SECTION */}
+             {/* MAIN SECTION */}
+              {main && (
+                <div className="columns mt-4">
+                  <div className="column is-12">
+                    <h2 className="title is-size-2 has-text-weight-bold">
+                      {main.heading}
+                    </h2>
+                    <p>{main.description}</p>
+                  </div>
+                </div>
+              )}
+
+
+            {/* INTRO SECTION (CARD) */}
             {intro?.blurbs?.length > 0 && (
-              <div className="columns is-multiline mt-4">
+              <div className="columns is-multiline mt-5">
                 {intro.blurbs.map((item, index) => (
                   <div className="column is-6" key={index}>
-                    <div className="box">
-                      {item.image && (
-                        <figure className="image">
-                          <img src={item.image} alt="" />
-                        </figure>
-                      )}
-                      <p className="mt-2">{item.text}</p>
+                    <div
+                        className="box intro-card"
+                        style={{
+                        height: "100%",
+                        width: "500px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginBottom:  "1rem",
+                        flexDirection: "column",
+                      }}
+>
+
+                     {item.image && (
+                              <figure
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "center",
+                                  alignItems: "center",
+                                  height: "200px",
+                                  marginBottom: "1rem",
+                                }}
+                              >
+                                <img
+                                  src={item.image}
+                                  alt=""
+                                  style={{
+                                    width: "180px",
+                                    height: "180px",
+                                    objectFit: "cover",
+                                    borderRadius: "7px",
+                                  }}
+                                />
+                              </figure>
+                            )}
+
+
+                      <div className="intro-content">
+                        <p>{item.text}</p>
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
             )}
 
-            {/* MAIN SECTION */}
-            {main && (
-              <div className="section mt-6">
-                <h2 className="title is-size-3 has-text-weight-bold">
-                  {main.heading}
-                </h2>
-                <p className="mb-4">{main.description}</p>
+           
 
-                <div className="columns">
-                  <div className="column is-6"></div>
-                  <div className="column is-6"></div>
+                            <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "1rem",
+                  }}
+                >
+                  <a
+                    href="https://wa.me/6281285234904?text=Halo%20saya%20ingin%20join%20training"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      backgroundColor: "#ff7a00",
+                      color: "#fff",
+                      padding: "0.6rem 1.4rem",
+                      borderRadius: "999px",
+                      fontWeight: "600",
+                      fontSize: "0.9rem",
+                      textDecoration: "none",
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    Join Sekarang
+                  </a>
                 </div>
-              </div>
-            )}
+
 
             {/* BLOG SECTION */}
             <div className="section">
@@ -80,7 +139,7 @@ export const IndexPageTemplate = ({
 
               <BlogRoll />
 
-              <div className="has-text-centered" style={{ marginTop: "2rem" }}>
+              <div className="has-text-centered mt-5">
                 <a className="btn" href="/blog">
                   Read more
                 </a>
@@ -98,7 +157,6 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   subheading: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.arrayOf(
       PropTypes.shape({
@@ -122,7 +180,6 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         subheading={frontmatter.subheading}
         description={frontmatter.description}
-        image={frontmatter.image}
         intro={frontmatter.intro}
         main={frontmatter.main}
       />
@@ -138,14 +195,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subheading
-        image
         description
-        intro {
+
+      intro {
           blurbs {
             image
             text
           }
         }
+
         main {
           heading
           description
@@ -153,4 +211,5 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
+;

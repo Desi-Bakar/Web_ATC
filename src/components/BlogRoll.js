@@ -42,7 +42,13 @@ const BlogRollTemplate = ({ data }) => {
                     <img
                       src={fallbackImg}
                       alt={fm.title || "Blog image"}
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                               width: "30%",
+                               height: "100%",
+                               borderRadius: "10px",
+                               objectFit: "cover",
+                            }}
+
                     />
                   </div>
                 )}

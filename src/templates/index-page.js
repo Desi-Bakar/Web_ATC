@@ -13,143 +13,153 @@ export const IndexPageTemplate = ({
   main,
 }) => {
   return (
-    <div>
-      {/* Hero Carousel */}
-      <HeroCarousel />
+    <>
+      {/* =====================
+          STYLE LANGSUNG
+      ====================== */}
+      <style>{`
+        .intro-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 2rem;
+          margin-top: 3rem;
+        }
 
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
+        .intro-card {
+          height: 100%;
+        }
 
-            {/* TITLE */}
-            <div className="columns">
-              <div className="column is-12">
-                <h1 className="title is-size-2 has-text-weight-bold">
-                  {title}
-                </h1>
-                {subheading && (
-                  <h3 className="subtitle is-size-4 mt-2">{subheading}</h3>
-                )}
-              </div>
-            </div>
+        .intro-image {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+        }
 
-            {/* DESCRIPTION */}
-            <div className="columns">
-              <div className="column is-12">
-                <p>{description}</p>
-              </div>
-            </div>
+        .intro-image img {
+          width: 160px;
+          height: 160px;
+          object-fit: cover;
+          border-radius: 6px;
+        }
 
-             {/* MAIN SECTION */}
+        .intro-content p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+
+        .join-btn {
+          background-color: #ff7a00;
+          color: #fff;
+          padding: 0.7rem 1.6rem;
+          border-radius: 999px;
+          font-weight: 600;
+          font-size: 0.9rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+          background-color: #e56e00;
+          color: #fff;
+        }
+
+        /* HP kecil → 1 kolom */
+        @media (max-width: 420px) {
+          .intro-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
+
+      <div>
+        {/* HERO */}
+        <HeroCarousel />
+
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="section">
+
+              {/* TITLE */}
+              <h1 className="title is-size-2 has-text-weight-bold">
+                {title}
+              </h1>
+
+              {subheading && (
+                <h3 className="subtitle is-size-4 mt-2">
+                  {subheading}
+                </h3>
+              )}
+
+              {/* DESCRIPTION */}
+              <p className="mt-4">{description}</p>
+
+              {/* MAIN */}
               {main && (
-                <div className="columns mt-4">
-                  <div className="column is-12">
-                    <h2 className="title is-size-2 has-text-weight-bold">
-                      {main.heading}
-                    </h2>
-                    <p>{main.description}</p>
-                  </div>
+                <div className="mt-6">
+                  <h2 className="title is-size-3 has-text-weight-bold">
+                    {main.heading}
+                  </h2>
+                  <p>{main.description}</p>
                 </div>
               )}
 
-
-            {/* INTRO SECTION (CARD) */}
-            {intro?.blurbs?.length > 0 && (
-              <div className="columns is-multiline mt-5">
-                {intro.blurbs.map((item, index) => (
-                  <div className="column is-6" key={index}>
-                    <div
-                        className="box intro-card"
-                        style={{
-                        height: "100%",
-                        width: "500px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginBottom:  "1rem",
-                        flexDirection: "column",
-                      }}
->
-
-                     {item.image && (
-                              <figure
-                                style={{
-                                  display: "flex",
-                                  justifyContent: "center",
-                                  alignItems: "center",
-                                  height: "200px",
-                                  marginBottom: "1rem",
-                                }}
-                              >
-                                <img
-                                  src={item.image}
-                                  alt=""
-                                  style={{
-                                    width: "180px",
-                                    height: "180px",
-                                    objectFit: "cover",
-                                    borderRadius: "7px",
-                                  }}
-                                />
-                              </figure>
-                            )}
-
-
+              {/* CARD ATAS */}
+              {intro?.blurbs?.length > 0 && (
+                <div className="intro-grid">
+                  {intro.blurbs.map((item, index) => (
+                    <div key={index} className="box intro-card">
+                      {item.image && (
+                        <div className="intro-image">
+                          <img src={item.image} alt="" />
+                        </div>
+                      )}
                       <div className="intro-content">
                         <p>{item.text}</p>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-           
-
-                            <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "1rem",
-                  }}
-                >
-                  <a
-                    href="https://wa.me/6281285234904?text=Halo%20saya%20ingin%20join%20training"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      backgroundColor: "#ff7a00",
-                      color: "#fff",
-                      padding: "0.6rem 1.4rem",
-                      borderRadius: "999px",
-                      fontWeight: "600",
-                      fontSize: "0.9rem",
-                      textDecoration: "none",
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Join Sekarang
-                  </a>
+                  ))}
                 </div>
+              )}
 
-
-            {/* BLOG SECTION */}
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold">Blog</h2>
-
-              <BlogRoll />
-
-              <div className="has-text-centered mt-5">
-                <a className="btn" href="/blog">
-                  Read more
+              {/* JOIN SEKARANG (JARAK SUDAH DITAMBAH) */}
+              <div
+                className="has-text-centered"
+                style={{
+                  marginTop: "4rem",
+                  marginBottom: "6rem",
+                }}
+              >
+                <a
+                  href="https://wa.me/6281285234904?text=Halo%20saya%20ingin%20join%20training"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="join-btn"
+                >
+                  Join Sekarang
                 </a>
               </div>
-            </div>
 
+              {/* BLOG */}
+              <div className="section">
+                <h2 className="title is-size-3 has-text-weight-bold">
+                  Blog
+                </h2>
+
+                <BlogRoll />
+
+                {/* READ MORE */}
+                <div className="has-text-centered mt-5">
+                  <a className="btn" href="/blog">
+                    Read more
+                  </a>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 
@@ -196,14 +206,12 @@ export const pageQuery = graphql`
         title
         subheading
         description
-
-      intro {
+        intro {
           blurbs {
             image
             text
           }
         }
-
         main {
           heading
           description
@@ -211,5 +219,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-;
+`;

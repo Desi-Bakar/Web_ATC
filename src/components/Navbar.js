@@ -22,20 +22,20 @@ const Navbar = () => {
     { name: "Digital Marketing", path: "/products/BisnisDigital" }
   ];
 
-  /* CLICK OUTSIDE */
+  /* CLICK OUTSIDE DROPDOWN */
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handler = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setIsProductsOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  /* LOCK SCROLL MOBILE */
+  /* LOCK BODY SCROLL (MENU TETAP BISA SCROLL) */
   useEffect(() => {
-    document.body.style.overflow = isActive ? "hidden" : "auto";
+    document.body.style.overflow = isActive ? "hidden" : "";
   }, [isActive]);
 
   return (
@@ -60,13 +60,6 @@ const Navbar = () => {
           justify-content: space-between;
           align-items: center;
           height: 88px;
-        }
-
-        /* LOGO */
-        .navbar-brand {
-          display: flex;
-          align-items: center;
-          padding: 6px 0;
         }
 
         .navbar-brand img {
@@ -107,20 +100,8 @@ const Navbar = () => {
 
         .navbar-item {
           padding: 10px 8px;
-          cursor: pointer;
           font-weight: 500;
         }
-
-        /* HIGHLIGHT MENU */
-        .nav-campus {
-          background: ;
-          
-          padding: 8px 18px;
-          border-radius: 20px;
-          font-weight: 600;
-        }
-
-       
 
         .has-dropdown {
           position: relative;
@@ -158,6 +139,7 @@ const Navbar = () => {
           visibility: visible;
         }
 
+        /* ================= MOBILE ONLY ================= */
         @media (max-width: 1024px) {
           .navbar-burger {
             display: block;
@@ -167,56 +149,64 @@ const Navbar = () => {
             position: fixed;
             top: 0;
             right: 0;
-            width: 75%;
-            height: 100vh;
+            width: 78%;
+            max-width: 360px;
+            height: 100dvh;
             background: #fff;
+
+            display: flex;
             flex-direction: column;
-            padding-top: 120px;
+            padding: 96px 16px 24px;
+
             transform: translateX(100%);
-            transition: .35s;
+            transition: transform .35s ease;
             z-index: 2001;
 
-            /* ⬇️ INI KUNCI */
-            align-items: center;
-            text-align: center;
+            overflow-y: auto;
           }
 
           .navbar-menu.is-active {
             transform: translateX(0);
           }
 
-          /* SEMUA ITEM MENU */
           .navbar-item {
-            width: 100%;
-            text-align: center;
-            font-size: 18px;
+            font-size: 16px;
+            padding: 12px 6px;
+            border-bottom: 1px solid #eee;
           }
 
-          /* DROPDOWN */
+          /* PRODUCTS DROPDOWN MOBILE */
           .has-dropdown {
             width: 100%;
           }
 
+          .has-dropdown > span {
+            display: block;
+            padding: 12px 6px;
+            font-weight: 600;
+          }
+
           .navbar-dropdown {
             position: relative;
-            top: 0;
-            box-shadow: none;
             width: 100%;
-            align-items: center;
+            box-shadow: none;
+            background: #f9fafb;
+
+            max-height: 0;
+            overflow-y: auto;
+            transition: max-height .3s ease;
+          }
+
+          .has-dropdown.open .navbar-dropdown {
+            max-height: 55vh; /* ✅ SCROLLABLE */
           }
 
           .navbar-dropdown .navbar-item {
-            text-align: center;
-            padding: 12px 0;
-          }
-
-          /* INFORMASI KAMPUS */
-          .nav-campus {
-            margin-top: 16px;
-            text-align: center;
+            padding: 10px 14px;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e7eb;
           }
         }
-
       `}</style>
 
       <div
@@ -229,7 +219,6 @@ const Navbar = () => {
 
       <nav className="navbar">
         <div className="container">
-
           <Link to="/" className="navbar-brand">
             <img src={logo} alt="Logo Areta" />
           </Link>
@@ -238,7 +227,7 @@ const Navbar = () => {
             className={`navbar-burger ${isActive ? "is-active" : ""}`}
             onClick={() => setIsActive(!isActive)}
           >
-            <span></span><span></span><span></span>
+            <span /><span /><span />
           </button>
 
           <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
@@ -272,12 +261,11 @@ const Navbar = () => {
             <Link className="navbar-item" to="/blog">Blog</Link>
             <Link className="navbar-item" to="/contact">Contact</Link>
 
-            {/* INFORMASI KAMPUS */}
             <a
+              className="navbar-item"
               href="https://pmb.aretacollege.com/"
               target="_blank"
               rel="noreferrer"
-              className="nav-campus"
             >
               Informasi Kampus
             </a>

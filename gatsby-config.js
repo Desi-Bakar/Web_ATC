@@ -34,11 +34,7 @@ module.exports = {
       },
     },
 
-<<<<<<< HEAD
-    // SOURCE DIRS
-=======
-    // ====== Sumber Gambar & File ======
->>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
+    // SOURCE FILESYSTEM
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -61,45 +57,34 @@ module.exports = {
       },
     },
 
-<<<<<<< HEAD
-    // IMAGE TOOLS
-=======
-    // ====== BLOG MARKDOWN (yang kamu minta ditambahkan) ======
+    // BLOG MARKDOWN
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
+        name: "blog",
         path: `${__dirname}/src/pages/blog/`,
       },
     },
-    `gatsby-transformer-remark`,
 
-    // ====== IMAGE PROCESSOR ======
->>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
-    `gatsby-plugin-image`,
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-
-<<<<<<< HEAD
-    // Markdown Remark dengan plugin baru
+    // MARKDOWN TRANSFORMER
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images-v2`,
+            resolve: "gatsby-remark-relative-images-v2",
             options: {
               name: "uploads",
             },
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 2048,
             },
           },
           {
-            resolve: `gatsby-remark-copy-linked-files`,
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
               destinationDir: "static",
             },
@@ -108,10 +93,12 @@ module.exports = {
       },
     },
 
+    // IMAGE PROCESSOR
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+
     // CMS
-=======
-    // ====== CMS ======
->>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
     {
       resolve: "gatsby-plugin-decap-cms",
       options: {
@@ -119,11 +106,7 @@ module.exports = {
       },
     },
 
-<<<<<<< HEAD
-    // PurgeCSS
-=======
-    // ====== Purge CSS ======
->>>>>>> 29e6dbfe008eb4e357db06bd86b8e7d94887fe42
+    // PURGE CSS
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -133,11 +116,11 @@ module.exports = {
       },
     },
 
-    // Sitemap
+    // SITEMAP
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: "gatsby-plugin-sitemap",
       options: {
-        output: `/sitemap.xml`,
+        output: "/sitemap.xml",
         createLinkInHead: true,
       },
     },

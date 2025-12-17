@@ -6,10 +6,8 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.9.0",
-
-    "decap-cms-app": "3.1.11",
+    "decap-cms-app": "^3.1.11",
     "decap-cms-media-library-uploadcare": "^3.0.2",
-
     "gatsby": "^4.25.9",
     "gatsby-plugin-decap-cms": "^4.0.3",
     "gatsby-plugin-image": "^2.0.0",
@@ -19,34 +17,37 @@
     "gatsby-plugin-sass": "^5.0.0",
     "gatsby-plugin-sharp": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.12.0",
-
     "gatsby-remark-copy-linked-files": "^5.0.0",
     "gatsby-remark-images": "^6.0.0",
     "gatsby-remark-relative-images-v2": "^0.1.5",
-
     "gatsby-source-filesystem": "^4.25.0",
-    "gatsby-transformer-remark": "^4.0.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.0.0",
-
     "lodash": "^4.17.15",
     "lodash-webpack-plugin": "^0.11.4",
     "prop-types": "^15.6.0",
-
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-helmet": "^6.1.0",
-
     "sass": "^1.43.2",
     "sharp": "^0.34.1",
     "slide": "^1.1.6",
     "swiper": "^11.2.10",
     "uuid": "^8.0.0"
   },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
   "scripts": {
     "clean": "gatsby clean",
-    "develop": "npm run clean && gatsby develop",
+    "start": "npm run develop",
     "build": "npm run clean && gatsby build",
-    "serve": "gatsby serve"
+    "develop": "npm run clean && gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "prettier": "^2.0.5"

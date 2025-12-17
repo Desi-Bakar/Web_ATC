@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 const BlogPostTemplate = ({ data }) => {
@@ -10,22 +11,32 @@ const BlogPostTemplate = ({ data }) => {
         <div className="container content">
 
           {/* Title */}
-          <h1 className="title is-size-2">{post.frontmatter.title}</h1>
+          <h1 className="title is-size-2">
+            {post.frontmatter.title}
+          </h1>
 
           {/* Featured Image */}
           {post.frontmatter.featuredimage && (
             <img
               src={post.frontmatter.featuredimage}
               alt={post.frontmatter.title}
-              style={{ width: "100%", borderRadius: "10px", marginBottom: "20px" }}
+              style={{
+                width: "100%",
+                borderRadius: "10px",
+                marginBottom: "20px",
+              }}
             />
           )}
 
           {/* Description */}
-          <p className="subtitle">{post.frontmatter.description}</p>
+          <p className="subtitle">
+            {post.frontmatter.description}
+          </p>
 
           {/* Blog Body */}
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
 
         </div>
       </section>
@@ -43,7 +54,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        featuredimage   # <--- STRING, jadi query seperti ini saja
+        featuredimage
         date(formatString: "YYYY-MM-DD")
         tags
       }

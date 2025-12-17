@@ -53,10 +53,10 @@
     "prettier": "^2.0.5"
   },
   "engines": {
-    "node": ">=18"
+    "node": "20.x"
   },
   "resolutions": {
-    "undici": "4.17.0"
+    "undici": "4.x"
   },
   "repository": {
     "type": "git",

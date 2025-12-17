@@ -52,6 +52,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       _.flatMap(posts, (edge) => edge.node.frontmatter.tags || [])
     )
   );
+  if (typeof File === 'undefined') {
+    global.File = class File {};
+  }
 
   // 🔹 Generate halaman tag dengan slug kebab-case & filter aman
   tags.forEach((tag) => {

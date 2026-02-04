@@ -5,12 +5,12 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const BottomFullWidthImage = ({ image, title, imgPosition = "center" }) => {
   const img = getImage(image) || image;
 
-    return (
-        <section
+return (
+       <section
               style={{
                       margin: 0,
                               padding: 0,
-                                      backgroundColor: "#e78311",
+                                      backgroundColor: "#0057b8",
                                               lineHeight: 0, // hilangin jarak ekstra di bawah
                                                     }}
                                                         >

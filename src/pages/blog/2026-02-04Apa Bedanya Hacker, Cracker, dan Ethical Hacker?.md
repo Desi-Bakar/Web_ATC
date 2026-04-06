@@ -5,7 +5,7 @@ date: 2025-06-20T15:04:10.000Z
 description: >
   Selamat datang di Areta Training Center tempat kamu untuk meningkatkan skill bukan hanya di bidang IT tapi juga Bisnis Digital dengan Metode Full Praktek! Dunia IT terus berkembang, dan keahlian yang kamu miliki hari ini menentukan masa depan kariermu.
 featuredpost: false
-featuredimage: /img/corel.png
+featuredimage: /img/hacker.png
 tags:
   - TrainingHacker
   - BelajarHacking

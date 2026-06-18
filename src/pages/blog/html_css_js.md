@@ -2,7 +2,8 @@
 templateKey: blog-post
 title: "Trinitas Pengembangan Web: Panduan Lengkap Menguasai HTML, CSS, dan JavaScript"
 date: 2026-06-17T14:00:00.000Z
-description: Dunia web development terus berkembang dengan lahirnya ratusan framework dan library baru setiap tahunnya. Namun, secanggih apa pun teknologi yang digunakan saat ini, fondasi utama dari setiap halaman web di internet tidak pernah berubah. Mereka ditopang oleh tiga pilar utama yang sering disebut sebagai Trinitas Pengembangan Web: HTML, CSS, dan JavaScript.
+description: >
+ Dunia web development terus berkembang dengan lahirnya ratusan framework dan library baru setiap tahunnya. Namun, secanggih apa pun teknologi yang digunakan saat ini, fondasi utama dari setiap halaman web di internet tidak pernah berubah. Mereka ditopang oleh tiga pilar utama yang sering disebut sebagai Trinitas Pengembangan Web: HTML, CSS, dan JavaScript.
 featuredpost: false
 featuredimage: /img/html_css_js.png
 tags:

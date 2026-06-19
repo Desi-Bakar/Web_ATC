@@ -36,7 +36,7 @@ const CiscoBasic = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/28.png"
+                src="/img/ciscobasic.png"
                 alt="CISCO Basic"
                 style={imageStyle}
               />

@@ -36,7 +36,7 @@ const Mikrotik= () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/7.png"
+                src="/img/mikrotikbasic.png"
                 alt="Mikrotik & Networking Basic"
                 style={imageStyle}
               />

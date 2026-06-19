@@ -56,7 +56,7 @@ const LinuxBasic = () => {
             {/* Card 2 */}
            <div style={cardStyle}>
               <img
-                src="/img/16.png"
+                src="/img/linuxsecurity.png"
                 alt="Linux Security"
                 style={imageStyle}
               />
@@ -74,7 +74,7 @@ const LinuxBasic = () => {
             {/* Card 3 */}
             <div style={cardStyle}>
               <img
-                src="/img/3.png"
+                src="/img/linuxnetworking.png"
                 alt="Networking"
                 style={imageStyle}
               />
@@ -93,7 +93,7 @@ const LinuxBasic = () => {
             {/* Card 4 */}
             <div style={cardStyle}>
               <img
-                src="/img/15.png"
+                src="/img/linuxtechnic.png"
                 alt="Linux for Networking Computer -Technic"
                 style={imageStyle}
               />

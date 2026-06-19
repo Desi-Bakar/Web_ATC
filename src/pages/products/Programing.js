@@ -36,7 +36,7 @@ const Programing = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/10.png"
+                src="/img/phpbasic.png"
                 alt="PHP & MySQL. Standard"
                 style={imageStyle}
               />

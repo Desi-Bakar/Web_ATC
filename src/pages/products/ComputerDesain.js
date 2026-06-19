@@ -135,6 +135,28 @@ const ComputerDesain = () => {
               </div>
             </div>
 
+             {/* Card 7 */}
+              <div style={cardStyle}>
+                <img
+                  src="/img/designwithcanva.png"
+                  alt="Design with Canva"
+                  style={imageStyle}
+                />
+
+                <div style={contentStyle}>
+                  <h1 className="title" style={{ marginBottom: "1rem" }}>
+                    Design with Canva
+                  </h1>
+                  <p>
+                    <strong>Materi:</strong> Pengenalan Canva, Mengenal Interface Canva,
+                    Penggunaan Template, Pengaturan Elemen Desain, Penggunaan Font & Tipografi,
+                    Editing Foto Dasar, Penggunaan Background & Efek, Membuat Poster,
+                    Desain Feed Instagram, Story Instagram, Brosur, Flyer, Banner, Presentasi,
+                    Kartu Nama, Sertifikat, Konten Media Sosial, Teknik Branding Sederhana,
+                    Export & Sharing Desain, serta Latihan Proyek.
+                  </p>
+                </div>
+              </div>
 
           </div>
         </div>

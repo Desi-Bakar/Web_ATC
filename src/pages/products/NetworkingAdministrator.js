@@ -36,7 +36,7 @@ const LinuxBasic = () => {
             {/* Card 1 */}
             <div style={cardStyle}>
               <img
-                src="/img/1.png"
+                src="/img/linuxbasic.png"
                 alt="Linux Basic"
                 style={imageStyle}
               />

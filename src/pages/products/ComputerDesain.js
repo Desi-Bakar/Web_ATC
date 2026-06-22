@@ -140,9 +140,9 @@ const ComputerDesain = () => {
                 <img
                   src="/img/designwithcanva.png"
                   alt="Design with Canva"
-                  style={imageStyle}
+                  style={imageStyle}  
                 />
-
+                
                 <div style={contentStyle}>
                   <h1 className="title" style={{ marginBottom: "1rem" }}>
                     Design with Canva

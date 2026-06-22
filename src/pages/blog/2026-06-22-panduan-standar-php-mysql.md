@@ -46,3 +46,6 @@ Setiap sesi pelatihan akan dipandu langsung oleh trainer profesional yang berpen
 * **Siswa SMK** jurusan RPL (Rekayasa Perangkat Lunak) yang ingin melangkah lebih jauh ke bagian *logic* dan *database*.
 * **Mahasiswa** rumpun teknologi informasi yang ingin memperdalam mata kuliah pemrograman web untuk persiapan tugas akhir atau magang.
 * **Pemula & Freelancer** yang ingin naik kelas dari sekadar membuat web statis menjadi developer web dinamis yang profesional dan tepercaya.
+
+📞 <a href="https://wa.me/6285219507377?text=Halo%20Areta,%20saya%20ingin%20konsultasi%20program%20pelatihan%20web" target="_blank" rel="noopener">Hubungi Kami via WhatsApp Sekarang</a> untuk konsultasi program yang sesuai dengan kebutuhan anda.
+

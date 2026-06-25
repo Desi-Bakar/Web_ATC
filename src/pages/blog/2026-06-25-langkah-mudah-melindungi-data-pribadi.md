@@ -3,7 +3,7 @@ templateKey: blog-post
 title: "Mengapa Cyber Security Penting? Langkah Mudah Melindungi Data Pribadi dari Intaian Hacker"
 date: 2026-06-25T14:30:00.000Z
 description: >
-Di era serba digital, data pribadi kita adalah komoditas yang sangat diincar oleh para peretas. Mengapa cyber security bukan lagi sekadar pilihan, melainkan kebutuhan mutlak? Yuk, bongkar cara mudah melindungi data pribadimu dari intaian hacker di sini!
+  Di era serba digital, data pribadi kita adalah komoditas yang sangat diincar oleh para peretas. Mengapa cyber security bukan lagi sekadar pilihan, melainkan kebutuhan mutlak? Yuk, bongkar cara mudah melindungi data pribadimu dari intaian hacker di sini!
 featuredpost: false
 featuredimage: /img/hacking-securty.png
 tags:

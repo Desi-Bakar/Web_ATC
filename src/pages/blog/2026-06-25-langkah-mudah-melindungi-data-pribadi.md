@@ -5,7 +5,7 @@ date: 2026-06-25T14:30:00.000Z
 description: >
 Di era serba digital, data pribadi kita adalah komoditas yang sangat diincar oleh para peretas. Mengapa cyber security bukan lagi sekadar pilihan, melainkan kebutuhan mutlak? Yuk, bongkar cara mudah melindungi data pribadimu dari intaian hacker di sini!
 featuredpost: false
-featuredimage: /img/cyber_security_personal.png
+featuredimage: /img/hacking-securty.png
 tags:
   - Mengapa Cyber Security Penting
   - Melindungi Data Pribadi
